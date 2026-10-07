@@ -1,0 +1,278 @@
+<section class="background-color mb-80">
+  <div class="container">
+    <div class="product-title-outer">
+      <ul class="product-title-wrapper">
+        {% for block in section.blocks %}
+          {% assign collection = block.settings.collection %}
+          <li
+            class="product-title-tab {% if forloop.index == 1 %}active{% endif %}"
+            data-tab="block--{{ forloop.index }}-{{ collection.handle | handle }}"
+          >
+            <span>{{ collection.title }}</span>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="pc--collection-product-wrapper">
+      <div class="collection-product-wrapper">
+        {% for block in section.blocks %}
+          {% assign collection = block.settings.collection %}
+          <ul
+            class="product-tab-details {% if forloop.index == 1 %}active{% endif %}"
+            id="block--{{ forloop.index }}-{{ collection.handle | handle }}"
+          >
+            {% for product in collection.products limit: 8 %}
+              {% assign product = product.selected_or_first_available_variant %}
+              <li class="grid_items product-tab-outer">
+                <div class="product-bg">
+                  <div class="product-image-wrapper">
+                    <div class="pro-icons">
+                      {% render 'wishlisthero-collection-product' with product: product %}
+                    </div>
+                    <a href="{{ product.url }}">
+                      <img
+                        src="{{ product.featured_image | img_url: 'master' }}"
+                        alt="{{ product.featured_image.alt }}"
+                      >
+                    </a>
+                  </div>
+                  <div class="product-content-wrapper">
+                    <h2 class="product_title"><a href="{{ product.url }}">{{ product.title }}</a></h2>
+                    <div class="product-price-wrapper">
+                      <div class="rating-price">
+                        <!-- Start of Judge.me code -->
+                        <div class="jdgm-widget jdgm-preview-badge">
+                          {{ product.metafields.judgeme.badge }}
+                        </div>
+                        <!-- End of Judge.me code -->
+                        <div class="regular-discount">
+                          {% if product.compare_at_price != blank %}
+                            <span class="product-discount_price">
+                              {{- product.compare_at_price | money_without_trailing_zeros -}}
+                            </span>
+                          {% endif %}
+                          {% if product.price != blank %}
+                            <span class="product-regular_price">
+                              {{- product.price | money_without_trailing_zeros -}}
+                            </span>
+                          {% endif %}
+                        </div>
+                      </div>
+                    </div>
+
+                    {% assign product_form_id = 'quick-add-' | append: section_id | append: product.id %}
+                    <div class="quick-add no-js-hidden">
+                      {%- liquid
+                        assign qty_rules = false
+                        if product.selected_or_first_available_variant.quantity_rule.min > 1 or product.selected_or_first_available_variant.quantity_rule.max != null or product.selected_or_first_available_variant.quantity_rule.increment > 1
+                          assign qty_rules = true
+                        endif
+                      -%}
+                      {%- if product.variants.size > 1 or qty_rules -%}
+                        <modal-opener data-modal="#QuickAdd-{{ product.id }}">
+                          <button
+                            id="{{ product_form_id }}-submit"
+                            type="submit"
+                            name="add"
+                            class="quick-add__submit button button--full-width button--secondary{% if horizontal_quick_add %} card--horizontal__quick-add animate-arrow{% endif %}"
+                            aria-haspopup="dialog"
+                            aria-labelledby="{{ product_form_id }}-submit title-{{ section_id }}-{{ product.id }}"
+                            data-product-url="{{ product.url }}"
+                          >
+                            {{ 'products.product.choose_options' | t }}
+                            {%- if horizontal_quick_add -%}
+                              <span class="icon-wrap">
+                                {{- 'icon-arrow.svg' | inline_asset_content -}}
+                              </span>
+                            {%- endif -%}
+                            {%- render 'loading-spinner' -%}
+                          </button>
+                        </modal-opener>
+                        <quick-add-modal id="QuickAdd-{{ product.id }}" class="quick-add-modal">
+                          <div
+                            role="dialog"
+                            aria-label="{{ 'products.product.choose_product_options' | t: product_name: product.title | escape }}"
+                            aria-modal="true"
+                            class="quick-add-modal__content global-settings-popup"
+                            tabindex="-1"
+                          >
+                            <button
+                              id="ModalClose-{{ product.id }}"
+                              type="button"
+                              class="quick-add-modal__toggle"
+                              aria-label="{{ 'accessibility.close' | t }}"
+                            >
+                              {{- 'icon-close.svg' | inline_asset_content -}}
+                            </button>
+                            <div id="QuickAddInfo-{{ product.id }}" class="quick-add-modal__content-info"></div>
+                          </div>
+                        </quick-add-modal>
+                      {%- else -%}
+                        <product-form aa data-section-id="{{ section.id }}">
+                          {%- form 'product',
+                            product,
+                            id: product_form_id,
+                            class: 'form',
+                            novalidate: 'novalidate',
+                            data-type: 'add-to-cart-form'
+                          -%}
+                            <input
+                              type="hidden"
+                              name="id"
+                              value="{{ product.selected_or_first_available_variant.id }}"
+                              class="product-variant-id"
+                              {% if product.selected_or_first_available_variant.available == false %}
+                                disabled
+                              {% endif %}
+                            >
+                            <button
+                              id="{{ product_form_id }}-submit"
+                              type="submit"
+                              name="add"
+                              class="quick-add__submit button button--full-width button--secondary{% if horizontal_quick_add %} card--horizontal__quick-add{% endif %}"
+                              aria-haspopup="dialog"
+                              aria-labelledby="{{ product_form_id }}-submit title-{{ section_id }}-{{ product.id }}"
+                              aria-live="polite"
+                              data-sold-out-message="true"
+                              {% if product.selected_or_first_available_variant.available == false %}
+                                disabled
+                              {% endif %}
+                            >
+                              <span>
+                                {%- if product.selected_or_first_available_variant.available -%}
+                                  {{ 'products.product.add_to_cart' | t }}
+                                {%- else -%}
+                                  {{ 'products.product.sold_out' | t }}
+                                {%- endif -%}
+                              </span>
+                              <span class="sold-out-message hidden">
+                                {{ 'products.product.sold_out' | t }}
+                              </span>
+                              {%- if horizontal_quick_add -%}
+                                <span class="icon-wrap">
+                                  {{- 'icon-plus.svg' | inline_asset_content -}}
+                                </span>
+                              {%- endif -%}
+                              {%- render 'loading-spinner' -%}
+                            </button>
+                          {%- endform -%}
+                        </product-form>
+                      {%- endif -%}
+                    </div>
+                  </div>
+                </div>
+              </li>
+            {% endfor %}
+          </ul>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Product Tabify",
+  "class": "pc--product-tabify-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Add Text"
+    },
+    {
+      "type": "textarea",
+      "id": "desc",
+      "label": "Add Description"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "Collection",
+      "name": "Collection",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Collection"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product Tabify"
+    }
+  ]
+}
+{% endschema %}
+
+<script>
+  $(document).ready(function(){
+
+  //     Product Tabify slider js
+  //     var $tabi_slider = $(".product-tab-details");
+  //     $tabi_slider.slick({
+  //     slidesToShow: 4,
+  //     slidesToScroll: 1,
+  //     infinite:true,
+  //     autoplay: true,
+  //     dots: true,
+  //     arrows: true,
+  //     prevArrow: '<button class="slide-arrow prev-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="10" viewBox="0 0 12 10" fill="none"><path d="M-5.95123e-08 5.0094C-5.66318e-08 5.25095 0.0894775 5.48317 0.288319 5.66896L0.278266 5.65017L4.6429 9.72829C5.03062 10.0906 5.65695 10.0906 6.04471 9.72829C6.43246 9.36601 6.43246 8.7808 6.04471 8.4185L3.37032 5.91967L11.0058 5.91967C11.5526 5.91967 12 5.50166 12 4.99073C12 4.4798 11.5526 4.06179 11.0058 4.06179L3.40022 4.06179L6.05476 1.58151C6.44252 1.21924 6.44248 0.634026 6.05476 0.271726C5.66704 -0.0905751 5.04071 -0.0905751 4.65295 0.271726L0.288319 4.34984C0.0994195 4.53563 -6.23928e-08 4.76785 -5.95123e-08 5.0094Z" fill="white"/></svg></button>',
+  //     nextArrow: '<button class="slide-arrow next-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="10" viewBox="0 0 12 10" fill="none"><path d="M12 5.0094C12 5.25095 11.9105 5.48317 11.7117 5.66896L11.7217 5.65017L7.3571 9.72829C6.96938 10.0906 6.34305 10.0906 5.95529 9.72829C5.56754 9.36601 5.56754 8.7808 5.95529 8.4185L8.62968 5.91967L0.994203 5.91967C0.447376 5.91967 5.36421e-08 5.50166 5.97349e-08 4.99073C6.58277e-08 4.4798 0.447376 4.06179 0.994203 4.06179L8.59978 4.06179L5.94524 1.58151C5.55748 1.21924 5.55752 0.634027 5.94524 0.271726C6.33296 -0.0905751 6.95929 -0.0905751 7.34705 0.271726L11.7117 4.34984C11.9006 4.53563 12 4.76785 12 5.0094Z" fill="white"/></svg></button>',
+  //     responsive: [
+  //         {
+  //         breakpoint: 1200,
+  //         settings: {
+  //             slidesToShow: 3
+  //         }
+  //         },
+  //         {
+  //         breakpoint: 992,
+  //         settings: {
+  //             slidesToShow: 2
+  //         }
+  //         },
+  //         {
+  //         breakpoint: 768,
+  //         settings: {
+  //             slidesToShow: 1,
+  //             centerMode: true,
+  //             centerPadding:'125px',
+  //             arrows: false
+  //         }
+  //         },
+  //         {
+  //         breakpoint: 575,
+  //         settings: {
+  //             slidesToShow: 1,
+  //             centerMode: true,
+  //             centerPadding:'100px',
+  //             arrows: false
+  //         }
+  //         },
+  //         {
+  //         breakpoint: 370,
+  //         settings: {
+  //             slidesToShow: 1,
+  //             centerMode: true,
+  //             centerPadding:'70px',
+  //             arrows: false
+  //         }
+  //         }
+  //     ]
+  // });
+
+  // product tabify js
+  $('.product-title-wrapper .product-title-tab').click(function(){
+      var tab_id = $(this).attr('data-tab');
+      $('.product-title-wrapper .product-title-tab').removeClass('active');
+      $('.collection-product-wrapper').find('.product-tab-details').removeClass('active');
+      $(this).addClass('active');
+      $("#"+tab_id).addClass('active');
+      $tabi_slider.slick('refresh');
+  });
+
+  });
+</script>

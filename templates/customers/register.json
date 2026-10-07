@@ -1,0 +1,29 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-register",
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "image": "shopify://shop_images/register_img.png",
+        "logo": "shopify://shop_images/Qlem_Logo_be0d3f91-6423-47c1-b422-b5ef02ebdfd8.png",
+        "title": "Sign up for Free",
+        "desc": "Tap to connect, Tap for Progress.",
+        "ftitle": "",
+        "fdesc": ""
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

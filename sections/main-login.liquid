@@ -1,0 +1,292 @@
+{{ 'customer.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+{%- if section.settings.enable_shop_login_button == false -%}
+  {%- assign hide_shop_login_button = true -%}
+{%- endif -%}
+
+<div class="customer login section-{{ section.id }}-padding">
+  <h1 id="recover" tabindex="-1"></h1>
+
+  <div>
+    {% comment %}
+      <p>
+        {{ 'customer.recover_password.subtext' | t }}
+      </p>
+    {% endcomment %}
+    <div class="custom_flex forget-pass">
+      <div class="custom_sign_left">
+        <div class="custom_sign_text">
+          {% if section.settings.logo != blank %}
+            <img src="{{ section.settings.logo | img_url:'master' }}">
+          {% endif %}
+          {% if section.settings.ftitle != blank %}
+            <h3>{{ section.settings.ftitle }}</h3>
+          {% endif %}
+          {% if section.settings.fdesc != blank %}
+            <p>{{ section.settings.fdesc }}</p>
+          {% endif %}
+        </div>
+        {%- form 'recover_customer_password' -%}
+          {% assign recover_success = form.posted_successfully? %}
+
+          <div class="field">
+            <input
+              type="email"
+              value=""
+              name="email"
+              id="RecoverEmail"
+              autocorrect="off"
+              autocapitalize="off"
+              autocomplete="email"
+              {% if form.errors %}
+                aria-invalid="true"
+                aria-describedby="RecoverEmail-email-error"
+                autofocus
+              {% endif %}
+              placeholder="{{ 'customer.login_page.email' | t }}"
+            >
+            <label for="RecoverEmail">
+              {{ 'customer.login_page.email' | t }}
+            </label>
+          </div>
+          {%- if form.errors -%}
+            <small id="RecoverEmail-email-error" class="form__message">
+              <span class="svg-wrapper">
+                {{- 'icon-error.svg' | inline_asset_content -}}
+              </span>
+              {{ form.errors.messages.form }}
+            </small>
+          {%- endif -%}
+
+          <button>
+            {{ 'customer.login_page.submit' | t }}
+          </button>
+
+          <p class="for-text">New to QLEM?<a href="{{ routes.account_register_url }}"> Create an account </a></p>
+        {%- endform -%}
+      </div>
+      <div class="sign_img_right">
+        {% if section.settings.fimage != blank %}
+          <img src="{{ section.settings.fimage | img_url:'master' }}">
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  {% comment %}
+    <h1 id="login" tabindex="-1">
+      {{ 'customer.login_page.title' | t }}
+    </h1>
+  {% endcomment %}
+  <div class="custom_flex">
+    <div class="custom_sign_left">
+      <div class="custom_sign_text">
+        {% if section.settings.logo != blank %}
+          <img src="{{ section.settings.logo | img_url:'master' }}">
+        {% endif %}
+        {% if section.settings.title != blank %}
+          <h3>{{ section.settings.title }}</h3>
+        {% endif %}
+        {% if section.settings.desc != blank %}
+          <p>{{ section.settings.desc }}</p>
+        {% endif %}
+      </div>
+      <div>
+        {%- if recover_success == true -%}
+          <h3 class="form__message" tabindex="-1" autofocus>
+            <span class="svg-wrapper">
+              {{- 'icon-success.svg' | inline_asset_content -}}
+            </span>
+            {{ 'customer.recover_password.success' | t }}
+          </h3>
+        {%- endif -%}
+        {%- form 'customer_login', novalidate: 'novalidate' -%}
+          {%- if form.errors -%}
+            <h2 class="form__message" tabindex="-1" autofocus>
+              <span class="visually-hidden">{{ 'accessibility.error' | t }} </span>
+              <span class="svg-wrapper">
+                {{- 'icon-error.svg' | inline_asset_content -}}
+              </span>
+              {{ 'templates.contact.form.error_heading' | t }}
+            </h2>
+            {{ form.errors | default_errors }}
+          {%- endif -%}
+
+          {%- if shop.features.login_with_shop_classic_customer_accounts? -%}
+            <section name="sign-in-with-shop-provider">
+              {{ shop | login_button: hide_button: hide_shop_login_button }}
+
+              {%- unless hide_shop_login_button -%}
+                <p>
+                  {{ 'customer.login_page.alternate_provider_separator' | t }}
+                </p>
+              {%- endunless -%}
+            </section>
+          {%- endif -%}
+          <label>User Name</label>
+          <div class="field">
+            <input
+              type="email"
+              name="customer[email]"
+              id="CustomerEmail"
+              autocomplete="email"
+              autocorrect="off"
+              autocapitalize="off"
+              {% if form.errors contains 'form' %}
+                aria-invalid="true"
+              {% endif %}
+              placeholder="{{ 'customer.login_page.email' | t }}"
+            >
+            <label for="CustomerEmail">
+              {{ 'customer.login_page.email' | t }}
+            </label>
+          </div>
+
+          {%- if form.password_needed -%}
+            <label>Password</label>
+            <div class="field">
+              <input
+                type="password"
+                value=""
+                name="customer[password]"
+                id="CustomerPassword"
+                autocomplete="current-password"
+                {% if form.errors contains 'form' %}
+                  aria-invalid="true"
+                {% endif %}
+                placeholder="{{ 'customer.login_page.password' | t }}"
+              >
+              <label for="CustomerPassword">
+                {{ 'customer.login_page.password' | t }}
+              </label>
+            </div>
+
+            <a href="#recover">
+              {{ 'customer.login_page.forgot_password' | t }}
+            </a>
+          {%- endif -%}
+
+          <button>
+            {{ 'customer.login_page.sign_in' | t }}
+          </button>
+
+          <p class="for-text">New to QLEM?<a href="{{ routes.account_register_url }}"> Create an account </a></p>
+        {%- endform -%}
+      </div>
+
+      {%- if shop.checkout.guest_login -%}
+        <div>
+          <hr>
+          <h2>{{ 'customer.login_page.guest_title' | t }}</h2>
+
+          {%- form 'guest_login' -%}
+            <button>
+              {{ 'customer.login_page.guest_continue' | t }}
+            </button>
+          {%- endform -%}
+        </div>
+      {%- endif -%}
+    </div>
+
+    <div class="sign_img_right">
+      {% if section.settings.image != blank %}
+        <img src="{{ section.settings.image | img_url:'master' }}">
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.main-login.name",
+  "class": "cus-bg p-150",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "enable_shop_login_button",
+      "label": "t:sections.main-login.shop_login_button.enable",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    },
+    {
+      "type": "header",
+      "content": "Add Register Detail"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Add Image"
+    },
+    {
+      "type":"image_picker",
+      "id":"logo",
+      "label":"Add Logo"
+    },
+    {
+      "type":"text",
+      "id":"title",
+      "label":"Add Title"
+    },
+    {
+      "type":"textarea",
+      "id":"desc",
+      "label":"Add Descritption"
+    },
+    {
+      "type": "header",
+      "content": "Add Login Detail"
+    },
+    {
+      "type": "image_picker",
+      "id": "fimage",
+      "label": "Add Image"
+    },
+    {
+      "type":"text",
+      "id":"ftitle",
+      "label":"Add Title"
+    },
+    {
+      "type":"textarea",
+      "id":"fdesc",
+      "label":"Add Descritption"
+    }
+  ]
+}
+{% endschema %}

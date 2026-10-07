@@ -1,0 +1,653 @@
+<script>
+    $(document).ready(function() {
+    // Main tab click
+    $('.main-tab').click(function() {
+      var mainTab = $(this).data('main-tab');
+
+      // Set active state for main tabs
+      $('.main-tab').removeClass('active');
+      $(this).addClass('active');
+
+      // Show corresponding sub-tab container and hide others
+      $('.sub-tab-container').hide();
+      $('.sub-tab-container[data-main-tab="' + mainTab + '"]').show();
+
+      // Reset sub-tab active states
+      $('.sub-tab').removeClass('active');
+      $('.sub-tab-container[data-main-tab="' + mainTab + '"] .sub-tab:first').addClass('active');
+
+      // Show the first sub-tab content by default
+      $('.sub-tab-content').hide();
+      $('.sub-tab-container[data-main-tab="' + mainTab + '"] .sub-tab-content:first').show();
+    });
+
+    // Sub-tab click
+    $('.sub-tab').click(function() {
+      var subTab = $(this).data('sub-tab');
+
+      // Set active state for sub-tabs
+      $(this).siblings().removeClass('active');
+      $(this).addClass('active');
+
+      // Show corresponding sub-tab content and hide others
+      $(this).closest('.sub-tab-container').find('.sub-tab-content').hide();
+      $(this).closest('.sub-tab-container').find('.sub-tab-content[data-sub-tab="' + subTab + '"]').show();
+    });
+  });
+</script>
+<div class="tutorail_sec mb-80 main-tabs">
+  <div class="container">
+    <!-- Main Tabs -->
+    <ul class="main-tab-list">
+      <li class="main-tab active" data-main-tab="tab1">FAQs for QLEM App</li>
+      <li class="main-tab" data-main-tab="tab2">FAQs For QLEM Dashboard</li>
+    </ul>
+
+    <!-- Sub Tabs for Main Tab 1 -->
+    <div class="sub-tab-container" data-main-tab="tab1">
+      <ul class="sub-tab-list">
+        <li class="sub-tab active" data-sub-tab="subtab1-1">Basic</li>
+        <li class="sub-tab" data-sub-tab="subtab1-2">Onboarding/setup</li>
+        <li class="sub-tab" data-sub-tab="subtab1-3">QLEM With different devices</li>
+        <li class="sub-tab" data-sub-tab="subtab1-4">Activating a QLEM Device</li>
+        <li class="sub-tab" data-sub-tab="subtab1-5">buliding your profile</li>
+        <li class="sub-tab" data-sub-tab="subtab1-6">QLEM App Features</li>
+        <li class="sub-tab" data-sub-tab="subtab1-7">Your Connections</li>
+        <li class="sub-tab" data-sub-tab="subtab1-8">Lead Capture</li>
+      </ul>
+      <div class="sub-tab-content" data-sub-tab="subtab1-1">
+        <div class="tutorail-flex d-flex">
+          {% for block in section.blocks %}
+            {% if block.type == 'tab_1_block' %}
+              <div class="tutorail-flex-col">
+                <div class="tutorail-bg">
+                  <div class="o-video">
+                    {% if block.settings.video1 != blank %}
+                      <iframe
+                        src="{{ block.settings.video1 }}"
+                        allowfullscreen
+                        height="268px"
+                        width="436px"
+                      ></iframe>
+                    {% endif %}
+                  </div>
+                  {% if block.settings.title1 != blank %}
+                    <h3>{{ block.settings.title1 }}</h3>
+                  {% endif %}
+                </div>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+      <div class="sub-tab-content" data-sub-tab="subtab1-2" style="display: none;">
+        <div class="tutorail-flex d-flex">
+          {% for block in section.blocks %}
+            {% if block.type == 'tab_2_block' %}
+              <div class="tutorail-flex-col">
+                <div class="tutorail-bg">
+                  <div class="o-video">
+                    {% if block.settings.video2 != blank %}
+                      <iframe
+                        src="{{ block.settings.video2 }}"
+                        allowfullscreen
+                        height="268px"
+                        width="436px"
+                      ></iframe>
+                    {% endif %}
+                  </div>
+                  {% if block.settings.title2 != blank %}
+                    <h3>{{ block.settings.title2 }}</h3>
+                  {% endif %}
+                </div>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+      <div class="sub-tab-content" data-sub-tab="subtab1-3" style="display: none;">
+        <div class="tutorail-flex d-flex">
+          {% for block in section.blocks %}
+            {% if block.type == 'tab_3_block' %}
+              <div class="tutorail-flex-col">
+                <div class="tutorail-bg">
+                  <div class="o-video">
+                    {% if block.settings.video3 != blank %}
+                      <iframe
+                        src="{{ block.settings.video3 }}"
+                        allowfullscreen
+                        height="268px"
+                        width="436px"
+                      ></iframe>
+                    {% endif %}
+                  </div>
+                  {% if block.settings.title3 != blank %}
+                    <h3>{{ block.settings.title3 }}</h3>
+                  {% endif %}
+                </div>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+      <div class="sub-tab-content" data-sub-tab="subtab1-4" style="display: none;">
+        <div class="tutorail-flex d-flex">
+          {% for block in section.blocks %}
+            {% if block.type == 'tab_4_block' %}
+              <div class="tutorail-flex-col">
+                <div class="tutorail-bg">
+                  <div class="o-video">
+                    {% if block.settings.video4 != blank %}
+                      <iframe
+                        src="{{ block.settings.video4 }}"
+                        allowfullscreen
+                        height="268px"
+                        width="436px"
+                      ></iframe>
+                    {% endif %}
+                  </div>
+                  {% if block.settings.title4 != blank %}
+                    <h3>{{ block.settings.title4 }}</h3>
+                  {% endif %}
+                </div>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+      <div class="sub-tab-content" data-sub-tab="subtab1-5" style="display: none;">
+        <div class="tutorail-flex d-flex">
+          {% for block in section.blocks %}
+            {% if block.type == 'tab_5_block' %}
+              <div class="tutorail-flex-col">
+                <div class="tutorail-bg">
+                  <div class="o-video">
+                    {% if block.settings.video5 != blank %}
+                      <iframe
+                        src="{{ block.settings.video5 }}"
+                        allowfullscreen
+                        height="268px"
+                        width="436px"
+                      ></iframe>
+                    {% endif %}
+                  </div>
+                  {% if block.settings.title5 != blank %}
+                    <h3>{{ block.settings.title5 }}</h3>
+                  {% endif %}
+                </div>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+      <div class="sub-tab-content" data-sub-tab="subtab1-6" style="display: none;">
+        <div class="tutorail-flex d-flex">
+          {% for block in section.blocks %}
+            {% if block.type == 'tab_6_block' %}
+              <div class="tutorail-flex-col">
+                <div class="tutorail-bg">
+                  <div class="o-video">
+                    {% if block.settings.video6 != blank %}
+                      <iframe
+                        src="{{ block.settings.video6 }}"
+                        allowfullscreen
+                        height="268px"
+                        width="436px"
+                      ></iframe>
+                    {% endif %}
+                  </div>
+                  {% if block.settings.title6 != blank %}
+                    <h3>{{ block.settings.title6 }}</h3>
+                  {% endif %}
+                </div>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+      <div class="sub-tab-content" data-sub-tab="subtab1-7" style="display: none;">
+        <div class="tutorail-flex d-flex">
+          {% for block in section.blocks %}
+            {% if block.type == 'tab_7_block' %}
+              <div class="tutorail-flex-col">
+                <div class="tutorail-bg">
+                  <div class="o-video">
+                    {% if block.settings.video7 != blank %}
+                      <iframe
+                        src="{{ block.settings.video7 }}"
+                        allowfullscreen
+                        height="268px"
+                        width="436px"
+                      ></iframe>
+                    {% endif %}
+                  </div>
+                  {% if block.settings.title7 != blank %}
+                    <h3>{{ block.settings.title7 }}</h3>
+                  {% endif %}
+                </div>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+      <div class="sub-tab-content" data-sub-tab="subtab1-8" style="display: none;">
+        <div class="tutorail-flex d-flex">
+          {% for block in section.blocks %}
+            {% if block.type == 'tab_8_block' %}
+              <div class="tutorail-flex-col">
+                <div class="tutorail-bg">
+                  <div class="o-video">
+                    {% if block.settings.video8 != blank %}
+                      <iframe
+                        src="{{ block.settings.video8 }}"
+                        allowfullscreen
+                        height="268px"
+                        width="436px"
+                      ></iframe>
+                    {% endif %}
+                  </div>
+                  {% if block.settings.title8 != blank %}
+                    <h3>{{ block.settings.title8 }}</h3>
+                  {% endif %}
+                </div>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+
+    <!-- Sub Tabs for Main Tab 2 -->
+    <div class="sub-tab-container" data-main-tab="tab2" style="display: none;">
+      <ul class="sub-tab-list">
+        <li class="sub-tab active" data-sub-tab="subtab2-1">Basic</li>
+        <li class="sub-tab" data-sub-tab="subtab2-2">Onboarding/setup</li>
+        <li class="sub-tab" data-sub-tab="subtab2-3">QLEM With different devices</li>
+        <li class="sub-tab" data-sub-tab="subtab2-4">Activating a QLEM Device</li>
+        <li class="sub-tab" data-sub-tab="subtab2-5">buliding your profile</li>
+        <li class="sub-tab" data-sub-tab="subtab2-6">QLEM App Features</li>
+        <li class="sub-tab" data-sub-tab="subtab2-7">Your Connections</li>
+        <li class="sub-tab" data-sub-tab="subtab2-8">Lead Capture</li>
+      </ul>
+      <div class="sub-tab-content" data-sub-tab="subtab2-1">Content for Sub Tab 2-1</div>
+      <div class="sub-tab-content" data-sub-tab="subtab2-2" style="display: none;">Content for Sub Tab 2-2</div>
+      <div class="sub-tab-content" data-sub-tab="subtab2-3" style="display: none;">Content for Sub Tab 2-3</div>
+      <div class="sub-tab-content" data-sub-tab="subtab2-4" style="display: none;">Content for Sub Tab 2-4</div>
+      <div class="sub-tab-content" data-sub-tab="subtab2-5" style="display: none;">Content for Sub Tab 2-5</div>
+      <div class="sub-tab-content" data-sub-tab="subtab2-6" style="display: none;">Content for Sub Tab 2-6</div>
+      <div class="sub-tab-content" data-sub-tab="subtab2-7" style="display: none;">Content for Sub Tab 2-7</div>
+      <div class="sub-tab-content" data-sub-tab="subtab2-8" style="display: none;">Content for Sub Tab 2-8</div>
+    </div>
+  </div>
+</div>
+{% comment %}
+  <div class="tutorail_sec mb-80">
+    <div class="container">
+      <div class="tutorail-tab">
+        <div class="tutorial-tab-main">
+          <ul class="tabs">
+            <li class="current parent-1">
+              <a href="#" class="active" data-rel="tab-1">FAQs for QLEM App</a>
+            </li>
+            <li class="current">
+              <a href="#" data-rel="tab-2">FAQs For QLEM Dashboard</a>
+            </li>
+          </ul>
+        </div>
+        <div class="tutorial-tab tab-content current" id="#tab-1">
+          <ul>
+            <li class="clickme"><a href="javascript:void();" data-tag="one" class="activelink">Basic</a></li>
+            <li class="clickme"><a href="javascript:void();" data-tag="two">Onboarding/setup</a></li>
+            <li class="clickme"><a href="javascript:void();" data-tag="three">QLEM With different devices</a></li>
+            <li class="clickme"><a href="javascript:void();" data-tag="four">Activating a QLEM Device</a></li>
+            <li class="clickme"><a href="javascript:void();" data-tag="five">buliding your profile</a></li>
+            <li class="clickme"><a href="javascript:void();" data-tag="six">QLEM App Features</a></li>
+            <li class="clickme"><a href="javascript:void();" data-tag="seven">Your Connections</a></li>
+            <li class="clickme"><a href="javascript:void();" data-tag="eight">Lead Capture</a></li>
+          </ul>
+        </div>
+        <div class="tutorial-tab tab-content" id="#tab-2">
+          <ul>
+            <li class="clickme"><a href="javascript:void();" data-tag="nine" class="activelink">Basic</a></li>
+            <li class="clickme"><a href="javascript:void();" data-tag="ten">Onboarding/setup</a></li>
+            <li class="clickme"><a href="javascript:void();" data-tag="eleven">QLEM With different devices</a></li>
+            <li class="clickme"><a href="javascript:void();" data-tag="twelve">Activating a QLEM Device</a></li>
+            <li class="clickme"><a href="javascript:void();" data-tag="thirteen">buliding your profile</a></li>
+            <li class="clickme"><a href="javascript:void();" data-tag="fourteen">QLEM App Features</a></li>
+            <li class="clickme"><a href="javascript:void();" data-tag="fifteen">Your Connections</a></li>
+            <li class="clickme"><a href="javascript:void();" data-tag="sixteen">Lead Capture</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="list" id="one"></div>
+      <div class="list hide" id="two">
+        <div class="tutorail-flex d-flex">
+          {% for block in section.blocks %}
+            {% if block.type == 'tab_2_block' %}
+              <div class="tutorail-flex-col">
+                <div class="tutorail-bg">
+                  <div class="o-video">
+                    {% if block.settings.video2 != blank %}
+                      <iframe
+                        src="{{ block.settings.video2 }}"
+                        allowfullscreen
+                        height="268px"
+                        width="436px"
+                      ></iframe>
+                    {% endif %}
+                  </div>
+                  {% if block.settings.title2 != blank %}
+                    <h3>{{ block.settings.title2 }}</h3>
+                  {% endif %}
+                </div>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+      <div class="list hide" id="three">
+        <div class="tutorail-flex d-flex">
+          {% for block in section.blocks %}
+            {% if block.type == 'tab_3_block' %}
+              <div class="tutorail-flex-col">
+                <div class="tutorail-bg">
+                  <div class="o-video">
+                    {% if block.settings.video3 != blank %}
+                      <iframe
+                        src="{{ block.settings.video3 }}"
+                        allowfullscreen
+                        height="268px"
+                        width="436px"
+                      ></iframe>
+                    {% endif %}
+                  </div>
+                  {% if block.settings.title3 != blank %}
+                    <h3>{{ block.settings.title3 }}</h3>
+                  {% endif %}
+                </div>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+      <div class="list hide" id="four">
+        <div class="tutorail-flex d-flex">
+          {% for block in section.blocks %}
+            {% if block.type == 'tab_4_block' %}
+              <div class="tutorail-flex-col">
+                <div class="tutorail-bg">
+                  <div class="o-video">
+                    {% if block.settings.video4 != blank %}
+                      <iframe
+                        src="{{ block.settings.video4 }}"
+                        allowfullscreen
+                        height="268px"
+                        width="436px"
+                      ></iframe>
+                    {% endif %}
+                  </div>
+                  {% if block.settings.title4 != blank %}
+                    <h3>{{ block.settings.title4 }}</h3>
+                  {% endif %}
+                </div>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+      <div class="list hide" id="five">
+        <div class="tutorail-flex d-flex">
+          {% for block in section.blocks %}
+            {% if block.type == 'tab_5_block' %}
+              <div class="tutorail-flex-col">
+                <div class="tutorail-bg">
+                  <div class="o-video">
+                    {% if block.settings.video5 != blank %}
+                      <iframe
+                        src="{{ block.settings.video5 }}"
+                        allowfullscreen
+                        height="268px"
+                        width="436px"
+                      ></iframe>
+                    {% endif %}
+                  </div>
+                  {% if block.settings.title5 != blank %}
+                    <h3>{{ block.settings.title5 }}</h3>
+                  {% endif %}
+                </div>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+      <div class="list hide" id="six">
+        <div class="tutorail-flex d-flex">
+          {% for block in section.blocks %}
+            {% if block.type == 'tab_6_block' %}
+              <div class="tutorail-flex-col">
+                <div class="tutorail-bg">
+                  <div class="o-video">
+                    {% if block.settings.video6 != blank %}
+                      <iframe
+                        src="{{ block.settings.video6 }}"
+                        allowfullscreen
+                        height="268px"
+                        width="436px"
+                      ></iframe>
+                    {% endif %}
+                  </div>
+                  {% if block.settings.title6 != blank %}
+                    <h3>{{ block.settings.title6 }}</h3>
+                  {% endif %}
+                </div>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+      <div class="list hide" id="seven">
+        <div class="tutorail-flex d-flex">
+          {% for block in section.blocks %}
+            {% if block.type == 'tab_7_block' %}
+              <div class="tutorail-flex-col">
+                <div class="tutorail-bg">
+                  <div class="o-video">
+                    {% if block.settings.video7 != blank %}
+                      <iframe
+                        src="{{ block.settings.video7 }}"
+                        allowfullscreen
+                        height="268px"
+                        width="436px"
+                      ></iframe>
+                    {% endif %}
+                  </div>
+                  {% if block.settings.title7 != blank %}
+                    <h3>{{ block.settings.title7 }}</h3>
+                  {% endif %}
+                </div>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+      <div class="list hide" id="eight">
+        <div class="tutorail-flex d-flex">
+          {% for block in section.blocks %}
+            {% if block.type == 'tab_8_block' %}
+              <div class="tutorail-flex-col">
+                <div class="tutorail-bg">
+                  <div class="o-video">
+                    {% if block.settings.video8 != blank %}
+                      <iframe
+                        src="{{ block.settings.video8 }}"
+                        allowfullscreen
+                        height="268px"
+                        width="436px"
+                      ></iframe>
+                    {% endif %}
+                  </div>
+                  {% if block.settings.title8 != blank %}
+                    <h3>{{ block.settings.title8 }}</h3>
+                  {% endif %}
+                </div>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    $(document).ready(function(){
+        $('.clickme a').click(function(){
+            $('.clickme a').removeClass('activelink');
+            $(this).addClass('activelink');
+            var tagid = $(this).data('tag');
+            $('.list').removeClass('active').addClass('hide');
+            $('#'+tagid).addClass('active').removeClass('hide');
+        });
+    });
+  </script>
+{% endcomment %}
+{% schema %}
+{
+  "name": "Tutorial Section",
+  "settings": [],
+    "blocks": [
+      {
+        "type": "tab_1_block",
+        "name":"Basic",
+        "settings": [
+          {
+            "type": "url",
+            "id": "video1",
+            "label": "Add Video URL"
+          },
+          {
+            "type": "text",
+            "id": "title1",
+            "label": "Add Title"
+          }
+        ]
+      },
+      {
+        "type": "tab_2_block",
+        "name":"Onboarding/setup",
+        "settings": [
+          {
+            "type": "url",
+            "id": "video2",
+            "label": "Add URL"
+          },
+          {
+            "type": "text",
+            "id": "title2",
+            "label": "Add Title"
+          }
+        ]
+      },
+      {
+        "type": "tab_3_block",
+        "name":"QLEM With different devi",
+        "settings": [
+          {
+            "type": "url",
+            "id": "video3",
+            "label": "Add URL"
+          },
+          {
+            "type": "text",
+            "id": "title3",
+            "label": "Add Title"
+          }
+        ]
+      },
+      {
+        "type": "tab_4_block",
+        "name":"Activating a QLEM Device",
+        "settings": [
+          {
+            "type": "url",
+            "id": "video4",
+            "label": "Add URL"
+          },
+          {
+            "type": "text",
+            "id": "title4",
+            "label": "Add Title"
+          }
+        ]
+      },
+      {
+        "type": "tab_5_block",
+        "name":"buliding your profile",
+        "settings": [
+          {
+            "type": "url",
+            "id": "video5",
+            "label": "Add URL"
+          },
+          {
+            "type": "text",
+            "id": "title5",
+            "label": "Add Title"
+          }
+        ]
+      },
+      {
+        "type": "tab_6_block",
+        "name":"QLEM App Features",
+        "settings": [
+          {
+            "type": "url",
+            "id": "video6",
+            "label": "Add URL"
+          },
+          {
+            "type": "text",
+            "id": "title6",
+            "label": "Add Title"
+          }
+        ]
+      },
+      {
+        "type": "tab_7_block",
+        "name":"Your Connections",
+        "settings": [
+          {
+            "type": "url",
+            "id": "video7",
+            "label": "Add URL"
+          },
+          {
+            "type": "text",
+            "id": "title7",
+            "label": "Add Title"
+          }
+        ]
+      },
+      {
+        "type": "tab_8_block",
+        "name":"Lead Capture",
+        "settings": [
+          {
+            "type": "url",
+            "id": "video8",
+            "label": "Add URL"
+          },
+          {
+            "type": "text",
+            "id": "title8",
+            "label": "Add Title"
+          }
+        ]
+      },
+    ],
+  "presets": [
+    {
+      "name": "Tutorial Section"
+    }
+  ]
+}
+{% endschema %}

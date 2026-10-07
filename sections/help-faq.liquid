@@ -1,0 +1,341 @@
+<section>
+  <div class="help_faq_sec" style="background:{{ section.settings.bg_color }}">
+    <div class="container">
+      <div class="help_faq_inner">
+        <div class="tab-center">
+          <div class="tab">
+            <a class="tablinks" onclick="openFAQ(event, 'Question2')" id="defaultOpen">General</a>
+            <a class="tablinks" onclick="openFAQ(event, 'Question1')">Troubleshooting</a>
+            <a class="tablinks" onclick="openFAQ(event, 'Question3')">Compatibility</a>
+            <a class="tablinks" onclick="openFAQ(event, 'Question4')">Shipping</a>
+          </div>
+        </div>
+        <div class="faq">
+          {% for block in section.blocks %}
+            {% if block.type == 'tab_1_block' %}
+              <div id="Question1" class="tabcontent">
+                {% for block in section.blocks %}
+                  {% if block.type == 'tab_1_block' %}
+                    <div class="help_faq_col">
+                      <div class="icon_flex">
+                        {% if block.settings.que1 != blank %}
+                          <h3 class="faq_heading">{{ block.settings.que1 }}</h3>
+                        {% endif %}
+                        <span class="plus_icon">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            fill="none"
+                          >
+                            <path d="M9.16797 10.8346H5.0013C4.76519 10.8346 4.56727 10.7548 4.40755 10.5951C4.24783 10.4353 4.16797 10.2374 4.16797 10.0013C4.16797 9.76519 4.24783 9.56727 4.40755 9.40755C4.56727 9.24783 4.76519 9.16797 5.0013 9.16797H9.16797V5.0013C9.16797 4.76519 9.24783 4.56727 9.40755 4.40755C9.56727 4.24783 9.76519 4.16797 10.0013 4.16797C10.2374 4.16797 10.4353 4.24783 10.5951 4.40755C10.7548 4.56727 10.8346 4.76519 10.8346 5.0013V9.16797H15.0013C15.2374 9.16797 15.4353 9.24783 15.5951 9.40755C15.7548 9.56727 15.8346 9.76519 15.8346 10.0013C15.8346 10.2374 15.7548 10.4353 15.5951 10.5951C15.4353 10.7548 15.2374 10.8346 15.0013 10.8346H10.8346V15.0013C10.8346 15.2374 10.7548 15.4353 10.5951 15.5951C10.4353 15.7548 10.2374 15.8346 10.0013 15.8346C9.76519 15.8346 9.56727 15.7548 9.40755 15.5951C9.24783 15.4353 9.16797 15.2374 9.16797 15.0013V10.8346Z" fill="black"/>
+                          </svg>
+                        </span>
+                        <span class="minus_icon">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            fill="none"
+                          >
+                            <path d="M5.0013 10.8346C4.76519 10.8346 4.56727 10.7548 4.40755 10.5951C4.24783 10.4353 4.16797 10.2374 4.16797 10.0013C4.16797 9.76519 4.24783 9.56727 4.40755 9.40755C4.56727 9.24783 4.76519 9.16797 5.0013 9.16797H15.0013C15.2374 9.16797 15.4353 9.24783 15.5951 9.40755C15.7548 9.56727 15.8346 9.76519 15.8346 10.0013C15.8346 10.2374 15.7548 10.4353 15.5951 10.5951C15.4353 10.7548 15.2374 10.8346 15.0013 10.8346H5.0013Z" fill="black"/>
+                          </svg>
+                        </span>
+                      </div>
+                      {% if block.settings.desc1 != blank %}
+                        <div class="help_faq_desc">
+                          <p>{{ block.settings.desc1 }}</p>
+                        </div>
+                      {% endif %}
+                    </div>
+                  {% endif %}
+                {% endfor %}
+              </div>
+            {% endif %}
+            {% if block.type == 'tab_2_block' %}
+              <div id="Question2" class="tabcontent">
+                {% for block in section.blocks %}
+                  {% if block.type == 'tab_2_block' %}
+                    <div class="help_faq_col">
+                      <div class="icon_flex">
+                        {% if block.settings.que2 != blank %}
+                          <h3 class="faq_heading">{{ block.settings.que2 }}</h3>
+                        {% endif %}
+                        <span class="plus_icon">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            fill="none"
+                          >
+                            <path d="M9.16797 10.8346H5.0013C4.76519 10.8346 4.56727 10.7548 4.40755 10.5951C4.24783 10.4353 4.16797 10.2374 4.16797 10.0013C4.16797 9.76519 4.24783 9.56727 4.40755 9.40755C4.56727 9.24783 4.76519 9.16797 5.0013 9.16797H9.16797V5.0013C9.16797 4.76519 9.24783 4.56727 9.40755 4.40755C9.56727 4.24783 9.76519 4.16797 10.0013 4.16797C10.2374 4.16797 10.4353 4.24783 10.5951 4.40755C10.7548 4.56727 10.8346 4.76519 10.8346 5.0013V9.16797H15.0013C15.2374 9.16797 15.4353 9.24783 15.5951 9.40755C15.7548 9.56727 15.8346 9.76519 15.8346 10.0013C15.8346 10.2374 15.7548 10.4353 15.5951 10.5951C15.4353 10.7548 15.2374 10.8346 15.0013 10.8346H10.8346V15.0013C10.8346 15.2374 10.7548 15.4353 10.5951 15.5951C10.4353 15.7548 10.2374 15.8346 10.0013 15.8346C9.76519 15.8346 9.56727 15.7548 9.40755 15.5951C9.24783 15.4353 9.16797 15.2374 9.16797 15.0013V10.8346Z" fill="black"/>
+                          </svg>
+                        </span>
+                        <span class="minus_icon">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            fill="none"
+                          >
+                            <path d="M5.0013 10.8346C4.76519 10.8346 4.56727 10.7548 4.40755 10.5951C4.24783 10.4353 4.16797 10.2374 4.16797 10.0013C4.16797 9.76519 4.24783 9.56727 4.40755 9.40755C4.56727 9.24783 4.76519 9.16797 5.0013 9.16797H15.0013C15.2374 9.16797 15.4353 9.24783 15.5951 9.40755C15.7548 9.56727 15.8346 9.76519 15.8346 10.0013C15.8346 10.2374 15.7548 10.4353 15.5951 10.5951C15.4353 10.7548 15.2374 10.8346 15.0013 10.8346H5.0013Z" fill="black"/>
+                          </svg>
+                        </span>
+                      </div>
+                      {% if block.settings.desc2 != blank %}
+                        <div class="help_faq_desc">
+                          <p>{{ block.settings.desc2 }}</p>
+                        </div>
+                      {% endif %}
+                    </div>
+                  {% endif %}
+                {% endfor %}
+              </div>
+            {% endif %}
+            {% if block.type == 'tab_3_block' %}
+              <div id="Question3" class="tabcontent">
+                {% for block in section.blocks %}
+                  {% if block.type == 'tab_3_block' %}
+                    <div class="help_faq_col">
+                      <div class="icon_flex">
+                        {% if block.settings.que3 != blank %}
+                          <h3 class="faq_heading">{{ block.settings.que3 }}</h3>
+                        {% endif %}
+                        <span class="plus_icon">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            fill="none"
+                          >
+                            <path d="M9.16797 10.8346H5.0013C4.76519 10.8346 4.56727 10.7548 4.40755 10.5951C4.24783 10.4353 4.16797 10.2374 4.16797 10.0013C4.16797 9.76519 4.24783 9.56727 4.40755 9.40755C4.56727 9.24783 4.76519 9.16797 5.0013 9.16797H9.16797V5.0013C9.16797 4.76519 9.24783 4.56727 9.40755 4.40755C9.56727 4.24783 9.76519 4.16797 10.0013 4.16797C10.2374 4.16797 10.4353 4.24783 10.5951 4.40755C10.7548 4.56727 10.8346 4.76519 10.8346 5.0013V9.16797H15.0013C15.2374 9.16797 15.4353 9.24783 15.5951 9.40755C15.7548 9.56727 15.8346 9.76519 15.8346 10.0013C15.8346 10.2374 15.7548 10.4353 15.5951 10.5951C15.4353 10.7548 15.2374 10.8346 15.0013 10.8346H10.8346V15.0013C10.8346 15.2374 10.7548 15.4353 10.5951 15.5951C10.4353 15.7548 10.2374 15.8346 10.0013 15.8346C9.76519 15.8346 9.56727 15.7548 9.40755 15.5951C9.24783 15.4353 9.16797 15.2374 9.16797 15.0013V10.8346Z" fill="black"/>
+                          </svg>
+                        </span>
+                        <span class="minus_icon">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            fill="none"
+                          >
+                            <path d="M5.0013 10.8346C4.76519 10.8346 4.56727 10.7548 4.40755 10.5951C4.24783 10.4353 4.16797 10.2374 4.16797 10.0013C4.16797 9.76519 4.24783 9.56727 4.40755 9.40755C4.56727 9.24783 4.76519 9.16797 5.0013 9.16797H15.0013C15.2374 9.16797 15.4353 9.24783 15.5951 9.40755C15.7548 9.56727 15.8346 9.76519 15.8346 10.0013C15.8346 10.2374 15.7548 10.4353 15.5951 10.5951C15.4353 10.7548 15.2374 10.8346 15.0013 10.8346H5.0013Z" fill="black"/>
+                          </svg>
+                        </span>
+                      </div>
+                      {% if block.settings.desc3 != blank %}
+                        <div class="help_faq_desc">
+                          <p>{{ block.settings.desc3 }}</p>
+                        </div>
+                      {% endif %}
+                    </div>
+                  {% endif %}
+                {% endfor %}
+              </div>
+            {% endif %}
+            {% if block.type == 'tab_4_block' %}
+              <div id="Question4" class="tabcontent">
+                {% for block in section.blocks %}
+                  {% if block.type == 'tab_4_block' %}
+                    <div class="help_faq_col">
+                      <div class="icon_flex">
+                        {% if block.settings.que4 != blank %}
+                          <h3 class="faq_heading">{{ block.settings.que4 }}</h3>
+                        {% endif %}
+                        <span class="plus_icon">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            fill="none"
+                          >
+                            <path d="M9.16797 10.8346H5.0013C4.76519 10.8346 4.56727 10.7548 4.40755 10.5951C4.24783 10.4353 4.16797 10.2374 4.16797 10.0013C4.16797 9.76519 4.24783 9.56727 4.40755 9.40755C4.56727 9.24783 4.76519 9.16797 5.0013 9.16797H9.16797V5.0013C9.16797 4.76519 9.24783 4.56727 9.40755 4.40755C9.56727 4.24783 9.76519 4.16797 10.0013 4.16797C10.2374 4.16797 10.4353 4.24783 10.5951 4.40755C10.7548 4.56727 10.8346 4.76519 10.8346 5.0013V9.16797H15.0013C15.2374 9.16797 15.4353 9.24783 15.5951 9.40755C15.7548 9.56727 15.8346 9.76519 15.8346 10.0013C15.8346 10.2374 15.7548 10.4353 15.5951 10.5951C15.4353 10.7548 15.2374 10.8346 15.0013 10.8346H10.8346V15.0013C10.8346 15.2374 10.7548 15.4353 10.5951 15.5951C10.4353 15.7548 10.2374 15.8346 10.0013 15.8346C9.76519 15.8346 9.56727 15.7548 9.40755 15.5951C9.24783 15.4353 9.16797 15.2374 9.16797 15.0013V10.8346Z" fill="black"/>
+                          </svg>
+                        </span>
+                        <span class="minus_icon">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            fill="none"
+                          >
+                            <path d="M5.0013 10.8346C4.76519 10.8346 4.56727 10.7548 4.40755 10.5951C4.24783 10.4353 4.16797 10.2374 4.16797 10.0013C4.16797 9.76519 4.24783 9.56727 4.40755 9.40755C4.56727 9.24783 4.76519 9.16797 5.0013 9.16797H15.0013C15.2374 9.16797 15.4353 9.24783 15.5951 9.40755C15.7548 9.56727 15.8346 9.76519 15.8346 10.0013C15.8346 10.2374 15.7548 10.4353 15.5951 10.5951C15.4353 10.7548 15.2374 10.8346 15.0013 10.8346H5.0013Z" fill="black"/>
+                          </svg>
+                        </span>
+                      </div>
+                      {% if block.settings.desc4 != blank %}
+                        <div class="help_faq_desc">
+                          <p>{{ block.settings.desc4 }}</p>
+                        </div>
+                      {% endif %}
+                    </div>
+                  {% endif %}
+                {% endfor %}
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+      function openFAQ(evt, questionName) {
+        var i, tabcontent, tablinks;
+
+        // Hide all tab content by default
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+
+        // Remove active class from all tab links
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        // Show the clicked tab and mark it as active
+        document.getElementById(questionName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+
+      // Set the first tab to be open by default
+      document.getElementById("defaultOpen").click();
+
+
+  $(document).ready(function() {
+
+      $('.help_faq_col').on('click', function() {
+          if ($(this).hasClass('active')) {
+              $(this).removeClass('active');
+          } else {
+              $('.help_faq_desc').slideUp(); // Close all open descriptions
+              $('.help_faq_col').removeClass('active'); // Remove active state from all
+              $(this).toggleClass('active'); // Toggle active state of clicked FAQ
+          }
+      });
+
+
+  });
+
+  // $('.support-tab-contain div').hide();
+  //         $('.support-tab-contain div:first').show();
+  //         $('.tab-nav-support-col li:first').addClass('active');
+
+  //         // Change tab class and display content
+  //         $('.tab-nav-support-col a').on('click', function(event){
+  //           event.preventDefault();
+  //           $('.tab-nav-support-col li').removeClass('active');
+  //           $(this).parent().addClass('active');
+  //           $('.support-tab-contain div').hide();
+  //           $($(this).attr('href')).show();
+  //         });
+
+
+  //        $('.s-faq-wrap h6').on('click', function() {
+  //       if($(this).hasClass('active')) {
+  //         $(this).siblings('.contain-main-text').slideUp();
+  //         $(this).removeClass('active');
+  //       }
+  //       else {
+  //       $('.contain-main-text').slideUp();
+  //         $('.s-faq-wrap h6').removeClass('active');
+  //         $(this).siblings('.contain-main-text').slideToggle();
+  //         $(this).toggleClass('active');
+  //       }
+  //       });
+</script>
+
+{% schema %}
+  {
+    "name": "help faq",
+    "settings": [
+        {
+        "type": "color",
+        "id": "bg_color",
+        "label": "Background Color"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "tab_1_block",
+        "name":"Tab 1 Block",
+        "settings": [
+          {
+            "type": "text",
+            "id": "que1",
+            "label": "Add Que1"
+          },
+          {
+            "type": "textarea",
+            "id": "desc1",
+            "label": "Add desc1"
+          }
+        ]
+      },
+      {
+        "type": "tab_2_block",
+        "name":"Tab 2 Block",
+        "settings": [
+           {
+            "type": "text",
+            "id": "que2",
+            "label": "Add Que2"
+          },
+          {
+            "type": "textarea",
+            "id": "desc2",
+            "label": "Add desc2"
+          }
+        ]
+      },
+        {
+        "type": "tab_3_block",
+        "name":"Tab 3 Block",
+        "settings": [
+           {
+            "type": "text",
+            "id": "que3",
+            "label": "Add Que3"
+          },
+          {
+            "type": "textarea",
+            "id": "desc3",
+            "label": "Add desc3"
+          }
+        ]
+      },
+        {
+        "type": "tab_4_block",
+        "name":"Tab 4 Block",
+        "settings": [
+           {
+            "type": "text",
+            "id": "que4",
+            "label": "Add Que4"
+          },
+          {
+            "type": "textarea",
+            "id": "desc4",
+            "label": "Add desc4"
+          }
+        ]
+      },
+    ],
+
+"presets": [
+  {
+    "name":"help faq"
+  }
+]
+  }
+{% endschema %}

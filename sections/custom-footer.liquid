@@ -1,0 +1,188 @@
+<footer>
+  <div class="custom_footer_sec" style="background:{{ section.settings.bg_color }}">
+    <div class="container">
+      <div class="custom_footer_inner">
+        <div class="custom_footer_logo_flex">
+          <div class="custom_footer_logo">
+            {% if section.settings.logo != blank %}
+              <a href="{{ shop.url }}">
+                <img src="{{ section.settings.logo | img_url:'master' }}">
+               </a>
+              {% endif %}
+          </div>
+          <div class="custom_footer_line">
+            {% if section.settings.desc != blank %}
+            <p>{{ section.settings.desc }}</p>
+            {% endif %}
+          </div>
+          <div class="custom_footer_social_box">
+              {% if section.settings.enable_icon != blank %}
+             {%- render 'social-icons', class: 'footer__list-social' -%}
+             {% endif %}
+          </div>
+          
+        </div>
+        <div class="custom_footer_flex">
+         {% for block in section.blocks %}
+             {% if block.type == 'linklist' %}
+          <div class="custom_menu">
+        
+              {% if block.settings.heading != blank %}
+            <div class="footer_links_heading">
+              <h4>{{ block.settings.heading }}</h4>
+            </div>
+                {% endif %}
+            
+              {% assign menu = block.settings.menu %}
+            <ul>    
+            {% for link in menu.links %}
+              {% if link.title != blank %}
+                  <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+                {% endif %}
+              {% endfor %}
+               </ul>
+            </div>   
+              {% endif %}
+            {% if block.type == 'app_block' %}
+           <div class="custom_app_box">
+             {% if block.settings.title != blank %}
+             <h4>{{ block.settings.title }}</h4>
+             {% endif %}
+             <div class="app_img_flex">
+               <div class="app_img">
+              {% if block.settings.image1 != blank %}
+              <a href="{{ block.settings.app_url }}">
+              <img src="{{ block.settings.image1 | img_url:'master' }}">
+              </a>
+              {% endif %}
+               {% if block.settings.image2 != blank %}
+              <a href="{{ block.settings.app_url2 }}">
+              <img src="{{ block.settings.image2 | img_url:'master' }}">
+              </a>
+              {% endif %}
+               </div>
+               <div class="screener_img">
+              {% if block.settings.screener_img != blank %}
+              <a href="{{ block.settings.screener_url }}">
+              <img src="{{ block.settings.screener_img | img_url:'master' }}">
+              </a>
+              {% endif %}
+               </div>
+             </div>
+           </div>
+           {% endif %}
+         {% endfor %}
+        </div>
+        <div class="custom_bottom_line">
+            {% if section.settings.line != blank %}
+            <p>{{ section.settings.line }}</p>
+            {% endif %}
+          </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+{% schema %}
+  {
+    "name": "Custom Footer",
+    "settings": [
+       {
+        "type": "color",
+        "id": "bg_color",
+        "label": "Background Color"
+      },
+      {
+        "type": "image_picker",
+        "id": "logo",
+        "label": "Add Logo"
+      },
+      {
+        "type": "textarea",
+        "id": "desc",
+        "label": "Add Content"
+      },
+     {
+      "type" : "checkbox",
+      "id" : "enable_icon",
+      "label" : "Enable Social Icon"
+      },
+      {
+        "type": "text",
+        "id": "line",
+        "label": "Add Bottom Line"
+      }
+    ],
+    "blocks": [
+           {
+        "type" : "linklist",
+        "name" : "Linklist",
+        "settings" : [
+            {
+            "type" : "text",
+            "id" : "heading",
+            "label" : "Heading"
+          },
+          {
+            "type" : "link_list",
+            "id" : "menu",
+            "label" : "Select Menu"
+          }
+        ]
+      },
+      {
+        "type": "app_block",
+        "name":"App Block",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Heading"
+          },
+          {
+            "type": "image_picker",
+            "id": "image1",
+            "label": "Add App Image"
+          },
+          {
+            "type": "url",
+            "id": "app_url",
+            "label": "Add App Url 1"
+          },
+          {
+            "type": "image_picker",
+            "id": "image2",
+            "label": "Add App Image"
+          },
+          {
+            "type": "url",
+            "id": "app_url2",
+            "label": "Add App Url 2"
+          },
+          {
+            "type": "image_picker",
+            "id": "screener_img",
+            "label": "Add Screener Image"
+          },
+         {
+           "type": "url",
+           "id": "screener_url",
+           "label": "Add Screener Url"
+         }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Custom Footer"
+      }
+    ]
+  }
+{% endschema %}

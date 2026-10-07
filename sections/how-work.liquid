@@ -1,0 +1,95 @@
+<section>
+  <div class="QL_card_sec how_work" style="background:{{ section.settings.bg_color }}">
+    <div class="container">
+      <div class="QL_card_inner">
+        {% if section.settings.title != blank %}
+          <h2 class="title-40 t-center">{{ section.settings.title }}</h2>
+        {% endif %}
+        {% if section.settings.desc != blank %}
+          <p class="f-20 t-center">{{ section.settings.desc }}</p>
+        {% endif %}
+        <div class="QL-card_flex">
+          {% for block in section.blocks %}
+            <div class="QL_card_wrapper QL_card_inner{{ forloop.index }}">
+              <div
+                class="QL_card_box br-8"
+                {% if block.settings.bg_img != blank %}
+                  style="background-image:url({{ block.settings.bg_img | img_url:'master' }})"
+                {% endif %}
+              >
+                {% if block.settings.icon != blank %}
+                  <span class="br-8">{{ block.settings.icon }}</span>
+                {% endif %}
+                {% if block.settings.title1 != blank %}
+                  <h4 class="t-center">{{ block.settings.title1 }}</h4>
+                {% endif %}
+                {% if block.settings.detail != blank %}
+                  <P class="t-center">{{ block.settings.detail }}</P>
+                {% endif %}
+                {% if block.settings.image != blank %}
+                  <img src="{{ block.settings.image | img_url:'master' }}">
+                {% endif %}
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "How Work",
+  "settings": [
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background Color"
+    },
+     {
+      "type": "text",
+      "id": "title",
+      "label": "Add Title"
+    },
+    {
+      "type": "textarea",
+      "id": "desc",
+      "label": "Add Description"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "card_block",
+      "name":"Card Block",
+      "settings": [
+        {
+          "type": "html",
+          "id": "icon",
+          "label": "Add Icon"
+        },
+        {
+          "type": "text",
+          "id": "title1",
+          "label": "Add Text"
+        },
+        {
+          "type": "textarea",
+          "id": "detail",
+          "label": "Add Details"
+        },
+        {
+          "type": "image_picker",
+          "id": "bg_img",
+          "label": "Add Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "How Work"
+    }
+  ]
+}
+{% endschema %}

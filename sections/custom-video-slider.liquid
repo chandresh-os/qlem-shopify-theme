@@ -1,0 +1,83 @@
+<section>
+  <div class="custom_video_slider_sec mb-80"  style="background:{{ section.settings.bg_color }}">
+    <div class="container">
+      <div class="custom_video_flex">
+        {% for block in section.blocks %}
+        <div class="custom_video_wrapper">
+          <div class="custom_video_box">
+            <div class="video_hold">
+              <div class="gr_1">
+                <video class="cm_video" poster="{% if block.settings.video_poster != blank %}{{ block.settings.video_poster | img_url: 'master' }}{% endif %}" loop="" muted="" width="100%" height="100%">
+                <source src="{{block.settings.url_video}}" type="video/mp4">
+                </video>
+                <a href="javascript:void(0)" class="cm_play play play_button" id="play_1">
+<svg width="62" height="62" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_b_1_303)">
+<circle cx="31" cy="31" r="31" fill="black" fill-opacity="0.5"/>
+</g>
+<g clip-path="url(#clip0_1_303)">
+<path d="M38.7843 27.3054L30.0412 20.8942C29.3583 20.3942 28.5502 20.093 27.7066 20.024C26.8631 19.9551 26.0169 20.1211 25.2618 20.5036C24.5068 20.8862 23.8725 21.4703 23.4291 22.1913C22.9857 22.9123 22.7507 23.742 22.75 24.5884V37.4171C22.7487 38.2644 22.9825 39.0953 23.4254 39.8176C23.8684 40.5398 24.503 41.1249 25.2588 41.5078C26.0146 41.8908 26.8618 42.0564 27.7061 41.9864C28.5504 41.9164 29.3588 41.6135 30.0412 41.1113L38.7843 34.7001C39.3645 34.2744 39.8362 33.718 40.1614 33.0761C40.4865 32.4341 40.656 31.7246 40.656 31.005C40.656 30.2854 40.4865 29.576 40.1614 28.934C39.8362 28.2921 39.3645 27.7357 38.7843 27.31V27.3054Z" fill="white"/>
+</g>
+<defs>
+<filter id="filter0_b_1_303" x="-5" y="-5" width="72" height="72" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImageFix" stdDeviation="2.5"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1_303"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1_303" result="shape"/>
+</filter>
+<clipPath id="clip0_1_303">
+<rect width="22" height="22" fill="white" transform="translate(20 20)"/>
+</clipPath>
+</defs>
+</svg>
+
+                </a>
+              </div>
+              
+              </div>
+          </div>
+        </div>
+       {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+{% schema %}
+  {
+    "name": "Custom Video",
+    "settings": [
+       {
+        "type": "color",
+        "id": "bg_color",
+        "label": "Background Color"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "video_block",
+        "name":"Video Block",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "video_poster",
+            "label": "Add Video Poster Image"
+          },
+          {
+            "type": "url",
+            "id": "url_video",
+            "label": "Add Video Url"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name":"Custom Video"
+      }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,30 @@
+{% assign related_blog_posts = blogs['blog-handle'].articles | limit: 3 %}
+<div class="related-posts">
+  <ul>
+    {% for article in related_blog_posts %}
+      <li class="related-post">
+        <a href="{{ article.url }}">
+          <!-- Display the first image from the metafield, if available -->
+          {% if article.metafields.custom.image_gallery != blank %}
+            <img src="{{ article.metafields.custom.image_gallery[0] | file_url }}" alt="{{ article.title }}">
+          {% else %}
+            <p>No image available</p>
+          {% endif %}
+          <h3>{{ article.title }}</h3>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+
+{% schema %}
+{
+  "name": "Related Blog Section",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Related Blog Section"
+    }
+  ]
+}
+{% endschema %}

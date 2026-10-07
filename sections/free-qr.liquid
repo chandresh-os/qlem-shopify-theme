@@ -1,0 +1,89 @@
+<div class="typesetting-section free-qr">
+  <div class="container">
+    <div class="typesetting-bg">
+      <div class="typesetting-inner d-flex">
+        <div class="typesetting-left">
+          {% if section.settings.title != blank %}
+            <h2 class="title-40 t-left">{{ section.settings.title }}</h2>
+          {% endif %}
+          {% if section.settings.desc != blank %}
+            <p class="f-20 t-left">{{ section.settings.desc }}</p>
+          {% endif %}
+          {% if section.settings.desc1 != blank %}
+            <p class="f-20 t-left">{{ section.settings.desc1 }}</p>
+          {% endif %}
+          <div class="app-btn d-flex">
+            {% if section.settings.gimg != blank %}
+              <a href="{{ section.settings.gurl }}">
+                <img src="{{ section.settings.gimg | img_url: "master" }}">
+              </a>
+            {% endif %}
+            {% if section.settings.aimg != blank %}
+              <a href="{{ section.settings.aurl }}">
+                <img src="{{ section.settings.aimg | img_url: "master" }}">
+              </a>
+            {% endif %}
+          </div>
+        </div>
+        <div class="typesetting-right">
+          {% if section.settings.img != blank %}
+            <img src="{{ section.settings.img | img_url: "master" }}">
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Free QR Section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "img",
+      "label": "Add Image"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Add Title"
+    },
+    {
+      "type": "textarea",
+      "id": "desc",
+      "label": "Add Desciption"
+    },
+    {
+      "type": "textarea",
+      "id": "desc1",
+      "label": "Add Desciption 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "gimg",
+      "label": "Add Google Image"
+    },
+    {
+      "type": "url",
+      "id": "gurl",
+      "label": "Add Google Store URL"
+    },
+    {
+      "type": "image_picker",
+      "id": "aimg",
+      "label": "Add Apple Image"
+    },
+    {
+      "type": "url",
+      "id": "aurl",
+      "label": "Add Apple Store URL"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Free QR Section"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,56 @@
+.totals {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.totals > * {
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+.totals > h2 {
+  text-decoration: none;
+  display: block;
+  margin: 0;
+  letter-spacing: 0;
+  color: #000;
+  font-family: Gilroy-SemiBold;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.totals * {
+  line-height: 1;
+}
+
+.totals > * + * {
+  margin-left: 2rem;
+}
+
+.totals__total {
+  margin-top: 0.5rem;
+}
+
+.totals__total-value {
+  letter-spacing: 0;
+  color: #28c0f1;
+  text-align: right;
+  font-family: Gilroy-SemiBold;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.cart__ctas + .totals {
+  margin-top: 2rem;
+}
+
+@media all and (min-width: 750px) {
+  .totals {
+    justify-content: flex-end;
+  }
+}

@@ -1,0 +1,90 @@
+<section>
+  <div class="about_banner_sec mb-80">
+    <div class="container">
+      <div class="about_banner_flex">
+        <div class="about_banner_text">
+          {% if section.settings.title != blank %}
+          <h2 class="title-40">{{ section.settings.title }}</h2>
+          {% endif %}
+          {% if section.settings.desc != blank %}
+          <p class="f-20">{{ section.settings.desc }}</p>
+          {% endif %}
+          <div class="about_icon_flex">
+          {% for block in section.blocks %}
+            <div class="about_banner_wrapper">
+            <div class="about_banner_icon">
+              {% if block.settings.icon != blank %}
+              <span>{{ block.settings.icon }}</span>
+              {% endif %}
+            </div>
+            <div class="about_banner_title">
+              {% if block.settings.text != blank %}
+              <h3>{{ block.settings.text }}</h3>
+              {% endif %}
+            </div>
+            </div>
+          {% endfor %}
+          </div>
+        </div>
+        <div class="about_banner_img">
+           {% if section.settings.image != blank %}
+            <img src="{{ section.settings.image | img_url:'master' }}">
+            {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+{% schema %}
+  {
+    "name": "About Banner",
+    "settings": [
+     {
+        "type": "text",
+        "id": "title",
+        "label": "Add Title"
+      },
+      {
+        "type": "textarea",
+        "id": "desc",
+        "label": "Add Description"
+      },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Add Image"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "icon_block",
+        "name":"Icon Block",
+        "settings": [
+          {
+            "type": "html",
+            "id": "icon",
+            "label": "Add Icon"
+          },
+          {
+            "type": "text",
+            "id": "text",
+            "label": "Add Title"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "About Banner"
+      }
+    ]
+  }
+{% endschema %}

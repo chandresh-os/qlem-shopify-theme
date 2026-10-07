@@ -1,0 +1,54 @@
+<div class="collection-link-sec">
+  <div class="container">
+    <div class="collection-links">
+      {% for block in section.blocks %}
+        {% assign collname = block.settings.collection %}
+        <div class="collection-lik-inner {% if collname.url == request.path %}active{% endif %}">
+          {{ block.settings.svg }}
+          <h5><a href="{{ collname.url }}">{{ collname.title }}</a></h5>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+  const currentURL = window.location.pathname;
+  console.log(currentURL);
+  document.querySelectorAll(".collection-links").forEach((link) => {
+    if (link.href.includes(currentURL)) {
+      link.classList.add("active");
+      link.parentElement.classList.add("active");
+    }
+  });
+});
+</script>
+{% schema %}
+  {
+    "name": "Collection Link Section",
+    "settings": [],
+    "blocks": [
+      {
+        "type": "header",
+        "name": "collecion",
+        "settings": [
+          {
+            "type": "textarea",
+            "id": "svg",
+            "label": "Add Collections SVG Icon"
+          },
+          {
+            "type": "collection",
+            "id": "collection",
+            "label": "Select Collectin"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Collection Link Section"
+      }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,85 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "breadcrumb_RGNJQU": {
+      "type": "breadcrumb",
+      "settings": {}
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "contact_us_sec_9tfHmd": {
+      "type": "contact-us-sec",
+      "blocks": {
+        "forms_inline_W7bLc8": {
+          "type": "shopify://apps/forms/blocks/inline/8744a304-fcb1-4347-b211-bb6b4759a76a",
+          "settings": {
+            "form_id": "290151",
+            "text_color": "#202020",
+            "button_background_color": "#28c0f1",
+            "button_label_color": "#ffffff",
+            "links_color": "#1878b9",
+            "errors_color": "#e02229",
+            "text_alignment": "center",
+            "form_alignment": "center",
+            "padding_top": 0,
+            "padding_bottom": 0,
+            "padding_right": 0,
+            "padding_left": 0
+          }
+        },
+        "contact_block_GLB9rp": {
+          "type": "contact_block",
+          "settings": {
+            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewbox=\"0 0 16 16\" fill=\"none\">\n  <g clip-path=\"url(#clip0_64_5196)\">\n    <path d=\"M13.7856 11.1361C12.8191 10.3094 11.8381 9.80864 10.8835 10.6341L10.3134 11.133C9.89629 11.4951 9.1208 13.1872 6.12248 9.73808C3.12478 6.29332 4.90866 5.75697 5.32638 5.39795L5.89957 4.89843C6.84927 4.07112 6.49087 3.02963 5.80591 1.95755L5.39257 1.30819C4.70449 0.238608 3.95522 -0.463831 3.00302 0.362237L2.48853 0.811798C2.06769 1.11837 0.891336 2.1149 0.605989 4.00805C0.262575 6.27958 1.34589 8.88079 3.82784 11.7349C6.30667 14.5902 8.73368 16.0244 11.0327 15.9995C12.9433 15.9789 14.0972 14.9536 14.4581 14.5809L14.9745 14.1307C15.9242 13.3052 15.3341 12.4648 14.3669 11.6362L13.7856 11.1361Z\" fill=\"#151515\"></path>\n  </g>\n  <defs>\n    <clippath id=\"clip0_64_5196\">\n      <rect width=\"16\" height=\"16\" fill=\"white\"></rect>\n    </clippath>\n  </defs>\n</svg>",
+            "title": "Phone Number :",
+            "contact_desc": "<p><a href=\"tel:+91 7575892807\" title=\"tel:+91 7575892807\">+91 7575892807</a></p>"
+          }
+        },
+        "contact_block_YbyKx3": {
+          "type": "contact_block",
+          "settings": {
+            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewbox=\"0 0 16 16\" fill=\"none\">\n  <path d=\"M8.46281 10.021C8.31169 10.1154 8.14168 10.1532 7.99056 10.1532C7.83943 10.1532 7.66942 10.1154 7.5183 10.021L0 5.43066V11.5322C0 12.8356 1.05785 13.8935 2.36128 13.8935H13.6387C14.9421 13.8935 16 12.8356 16 11.5322V5.43066L8.46281 10.021Z\" fill=\"#151515\"></path>\n  <path d=\"M13.6384 2.10645H2.36091C1.24639 2.10645 0.301878 2.89983 0.0751953 3.95769L8.00908 8.79358L15.9241 3.95769C15.6974 2.89983 14.7529 2.10645 13.6384 2.10645Z\" fill=\"#151515\"></path>\n</svg>",
+            "title": "Email Address :",
+            "contact_desc": "<p><a href=\"mailto:hi@qlem.co\" title=\"mailto:hi@qlem.co\">hi@qlem.co</a></p><p></p>"
+          }
+        },
+        "contact_block_XxTHfA": {
+          "type": "contact_block",
+          "settings": {
+            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewbox=\"0 0 16 16\" fill=\"none\">\n  <g clip-path=\"url(#clip0_64_5212)\">\n    <path d=\"M8 0C4.692 0 2 2.71067 2 6.04333C2 10.7787 7.436 15.668 7.66733 15.8733C7.76267 15.958 7.88133 16 8 16C8.11867 16 8.23733 15.958 8.33267 15.874C8.564 15.668 14 10.7787 14 6.04333C14 2.71067 11.308 0 8 0ZM8 9.33333C6.162 9.33333 4.66667 7.838 4.66667 6C4.66667 4.162 6.162 2.66667 8 2.66667C9.838 2.66667 11.3333 4.162 11.3333 6C11.3333 7.838 9.838 9.33333 8 9.33333Z\" fill=\"#151515\"></path>\n  </g>\n  <defs>\n    <clippath id=\"clip0_64_5212\">\n      <rect width=\"16\" height=\"16\" fill=\"white\"></rect>\n    </clippath>\n  </defs>\n</svg>",
+            "title": "Our Address :",
+            "contact_desc": "<p>Shop No. 1, B2, Subhash Nagar, Nr. Rise On Plaza, Sarthana, Surat, Gujarat, India</p>"
+          }
+        }
+      },
+      "block_order": [
+        "forms_inline_W7bLc8",
+        "contact_block_GLB9rp",
+        "contact_block_YbyKx3",
+        "contact_block_XxTHfA"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/contact_img_9456861d-3686-4449-80b4-3cb1e287d1ee.png"
+      }
+    }
+  },
+  "order": [
+    "breadcrumb_RGNJQU",
+    "main",
+    "contact_us_sec_9tfHmd"
+  ]
+}

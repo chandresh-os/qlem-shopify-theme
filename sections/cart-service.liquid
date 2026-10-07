@@ -1,0 +1,64 @@
+<div class="cart-service" style="background-color:{{ section.settings.color }}">
+  <div class="container">
+    <div class="cart-service-flex d-flex">
+      {% for block in section.blocks %}
+        <div class="cart-service-col">
+          <div class="cart-service-bg d-flex">
+            {% if block.settings.svgicon != blank %}
+              {{ block.settings.svgicon }}
+            {% endif %}
+            <div class="cart-service-info">
+              {% if block.settings.title != blank %}
+                <h4>{{ block.settings.title }}</h4>
+              {% endif %}
+              {% if block.settings.desc != blank %}
+                <p>{{ block.settings.desc }}</p>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Cart Service Section",
+  "settings": [
+    {
+      "type": "color",
+      "id": "color",
+      "label": "Add Background Color"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "block",
+      "name": "block",
+      "settings": [
+          {
+            "type": "textarea",
+            "id": "svgicon",
+            "label": "Add SVG Content"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Add Title"
+          },
+          {
+            "type": "textarea",
+            "id": "desc",
+            "label": "Add Description"
+          }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Cart Service Section"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,35 @@
+<div class="title-desc-setion">
+  <div class="container">
+    <div class="faq_title ">
+      {% if section.settings.title != blank %}
+        <h2 class="title-40 t-center">{{ section.settings.title }}</h2>
+      {% endif %}
+      {% if section.settings.desc != blank %}
+        <p class="f-20 t-center">{{ section.settings.desc }}</p>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Titlt Desc Section",
+  "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Add Title"
+      },
+      {
+        "type": "textarea",
+        "id": "desc",
+        "label": "Add Description"
+      }
+  ],
+  "presets": [
+    {
+      "name": "Titlt Desc Section"
+    }
+  ]
+}
+{% endschema %}

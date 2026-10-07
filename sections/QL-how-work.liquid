@@ -1,0 +1,83 @@
+<section>
+  <div class="QL_how_work_sec mb-80"  style="background:{{ section.settings.bg_color }}">
+    <div class="container">
+      <div class="QL_how_work_inner">
+        {% if section.settings.title != blank %}
+        <h2 class="title-40 t-center">{{ section.settings.title }}</h2>
+        {% endif %}
+        {% if section.settings.desc != blank %}
+        <p class="f-20 t-center">{{ section.settings.desc }}</p>
+        {% endif %}
+        <div class="QL_how_work_flex">
+           {% for block in section.blocks %}
+          <div class="QL_how_work_wrapper">
+           {% if block.settings.image != blank %}
+          <img src="{{ block.settings.image | img_url:'master' }}">
+          {% endif %}
+           <div class="QL_how_work_title">
+             {% if block.settings.title != blank %}
+             <h4>{{ block.settings.title }}</h4>
+            {% endif %}
+           </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+{% schema %}
+  {
+    "name": "QL How Work",
+    "settings": [
+       {
+        "type": "color",
+        "id": "bg_color",
+        "label": "Background Color"
+      },
+       {
+        "type": "text",
+        "id": "title",
+        "label": "Add Title"
+      },
+      {
+        "type": "textarea",
+        "id": "desc",
+        "label": "Add Description"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "work_block",
+        "name":"Work Block",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Add Image"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Add Title"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "QL How Work"
+      }
+    ]
+  }
+{% endschema %}

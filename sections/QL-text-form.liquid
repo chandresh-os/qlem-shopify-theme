@@ -1,0 +1,189 @@
+<section>
+  <div class="QL_text_form_sec" style="background:{{ section.settings.bg_color }}">
+    <div class="container">
+      <div class="QL_text_form_flex">
+        <div class="QL_text_left">
+          {% if section.settings.title != blank %}
+            <h3>{{ section.settings.title }}</h3>
+          {% endif %}
+          {% if section.settings.content != blank %}
+            <div class="content">{{ section.settings.content }}</div>
+          {% endif %}
+        </div>
+        <div class="QL_form_right">
+          <div class="QL_form_inner">
+            <h2 class="title-40 t-center">Request a<span> proposal</span></h2>
+            {%- for block in section.blocks -%}
+              {% render block %}
+            {%- endfor -%}
+            {% comment %}
+                  {%- form 'contact', id: 'ContactForm', class: contact_form_class -%}
+                    {%- if form.posted_successfully? -%}
+                      <h2 class="form-status form-status-list form__message" tabindex="-1" autofocus>
+                        {{- 'icon-success.svg' | inline_asset_content -}}
+                        {{ 'templates.contact.form.post_success' | t }}
+                      </h2>
+                    {%- elsif form.errors -%}
+                      <div class="form__message">
+                        <h2 class="form-status caption-large text-body" role="alert" tabindex="-1" autofocus>
+                          {{- 'icon-error.svg' | inline_asset_content -}}
+                          {{ 'templates.contact.form.error_heading' | t }}
+                        </h2>
+                      </div>
+                      <ul class="form-status-list caption-large" role="list">
+                        <li>
+                          <a href="#ContactForm-email" class="link">
+                            {{ form.errors.translated_fields.email | capitalize }}
+                            {{ form.errors.messages.email }}
+                          </a>
+                        </li>
+                      </ul>
+                    {%- endif -%}
+                    <div class="contact__fields">
+                      <div class="contact_flex">
+                        <div class="name_field com-field">
+                          <label>Full Name<span>*</span></label>
+                          <div class="field">
+                            <input
+                              class="field__input"
+                              autocomplete="name"
+                              type="text"
+                              id="ContactForm-name"
+                              name="contact[{{ 'templates.contact.form.name' | t }}]"
+                              value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}"
+                              placeholder="{{ 'templates.contact.form.name' | t }}"
+                            >
+                            <label class="field__label" for="ContactForm-name">{{ 'templates.contact.form.name' | t }}</label>
+                          </div>
+                        </div>
+                        <div class="email_field com-field">
+                          <label>Email Address<span>*</span></label>
+                          <div class="field field--with-error">
+                            <input
+                              autocomplete="email"
+                              type="email"
+                              id="ContactForm-email"
+                              class="field__input"
+                              name="contact[email]"
+                              spellcheck="false"
+                              autocapitalize="off"
+                              value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
+                              aria-required="true"
+                              {% if form.errors contains 'email' %}
+                                aria-invalid="true"
+                                aria-describedby="ContactForm-email-error"
+                              {% endif %}
+                              placeholder="{{ 'templates.contact.form.email' | t }}"
+                            >
+                            <label class="field__label" for="ContactForm-email">
+                              {{- 'templates.contact.form.email' | t }}
+                              <span aria-hidden="true"></span></label
+                            >
+                            {%- if form.errors contains 'email' -%}
+                              <small class="contact__field-error" id="ContactForm-email-error">
+                                <span class="visually-hidden">{{ 'accessibility.error' | t }}</span>
+                                <span class="form__message">
+                                  <span class="svg-wrapper">
+                                    {{- 'icon-error.svg' | inline_asset_content -}}
+                                  </span>
+                                  {{- form.errors.translated_fields.email | capitalize }}
+                                  {{ form.errors.messages.email -}}
+                                </span>
+                              </small>
+                            {%- endif -%}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="contact_flex">
+                      <div class="phone_box com-field">
+                        <label>Phone Number<span>*</span></label>
+                        <div class="field">
+                          <input
+                            type="tel"
+                            id="ContactForm-phone"
+                            class="field__input"
+                            autocomplete="tel"
+                            name="contact[{{ 'templates.contact.form.phone' | t }}]"
+                            pattern="[0-9\-]*"
+                            value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}"
+                            placeholder="{{ 'templates.contact.form.phone' | t }}"
+                          >
+                          <label class="field__label" for="ContactForm-phone">{{ 'templates.contact.form.phone' | t }}</label>
+                        </div>
+                      </div>
+                      <div class="category_box com-field">
+                        <label>Category<span>*</span></label>
+                        <div class="category_filed">
+                          <select id="cars">
+                            <option value="category">Select Category</option>
+                            <option value="category1">Category 1</option>
+                            <option value="category2">Category 2</option>
+                            <option value="category3">Category 3</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="com-field">
+                      <label>Your Message<span>*</span></label>
+                      <div class="field">
+                        <textarea
+                          rows="10"
+                          id="ContactForm-body"
+                          class="text-area field__input"
+                          name="contact[{{ 'templates.contact.form.comment' | t }}]"
+                          placeholder="{{ 'templates.contact.form.comment' | t }}"
+                        >
+                {{- form.body -}}
+              </textarea>
+                        <label class="form__label field__label" for="ContactForm-body">
+                          {{- 'templates.contact.form.comment' | t -}}
+                        </label>
+                      </div>
+                    </div>
+                    <div class="contact__button">
+                      <button type="submit" class="button common_btn">
+                        {{ 'templates.contact.form.send' | t }}
+                      </button>
+                    </div>
+                  {%- endform -%}
+            {% endcomment %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "QL Text Form",
+  "settings": [
+     {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background Color"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Add Title"
+    },
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": "Add Content"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "@app"
+    }
+  ],
+  "presets": [
+    {
+      "name": "QL Text Form"
+    }
+  ]
+}
+{% endschema %}

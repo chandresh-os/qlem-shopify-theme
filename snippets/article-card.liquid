@@ -1,0 +1,210 @@
+{% comment %}
+  Renders an article card for a given blog with settings to either show the image or not.
+
+  Accepts:
+  - blog: {Object} Blog object
+  - article: {Object} Article object
+  - media_aspect_ratio: {String} The setting changes the aspect ratio of the article image, if shown
+  - media_height: {String} The setting changes the height of the article image. Overrides media_aspect_ratio.
+  - show_image: {String} The setting either show the article image or not. If it's not included it will show the image by default
+  - show_date: {String} The setting either show the article date or not. If it's not included it will not show the image by default
+  - show_author: {String} The setting either show the article author or not. If it's not included it will not show the author by default
+  - show_badge: {String} The setting either show the blog badge or not.
+  - lazy_load: {Boolean} Image should be lazy loaded. Default: true (optional)
+
+  Usage:
+  {% render 'article-card' blog: blog, article: article, show_image: section.settings.show_image %}
+{% endcomment %}
+
+{%- if article and article != empty -%}
+  {%- liquid
+    assign ratio = 1
+    if media_aspect_ratio != null
+      assign ratio = media_aspect_ratio
+    endif
+  -%}
+  <div class="article-card-wrapper card-wrapper underline-links-hover">
+    {% comment %} <article aria-labelledby="Article-{{ article.id }}"> {% endcomment %}
+    <div
+      class="
+        card article-card
+        card--{{ settings.blog_card_style }}
+        {% if media_height and media_height != 'adapt' %} article-card__image--{{ media_height }}{% endif %}
+        {% if article.image and show_image %} card--media{% else %} card--text{% endif %}
+        {% if settings.blog_card_style == 'card' %} color-{{ settings.blog_card_color_scheme }} gradient{% endif %}
+        {% if settings.blog_card_style == 'card' and media_height == nil and article.image == empty or show_image == false %} ratio{% endif %}
+      "
+      style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
+    >
+      <div
+        class="card__inner {% if settings.blog_card_style == 'standard' %} color-{{ settings.blog_card_color_scheme }} gradient{% endif %}{% if article.image and show_image or settings.blog_card_style == 'standard' %} ratio{% endif %}"
+        style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
+      >
+        {%- if show_image == true and article.image -%}
+          <div class="article-card__image-wrapper card__media">
+            <div
+              class="article-card__image media media--hover-effect"
+              {% if section.settings.media_height == 'adapt' %}
+                style="padding-bottom: {{ 1 | divided_by: article.image.aspect_ratio | times: 100 }}%;"
+              {% endif %}
+            >
+              {% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
+              <img
+                srcset="
+                  {%- if article.image.src.width >= 165 -%}{{ article.image.src | image_url: width: 165 }} 165w,{%- endif -%}
+                  {%- if article.image.src.width >= 360 -%}{{ article.image.src | image_url: width: 360 }} 360w,{%- endif -%}
+                  {%- if article.image.src.width >= 533 -%}{{ article.image.src | image_url: width: 533 }} 533w,{%- endif -%}
+                  {%- if article.image.src.width >= 720 -%}{{ article.image.src | image_url: width: 720 }} 720w,{%- endif -%}
+                  {%- if article.image.src.width >= 1000 -%}{{ article.image.src | image_url: width: 1000 }} 1000w,{%- endif -%}
+                  {%- if article.image.src.width >= 1500 -%}{{ article.image.src | image_url: width: 1500 }} 1500w,{%- endif -%}
+                  {{ article.image.src | image_url }} {{ article.image.src.width }}w
+                "
+                src="{{ article.image.src | image_url: width: 533 }}"
+                sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+                alt="{{ article.image.src.alt | escape }}"
+                class="motion-reduce"
+                {% unless lazy_load == false %}
+                  loading="lazy"
+                {% endunless %}
+                width="{{ article.image.width }}"
+                height="{{ article.image.height }}"
+              >
+              {% comment %}theme-check-enable ImgLazyLoading{% endcomment %}
+            </div>
+          </div>
+        {%- endif -%}
+        <div class="card__content">
+          <div class="card__information">
+            <h3 class="card__heading{% if show_excerpt %} h2{% endif %}">
+              <a href="{{ article.url }}" class="full-unstyled-link">
+                {{ article.title | truncate: 50 | escape }}
+              </a>
+            </h3>
+            <div class="article-card__info caption-with-letter-spacing h5">
+              {%- if show_date -%}
+                <span class="circle-divider">{{ article.published_at | time_tag: format: 'date' }}</span>
+              {%- endif -%}
+              {%- if show_author -%}
+                <span>{{ article.author }}</span>
+              {%- endif -%}
+            </div>
+            {%- if show_excerpt -%}
+              {%- if article.excerpt.size > 0 or article.content.size > 0 -%}
+                <p class="article-card__excerpt rte-width">
+                  {%- if article.excerpt.size > 0 -%}
+                    {{ article.excerpt | strip_html | truncatewords: 30 }}
+                  {%- else -%}
+                    {{ article.content | strip_html | truncatewords: 30 }}
+                  {%- endif -%}
+                </p>
+              {%- endif -%}
+              <div class="article-card__footer">
+                {%- if article.comments_count > 0 and blog.comments_enabled? -%}
+                  <span>{{ 'blogs.article.comments' | t: count: article.comments_count }}</span>
+                {%- endif -%}
+              </div>
+            {%- endif -%}
+          </div>
+          {%- if show_badge -%}
+            <div class="card__badge {{ settings.badge_position }}">
+              <span class="badge color-{{ settings.color_schemes | first }}">{{ 'blogs.article.blog' | t }}</span>
+            </div>
+          {%- endif -%}
+        </div>
+      </div>
+      <div class="card__content">
+        <div class="card__information">
+          <div class="article-card__info caption-with-letter-spacing h5">
+            {%- if show_author -%}
+              <span class="author_info">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <g clip-path="url(#clip0_1_77966)">
+                    <path d="M8 8C8.79113 8 9.56449 7.76541 10.2223 7.32588C10.8801 6.88635 11.3928 6.26164 11.6955 5.53074C11.9983 4.79983 12.0775 3.99556 11.9231 3.21964C11.7688 2.44372 11.3878 1.73098 10.8284 1.17157C10.269 0.612165 9.55629 0.231202 8.78036 0.0768607C8.00444 -0.0774802 7.20017 0.00173314 6.46927 0.304484C5.73836 0.607234 5.11365 1.11992 4.67412 1.77772C4.2346 2.43552 4 3.20888 4 4C4.00106 5.06054 4.42283 6.07734 5.17274 6.82726C5.92266 7.57718 6.93946 7.99894 8 8ZM8 1.33334C8.52742 1.33334 9.04299 1.48973 9.48152 1.78275C9.92005 2.07577 10.2618 2.49224 10.4637 2.97951C10.6655 3.46678 10.7183 4.00296 10.6154 4.52024C10.5125 5.03753 10.2586 5.51268 9.88562 5.88562C9.51268 6.25856 9.03752 6.51254 8.52024 6.61543C8.00296 6.71832 7.46678 6.66551 6.97951 6.46368C6.49224 6.26185 6.07577 5.92005 5.78275 5.48152C5.48973 5.04299 5.33333 4.52742 5.33333 4C5.33333 3.29276 5.61428 2.61448 6.11438 2.11438C6.61448 1.61429 7.29276 1.33334 8 1.33334Z" fill="#535353"/>
+                    <path d="M8 9.33398C6.40924 9.33575 4.88414 9.96846 3.75931 11.0933C2.63447 12.2181 2.00176 13.7432 2 15.334C2 15.5108 2.07024 15.6804 2.19526 15.8054C2.32029 15.9304 2.48986 16.0007 2.66667 16.0007C2.84348 16.0007 3.01305 15.9304 3.13807 15.8054C3.2631 15.6804 3.33333 15.5108 3.33333 15.334C3.33333 14.0963 3.825 12.9093 4.70017 12.0342C5.57534 11.159 6.76232 10.6673 8 10.6673C9.23768 10.6673 10.4247 11.159 11.2998 12.0342C12.175 12.9093 12.6667 14.0963 12.6667 15.334C12.6667 15.5108 12.7369 15.6804 12.8619 15.8054C12.987 15.9304 13.1565 16.0007 13.3333 16.0007C13.5101 16.0007 13.6797 15.9304 13.8047 15.8054C13.9298 15.6804 14 15.5108 14 15.334C13.9982 13.7432 13.3655 12.2181 12.2407 11.0933C11.1159 9.96846 9.59076 9.33575 8 9.33398Z" fill="#535353"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1_77966">
+                      <rect width="16" height="16" fill="white"/>
+                    </clipPath>
+                  </defs>
+                </svg>
+                {{ article.author -}}
+              </span>
+            {%- endif -%}
+            {%- if show_date -%}
+              <span class="circle-divider">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <g clip-path="url(#clip0_1_77960)">
+                    <path d="M12.6667 1.33333H12V0.666667C12 0.489856 11.9298 0.320286 11.8047 0.195262C11.6797 0.0702379 11.5101 0 11.3333 0C11.1565 0 10.987 0.0702379 10.8619 0.195262C10.7369 0.320286 10.6667 0.489856 10.6667 0.666667V1.33333H5.33333V0.666667C5.33333 0.489856 5.2631 0.320286 5.13807 0.195262C5.01305 0.0702379 4.84348 0 4.66667 0C4.48986 0 4.32029 0.0702379 4.19526 0.195262C4.07024 0.320286 4 0.489856 4 0.666667V1.33333H3.33333C2.4496 1.33439 1.60237 1.68592 0.97748 2.31081C0.352588 2.93571 0.00105857 3.78294 0 4.66667L0 12.6667C0.00105857 13.5504 0.352588 14.3976 0.97748 15.0225C1.60237 15.6474 2.4496 15.9989 3.33333 16H12.6667C13.5504 15.9989 14.3976 15.6474 15.0225 15.0225C15.6474 14.3976 15.9989 13.5504 16 12.6667V4.66667C15.9989 3.78294 15.6474 2.93571 15.0225 2.31081C14.3976 1.68592 13.5504 1.33439 12.6667 1.33333ZM1.33333 4.66667C1.33333 4.13623 1.54405 3.62753 1.91912 3.25245C2.29419 2.87738 2.8029 2.66667 3.33333 2.66667H12.6667C13.1971 2.66667 13.7058 2.87738 14.0809 3.25245C14.456 3.62753 14.6667 4.13623 14.6667 4.66667V5.33333H1.33333V4.66667ZM12.6667 14.6667H3.33333C2.8029 14.6667 2.29419 14.456 1.91912 14.0809C1.54405 13.7058 1.33333 13.1971 1.33333 12.6667V6.66667H14.6667V12.6667C14.6667 13.1971 14.456 13.7058 14.0809 14.0809C13.7058 14.456 13.1971 14.6667 12.6667 14.6667Z" fill="#535353"/>
+                    <path d="M8 11C8.55228 11 9 10.5523 9 10C9 9.44772 8.55228 9 8 9C7.44772 9 7 9.44772 7 10C7 10.5523 7.44772 11 8 11Z" fill="#535353"/>
+                    <path d="M4.6665 11C5.21879 11 5.6665 10.5523 5.6665 10C5.6665 9.44772 5.21879 9 4.6665 9C4.11422 9 3.6665 9.44772 3.6665 10C3.6665 10.5523 4.11422 11 4.6665 11Z" fill="#535353"/>
+                    <path d="M11.3335 11C11.8858 11 12.3335 10.5523 12.3335 10C12.3335 9.44772 11.8858 9 11.3335 9C10.7812 9 10.3335 9.44772 10.3335 10C10.3335 10.5523 10.7812 11 11.3335 11Z" fill="#535353"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1_77960">
+                      <rect width="16" height="16" fill="white"/>
+                    </clipPath>
+                  </defs>
+                </svg>
+                {{ article.published_at | time_tag: format: 'date' -}}
+              </span>
+            {%- endif -%}
+            <div class="article-card__footer">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <g clip-path="url(#clip0_1_77918)">
+                    <path d="M13.3333 0H2.66667C1.95942 0 1.28115 0.280952 0.781049 0.781049C0.280952 1.28115 0 1.95942 0 2.66667L0 10.6667C0 11.3739 0.280952 12.0522 0.781049 12.5523C1.28115 13.0524 1.95942 13.3333 2.66667 13.3333H4.6L7.56733 15.842C7.68771 15.9439 7.8403 15.9998 7.998 15.9998C8.1557 15.9998 8.30829 15.9439 8.42867 15.842L11.4 13.3333H13.3333C14.0406 13.3333 14.7189 13.0524 15.219 12.5523C15.719 12.0522 16 11.3739 16 10.6667V2.66667C16 1.95942 15.719 1.28115 15.219 0.781049C14.7189 0.280952 14.0406 0 13.3333 0V0ZM14.6667 10.6667C14.6667 11.0203 14.5262 11.3594 14.2761 11.6095C14.0261 11.8595 13.687 12 13.3333 12H11.4C11.0849 12.0001 10.7799 12.1118 10.5393 12.3153L8 14.46L5.462 12.3153C5.22104 12.1115 4.9156 11.9998 4.6 12H2.66667C2.31304 12 1.97391 11.8595 1.72386 11.6095C1.47381 11.3594 1.33333 11.0203 1.33333 10.6667V2.66667C1.33333 2.31304 1.47381 1.97391 1.72386 1.72386C1.97391 1.47381 2.31304 1.33333 2.66667 1.33333H13.3333C13.687 1.33333 14.0261 1.47381 14.2761 1.72386C14.5262 1.97391 14.6667 2.31304 14.6667 2.66667V10.6667Z" fill="#374957"/>
+                    <path d="M4.66667 4.66683H8C8.17681 4.66683 8.34638 4.59659 8.4714 4.47156C8.59643 4.34654 8.66667 4.17697 8.66667 4.00016C8.66667 3.82335 8.59643 3.65378 8.4714 3.52876C8.34638 3.40373 8.17681 3.3335 8 3.3335H4.66667C4.48986 3.3335 4.32029 3.40373 4.19526 3.52876C4.07024 3.65378 4 3.82335 4 4.00016C4 4.17697 4.07024 4.34654 4.19526 4.47156C4.32029 4.59659 4.48986 4.66683 4.66667 4.66683Z" fill="#374957"/>
+                    <path d="M11.3333 6H4.66667C4.48986 6 4.32029 6.07024 4.19526 6.19526C4.07024 6.32029 4 6.48985 4 6.66667C4 6.84348 4.07024 7.01304 4.19526 7.13807C4.32029 7.26309 4.48986 7.33333 4.66667 7.33333H11.3333C11.5101 7.33333 11.6797 7.26309 11.8047 7.13807C11.9298 7.01304 12 6.84348 12 6.66667C12 6.48985 11.9298 6.32029 11.8047 6.19526C11.6797 6.07024 11.5101 6 11.3333 6Z" fill="#374957"/>
+                    <path d="M11.3333 8.6665H4.66667C4.48986 8.6665 4.32029 8.73674 4.19526 8.86177C4.07024 8.98679 4 9.15636 4 9.33317C4 9.50999 4.07024 9.67956 4.19526 9.80458C4.32029 9.92961 4.48986 9.99985 4.66667 9.99985H11.3333C11.5101 9.99985 11.6797 9.92961 11.8047 9.80458C11.9298 9.67956 12 9.50999 12 9.33317C12 9.15636 11.9298 8.98679 11.8047 8.86177C11.6797 8.73674 11.5101 8.6665 11.3333 8.6665Z" fill="#374957"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1_77918">
+                      <rect width="16" height="16" fill="white"/>
+                    </clipPath>
+                  </defs>
+                </svg>
+                {{ 'blogs.article.comments' | t: count: article.comments_count -}}
+              </span>
+            </div>
+          </div>
+          <h3 class="card__heading{% if show_excerpt %} h2{% endif %}">
+            <a href="{{ article.url }}" class="full-unstyled-link">
+              {{ article.title | truncate: 50 | escape }}
+            </a>
+          </h3>
+
+          {%- if show_excerpt -%}
+            {%- if article.excerpt.size > 0 or article.content.size > 0 -%}
+              <p class="article-card__excerpt rte-width">
+                {%- if article.excerpt.size > 0 -%}
+                  {{ article.excerpt | strip_html | truncatewords: 30 }}
+                {%- else -%}
+                  {{ article.content | strip_html | truncatewords: 30 }}
+                {%- endif -%}
+              </p>
+            {%- endif -%}
+          {%- endif -%}
+          <a class="read_more" href="{{ article.url }}"
+            >Read More
+            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="24" viewBox="0 0 23 24" fill="none">
+              <g clip-path="url(#clip0_1_77967)">
+                <path d="M15.5705 5.77272L11.9029 5.75387C11.8149 5.75351 11.7277 5.77058 11.6463 5.80409C11.565 5.8376 11.491 5.88689 11.4288 5.94913C11.3666 6.01136 11.3173 6.08529 11.2838 6.16667C11.2503 6.24805 11.2332 6.33526 11.2335 6.42326C11.2341 6.59939 11.3043 6.76815 11.4288 6.89268C11.5533 7.01722 11.7221 7.08742 11.8982 7.08794L15.2688 7.10209L5.65683 16.714C5.53181 16.839 5.46157 17.0086 5.46157 17.1854C5.46157 17.3622 5.53181 17.5318 5.65683 17.6568V17.6568C5.78186 17.7819 5.95143 17.8521 6.12824 17.8521C6.30505 17.8521 6.47462 17.7819 6.59964 17.6568L16.2399 8.01661L16.2351 11.4249C16.2348 11.5129 16.2519 11.6001 16.2854 11.6815C16.3189 11.7628 16.3682 11.8368 16.4304 11.899C16.4926 11.9612 16.5666 12.0105 16.648 12.044C16.7293 12.0776 16.8165 12.0946 16.9045 12.0943C16.9926 12.0946 17.0798 12.0776 17.1611 12.044C17.2425 12.0105 17.3165 11.9612 17.3787 11.899C17.4409 11.8368 17.4902 11.7628 17.5237 11.6815C17.5572 11.6001 17.5743 11.5129 17.5739 11.4249L17.5692 7.77148C17.5689 7.24148 17.3582 6.73328 16.9834 6.35851C16.6087 5.98374 16.1005 5.77305 15.5705 5.77272Z" fill="#535353"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_1_77967">
+                  <rect width="16" height="16" fill="white" transform="translate(0 12) rotate(-45)"/>
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+        </div>
+        {%- if show_badge -%}
+          <div class="card__badge {{ settings.badge_position }}">
+            <span class="badge color-{{ settings.color_schemes | first }}">{{ 'blogs.article.blog' | t }}</span>
+          </div>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+{%- endif -%}

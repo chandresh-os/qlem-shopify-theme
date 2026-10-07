@@ -1,0 +1,88 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "custom_footer_NcahXM": {
+      "type": "custom-footer",
+      "blocks": {
+        "linklist_ACHLzP": {
+          "type": "linklist",
+          "settings": {
+            "heading": "Company",
+            "menu": "company"
+          }
+        },
+        "linklist_zBb6Q6": {
+          "type": "linklist",
+          "settings": {
+            "heading": "Links",
+            "menu": "links"
+          }
+        },
+        "linklist_a8PLYj": {
+          "type": "linklist",
+          "settings": {
+            "heading": "Other links",
+            "menu": "other-links"
+          }
+        },
+        "app_block_iWJCMN": {
+          "type": "app_block",
+          "settings": {
+            "title": "Download our App",
+            "image1": "shopify://shop_images/App_Store_img.png",
+            "app_url": "https://apps.apple.com/in/app/qlem/id6502877166",
+            "image2": "shopify://shop_images/Google_Play_img.png",
+            "app_url2": "https://play.google.com/store/apps/details?id=com.qlem.nfc.smartcard.qr",
+            "screener_img": "shopify://shop_images/Qlem-QR-PNG.png",
+            "screener_url": "https://profile.qlem.co/vcard/17814986"
+          }
+        }
+      },
+      "block_order": [
+        "linklist_ACHLzP",
+        "linklist_zBb6Q6",
+        "linklist_a8PLYj",
+        "app_block_iWJCMN"
+      ],
+      "settings": {
+        "bg_color": "#081626",
+        "logo": "shopify://shop_images/Qlem_Logo.png",
+        "desc": "A digital business card is a modern alternative to traditional paper business cards.",
+        "enable_icon": true,
+        "line": "Copyright 2025, All Rights Reserved by Pixigo Innovation Private Limited"
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-1",
+        "newsletter_enable": true,
+        "newsletter_heading": "Subscribe to our emails",
+        "enable_follow_on_shop": true,
+        "show_social": true,
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "payment_enable": true,
+        "show_policy": true,
+        "margin_top": 0,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "custom_footer_NcahXM",
+    "footer"
+  ]
+}

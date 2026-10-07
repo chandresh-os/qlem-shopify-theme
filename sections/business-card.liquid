@@ -1,0 +1,313 @@
+<div class="business-card-section mb-80">
+  <div class="container">
+    {% if section.settings.title != blank %}
+      <h2 class="title-40 t-center">{{ section.settings.title }}</h2>
+    {% endif %}
+    {% if section.settings.subtext != blank %}
+      <p class="f-20 t-center">{{ section.settings.subtext }}</p>
+    {% endif %}
+    <div class="tab-teaser">
+      <div class="tab-menu">
+        <ul>
+          {% for block in section.blocks %}
+            <li>
+              <a href="#" class="{% if forloop.index == 1 %}active{% endif %}" data-rel="tab-{{ forloop.index }}">
+                {{- block.settings.tabtitle -}}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="tab-main-box">
+        {% for block in section.blocks %}
+          <div
+            class="tab-box"
+            id="tab-{{ forloop.index }}"
+            {% if forloop.index == 1 %}
+              style="display:block;"
+            {% endif %}
+          >
+            <div class="business-card d-flex">
+              <div class="business-card-img">
+                {% if block.settings.img1 != blank %}
+                  <div class="business-card-bg">
+                    {% if block.settings.img1 != blank %}
+                      <img src="{{ block.settings.img1 | img_url: "master" }}">
+                    {% endif %}
+                    {% if block.settings.img2 != blank %}
+                      <img src="{{ block.settings.img2 | img_url: "master" }}">
+                    {% endif %}
+                    {% if block.settings.img3 != blank %}
+                      <img src="{{ block.settings.img3 | img_url: "master" }}">
+                    {% endif %}
+                  </div>
+                {% endif %}
+              </div>
+              <div class="business-card-info">
+                <div class="business-card-top">
+                  {% if block.settings.tabtitle != blank %}
+                    <h3>{{- block.settings.tabtitle -}}</h3>
+                  {% endif %}
+                  {% if block.settings.btntext != blank %}
+                    <a href="{{ block.settings.btnurl }}" class="common_btn">{{ block.settings.btntext }}</a>
+                  {% endif %}
+                </div>
+                {% if block.settings.desc != blank %}
+                  <p>{{ block.settings.desc }}</p>
+                {% endif %}
+                <div class="b-card-inner d-flex">
+                  <div class="b-card-info w-50">
+                    {% if block.settings.svgicon1 != blank %}
+                      <div class="b-card-border">
+                        <div class="b-card-top">
+                          {% if block.settings.svgicon1 != blank %}
+                            {{- block.settings.svgicon1 -}}
+                          {% endif %}
+                          {% if block.settings.title1 != blank %}
+                            <h6>{{ block.settings.title1 }}</h6>
+                          {% endif %}
+                        </div>
+                        {% if block.settings.subtext1 != blank %}
+                          <p>{{ block.settings.subtext1 }}</p>
+                        {% endif %}
+                      </div>
+                    {% endif %}
+                  </div>
+                  <div class="b-card-info w-50">
+                    {% if block.settings.svgicon2 != blank %}
+                      <div class="b-card-border">
+                        <div class="b-card-top">
+                          {% if block.settings.svgicon2 != blank %}
+                            {{- block.settings.svgicon2 -}}
+                          {% endif %}
+                          {% if block.settings.title2 != blank %}
+                            <h6>{{ block.settings.title2 }}</h6>
+                          {% endif %}
+                        </div>
+                        {% if block.settings.subtext2 != blank %}
+                          <p>{{ block.settings.subtext2 }}</p>
+                        {% endif %}
+                      </div>
+                    {% endif %}
+                  </div>
+                  <div class="b-card-info w-50">
+                    {% if block.settings.svgicon3 != blank %}
+                      <div class="b-card-border">
+                        <div class="b-card-top">
+                          {% if block.settings.svgicon3 != blank %}
+                            {{- block.settings.svgicon3 -}}
+                          {% endif %}
+                          {% if block.settings.title3 != blank %}
+                            <h6>{{ block.settings.title3 }}</h6>
+                          {% endif %}
+                        </div>
+                        {% if block.settings.subtext3 != blank %}
+                          <p>{{ block.settings.subtext3 }}</p>
+                        {% endif %}
+                      </div>
+                    {% endif %}
+                  </div>
+                  <div class="b-card-info w-50">
+                    {% if block.settings.svgicon4 != blank %}
+                      <div class="b-card-border">
+                        <div class="b-card-top">
+                          {% if block.settings.svgicon4 != blank %}
+                            {{- block.settings.svgicon4 -}}
+                          {% endif %}
+                          {% if block.settings.title4 != blank %}
+                            <h6>{{ block.settings.title4 }}</h6>
+                          {% endif %}
+                        </div>
+                        {% if block.settings.subtext4 != blank %}
+                          <p>{{ block.settings.subtext4 }}</p>
+                        {% endif %}
+                      </div>
+                    {% endif %}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Busniess Card Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Add Title"
+    },
+    {
+      "type": "textarea",
+      "id": "subtext",
+      "label": "Add Sub Text"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "info",
+      "name": "info",
+      "settings": [
+        {
+          "type": "text",
+          "id": "tabtitle",
+          "label": "Add Tab Title"
+        },
+        {
+          "type": "header",
+          "content": "Add Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "img1",
+          "label": "Add Image 1"
+        },
+        {
+          "type": "image_picker",
+          "id": "img2",
+          "label": "Add Image 2"
+        },
+        {
+          "type": "image_picker",
+          "id": "img3",
+          "label": "Add Image 3"
+        },
+        {
+          "type": "header",
+          "content": "Add Button"
+        },
+        {
+          "type": "text",
+          "id": "btntext",
+          "label": "Add Button Title"
+        },
+        {
+          "type": "url",
+          "id": "btnurl",
+          "label": "Add Button URL"
+        },
+        {
+          "type": "textarea",
+          "id": "desc",
+          "label": "Add Description"
+        },
+        {
+          "type": "header",
+          "content": "Add Block Info 1"
+        },
+        {
+          "type": "textarea",
+          "id": "svgicon1",
+          "label": "Add SVG Content"
+        },
+        {
+          "type": "text",
+          "id": "title1",
+          "label": "Add Title"
+        },
+        {
+          "type": "textarea",
+          "id": "subtext1",
+          "label": "Add Sub Text"
+        },
+        {
+          "type": "header",
+          "content": "Add Block Info 2"
+        },
+        {
+          "type": "textarea",
+          "id": "svgicon2",
+          "label": "Add SVG Content"
+        },
+        {
+          "type": "text",
+          "id": "title2",
+          "label": "Add Title"
+        },
+        {
+          "type": "textarea",
+          "id": "subtext2",
+          "label": "Add Sub Text"
+        },
+        {
+          "type": "header",
+          "content": "Add Block Info 3"
+        },
+        {
+          "type": "textarea",
+          "id": "svgicon3",
+          "label": "Add SVG Content"
+        },
+        {
+          "type": "text",
+          "id": "title3",
+          "label": "Add Title"
+        },
+        {
+          "type": "textarea",
+          "id": "subtext3",
+          "label": "Add Sub Text"
+        },
+        {
+          "type": "header",
+          "content": "Add Block Info 4"
+        },
+        {
+          "type": "textarea",
+          "id": "svgicon4",
+          "label": "Add SVG Content"
+        },
+        {
+          "type": "text",
+          "id": "title4",
+          "label": "Add Title"
+        },
+        {
+          "type": "textarea",
+          "id": "subtext4",
+          "label": "Add Sub Text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Busniess Card Section"
+    }
+  ]
+}
+{% endschema %}
+<script>
+    var $tabi_slider = $(".business-card-bg");
+  $tabi_slider.slick({
+    dots: true,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+  });
+
+  $('.tab-menu li a').on('click', function() {
+    var target = $(this).attr('data-rel');
+
+    // Remove 'active' class from all tabs and add it to the clicked tab
+    $('.tab-menu li a').removeClass('active');
+    $(this).addClass('active');
+
+    // Show the target tab content and hide others
+    $("#" + target).fadeIn('slow').siblings(".tab-box").hide();
+
+    // Refresh the slick slider after changing tabs
+    $tabi_slider.slick('refresh');
+
+    return false;
+  });
+</script>

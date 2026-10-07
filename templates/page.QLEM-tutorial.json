@@ -1,0 +1,195 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "breadcrumb_YUGyAD": {
+      "type": "breadcrumb",
+      "settings": {}
+    },
+    "title_description_UF7T9z": {
+      "type": "title-description",
+      "settings": {
+        "title": "Lorem Ipsum is simply <span>dummy text </span>",
+        "desc": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
+      }
+    },
+    "tutorial_page_mncyA6": {
+      "type": "tutorial-page",
+      "blocks": {
+        "tab_1_block_Y9489E": {
+          "type": "tab_1_block",
+          "settings": {
+            "video1": "https://www.youtube.com/embed/9xwazD5SyVg?si=xrSHN_qgW3IRVfoM",
+            "title1": "How to setup (with a QLEM device)"
+          }
+        },
+        "tab_1_block_kr4eXX": {
+          "type": "tab_1_block",
+          "settings": {
+            "video1": "https://www.youtube.com/embed/9xwazD5SyVg?si=xrSHN_qgW3IRVfoM",
+            "title1": "QLEM to new iphones (XR, XS, 11, 12, 13, 14)"
+          }
+        },
+        "tab_1_block_dMe3Wm": {
+          "type": "tab_1_block",
+          "settings": {
+            "video1": "https://www.youtube.com/embed/9xwazD5SyVg?si=xrSHN_qgW3IRVfoM",
+            "title1": "QLEM to Androids"
+          }
+        },
+        "tab_1_block_mbVh4R": {
+          "type": "tab_1_block",
+          "settings": {
+            "video1": "https://www.youtube.com/embed/9xwazD5SyVg?si=xrSHN_qgW3IRVfoM",
+            "title1": "How to setup (with a QLEM device)"
+          }
+        },
+        "tab_2_block_LVkfgU": {
+          "type": "tab_2_block",
+          "settings": {
+            "video2": "https://www.youtube.com/embed/9xwazD5SyVg?si=xrSHN_qgW3IRVfoM",
+            "title2": "How to setup (with a QLEM device)"
+          }
+        },
+        "tab_3_block_aEhayQ": {
+          "type": "tab_3_block",
+          "settings": {
+            "video3": "https://www.youtube.com/embed/9xwazD5SyVg?si=xrSHN_qgW3IRVfoM",
+            "title3": "How to setup (with a QLEM device)"
+          }
+        },
+        "tab_4_block_BWcLd6": {
+          "type": "tab_4_block",
+          "settings": {
+            "video4": "https://www.youtube.com/embed/9xwazD5SyVg?si=xrSHN_qgW3IRVfoM",
+            "title4": "How to setup (with a QLEM device)"
+          }
+        },
+        "tab_5_block_MHPpxk": {
+          "type": "tab_5_block",
+          "settings": {
+            "video5": "https://www.youtube.com/embed/9xwazD5SyVg?si=xrSHN_qgW3IRVfoM",
+            "title5": "How to setup (with a QLEM device)"
+          }
+        },
+        "tab_6_block_7Aat3X": {
+          "type": "tab_6_block",
+          "settings": {
+            "video6": "https://www.youtube.com/embed/9xwazD5SyVg?si=xrSHN_qgW3IRVfoM",
+            "title6": "How to setup (with a QLEM device)"
+          }
+        },
+        "tab_7_block_BiLgJc": {
+          "type": "tab_7_block",
+          "settings": {
+            "video7": "https://www.youtube.com/embed/9xwazD5SyVg?si=xrSHN_qgW3IRVfoM",
+            "title7": "How to setup (with a QLEM device)"
+          }
+        },
+        "tab_8_block_cnJ4ER": {
+          "type": "tab_8_block",
+          "settings": {
+            "video8": "https://www.youtube.com/embed/9xwazD5SyVg?si=xrSHN_qgW3IRVfoM",
+            "title8": "How to setup (with a QLEM device)"
+          }
+        }
+      },
+      "block_order": [
+        "tab_1_block_Y9489E",
+        "tab_1_block_kr4eXX",
+        "tab_1_block_dMe3Wm",
+        "tab_1_block_mbVh4R",
+        "tab_2_block_LVkfgU",
+        "tab_3_block_aEhayQ",
+        "tab_4_block_BWcLd6",
+        "tab_5_block_MHPpxk",
+        "tab_6_block_7Aat3X",
+        "tab_7_block_BiLgJc",
+        "tab_8_block_cnJ4ER"
+      ],
+      "settings": {}
+    },
+    "faqs_C7wxjg": {
+      "type": "faqs",
+      "blocks": {
+        "faq_block_MbzEfF": {
+          "type": "faq_block",
+          "settings": {
+            "text": "What is a digital business card?",
+            "text1": "<p>A digital business card is a modern alternative to traditional paper business cards. It is an electronic format of a business card that can be easily shared <br/>with others through email, text, social media, NFC technology or QR codes.</p>"
+          }
+        },
+        "faq_block_4JHFVP": {
+          "type": "faq_block",
+          "settings": {
+            "text": "How does a digital business card work?",
+            "text1": "<p>A digital business card is a modern alternative to traditional paper business cards. It is an electronic format of a business card that can be easily shared <br/>with others through email, text, social media, NFC technology or QR codes.</p>"
+          }
+        },
+        "faq_block_B86EcG": {
+          "type": "faq_block",
+          "settings": {
+            "text": "What are the benefits of using digital business cards?",
+            "text1": "<p>A digital business card is a modern alternative to traditional paper business cards. It is an electronic format of a business card that can be easily shared <br/>with others through email, text, social media, NFC technology or QR codes.</p>"
+          }
+        },
+        "faq_block_pBmnrF": {
+          "type": "faq_block",
+          "settings": {
+            "text": "Why is Qlem the best digital business card?",
+            "text1": "<p>A digital business card is a modern alternative to traditional paper business cards. It is an electronic format of a business card that can be easily shared <br/>with others through email, text, social media, NFC technology or QR codes.</p>"
+          }
+        },
+        "faq_block_MR6q3G": {
+          "type": "faq_block",
+          "settings": {
+            "text": "What phones can my Qlem product and Qlem QR code share to?",
+            "text1": "<p>A digital business card is a modern alternative to traditional paper business cards. It is an electronic format of a business card that can be easily shared <br/>with others through email, text, social media, NFC technology or QR codes.</p>"
+          }
+        },
+        "faq_block_R7yrY7": {
+          "type": "faq_block",
+          "settings": {
+            "text": "Does the person I’m meeting need an app to receive my info?",
+            "text1": "<p>A digital business card is a modern alternative to traditional paper business cards. It is an electronic format of a business card that can be easily shared <br/>with others through email, text, social media, NFC technology or QR codes.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_block_MbzEfF",
+        "faq_block_4JHFVP",
+        "faq_block_B86EcG",
+        "faq_block_pBmnrF",
+        "faq_block_MR6q3G",
+        "faq_block_R7yrY7"
+      ],
+      "settings": {
+        "bg_color": "#f6f6f6",
+        "title": "Frequently <span>Asked Questions</span>",
+        "desc": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "breadcrumb_YUGyAD",
+    "title_description_UF7T9z",
+    "tutorial_page_mncyA6",
+    "faqs_C7wxjg"
+  ]
+}

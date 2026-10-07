@@ -1,0 +1,96 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "breadcrumb_MP8G8W": {
+      "type": "breadcrumb",
+      "settings": {}
+    },
+    "free_qr_mGkjRB": {
+      "type": "free-qr",
+      "settings": {
+        "img": "shopify://shop_images/free-qr-img.png",
+        "title": "Why Download <span>QLEM?</span>",
+        "desc": "Ready to upgrade your networking experience? With the QLEM app, sharing and managing contact information has never been easier. Our digital business card app lets you connect instantly, save time, and make a lasting impression.",
+        "desc1": "",
+        "gimg": "shopify://shop_images/googlestore.png",
+        "gurl": "https://play.google.com/store/apps/details?id=com.qlem.nfc.smartcard.qr&hl=en_IN",
+        "aimg": "shopify://shop_images/appstore.png",
+        "aurl": "https://apps.apple.com/in/app/qlem/id6502877166"
+      }
+    },
+    "mobile_text_img_fchpVW": {
+      "type": "Mobile-text-img",
+      "blocks": {
+        "block_H8wftC": {
+          "type": "block",
+          "settings": {
+            "bg_img": "shopify://shop_images/mob-mockup-1.png",
+            "title": "1. Download QLEM"
+          }
+        },
+        "block_NcXQPq": {
+          "type": "block",
+          "settings": {
+            "bg_img": "shopify://shop_images/mob-mockup-2.png",
+            "title": "2. Log in or Sign up"
+          }
+        },
+        "block_GdEakm": {
+          "type": "block",
+          "settings": {
+            "bg_img": "shopify://shop_images/mob-mockup-3.png",
+            "title": "3. Create/Update your Card"
+          }
+        },
+        "block_dixyWr": {
+          "type": "block",
+          "settings": {
+            "bg_img": "shopify://shop_images/mob-mockup-4.png",
+            "title": "4. Save Contacts"
+          }
+        },
+        "block_4MBMCT": {
+          "type": "block",
+          "settings": {
+            "bg_img": "shopify://shop_images/mob-mockup-6.png",
+            "title": "5. Digital Card"
+          }
+        }
+      },
+      "block_order": [
+        "block_H8wftC",
+        "block_NcXQPq",
+        "block_GdEakm",
+        "block_dixyWr",
+        "block_4MBMCT"
+      ],
+      "settings": {
+        "bg_color": "#f6f6f6",
+        "title": "Stay Connected with QLEM – <span>Your Digital Business Card Solution</span>",
+        "desc": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "breadcrumb_MP8G8W",
+    "free_qr_mGkjRB",
+    "mobile_text_img_fchpVW"
+  ]
+}

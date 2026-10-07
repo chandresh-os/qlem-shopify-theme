@@ -1,0 +1,127 @@
+<section>
+  <div class="custom_review_sec mb-80" style="background:{{ section.settings.bg_color }}">
+    <div class="container">
+      <div class="custom_review_inner">
+        {% if section.settings.title != blank %}
+        <h2 class="title-40 t-center">{{ section.settings.title }}</h2>
+        {% endif %}
+        {% if section.settings.desc != blank %}
+        <p class="f-20 t-center">{{ section.settings.desc }}</p>
+        {% endif %}
+        <div class="custom_review_flex">
+        {% for block in section.blocks %}
+          <div class="custom_review_wrapper">
+            <div class="custom_review_box br-8">
+              {% if block.settings.icon != blank %}
+              <span>{{ block.settings.icon }}</span>
+              {% endif %}
+              {% if block.settings.review_text != blank %}
+              <p>{{ block.settings.review_text }}</p>
+              {% endif %}
+              <div class="customer_img_name_flex">
+                <div class="customer_inner_flex">
+                <div class="customer_img">
+                {% if block.settings.image != blank %}
+                <img src="{{ block.settings.image | img_url:'master' }}">
+                {% endif %}
+                </div>
+                <div class="customer_name">
+                  {% if block.settings.name != blank %}
+                  <h5>{{ block.settings.name }}</h5>
+                  {% endif %}
+                  {% if block.settings.position != blank %}
+                  <h6>{{ block.settings.position }}</h6>
+                  {% endif %}
+                </div>
+                </div>
+                <div class="star_icon">
+                  {% if block.settings.star_icon != blank %}
+                  <span>{{ block.settings.star_icon }}</span>
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+          </div>
+         {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+{% schema %}
+  {
+    "name": "Custom Review",
+    "settings": [
+       {
+        "type": "color",
+        "id": "bg_color",
+        "label": "Background Color"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Add Title"
+      },
+      {
+        "type": "textarea",
+        "id": "desc",
+        "label": "Add Description"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "review_block",
+        "name":"Review Block",
+        "settings": [
+          {
+            "type": "html",
+            "id": "icon",
+            "label": "Add Icon"
+          },
+          {
+            "type": "textarea",
+            "id": "review_text",
+            "label": "Add Review Text"
+          },
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Add Photo"
+          },
+          {
+            "type": "text",
+            "id": "name",
+            "label": "Add Name"
+          },
+          {
+            "type": "text",
+            "id": "position",
+            "label": "Add Position"
+          },
+          {
+            "type": "html",
+            "id": "star_icon",
+            "label": "Add Star Icon"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Custom Review"
+      }
+    ]
+  }
+{% endschema %}

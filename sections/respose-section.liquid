@@ -1,0 +1,48 @@
+<div class="response-section mb-80" style="background-color:{{ section.settings.color}}">
+  <div class="container">
+    <div class="response-img">
+      {% if section.settings.img1 != blank %}
+        <img src="{{ section.settings.img1 | img_url: "master" }}">
+      {% endif %}
+      {% if section.settings.img2 != blank %}
+        <img src="{{ section.settings.img2 | img_url: "master" }}">
+      {% endif %}
+      {% if section.settings.img3 != blank %}
+        <img src="{{ section.settings.img3 | img_url: "master" }}">
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Response Section",
+  "settings": [
+    {
+      "type": "color",
+      "id": "color",
+      "label": "Add Background-color"
+    },
+    {
+      "type": "image_picker",
+      "id": "img1",
+      "label": "Add Image 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "img2",
+      "label": "Add Image 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "img3",
+      "label": "Add Image 3"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Response Section"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,251 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "breadcrumb_AAHcRN": {
+      "type": "breadcrumb",
+      "settings": {}
+    },
+    "help_sec_Chiaey": {
+      "type": "help-sec",
+      "blocks": {
+        "help_box_pPTNAn": {
+          "type": "help_box",
+          "disabled": true,
+          "settings": {
+            "icon": "<svg width=\"56\" height=\"56\" viewbox=\"0 0 56 56\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect width=\"56\" height=\"56\" rx=\"8\" fill=\"#FFE9FE\"></rect>\n<path d=\"M21.4375 14.875C18.8568 14.875 16.75 16.9818 16.75 19.5625V36.4375C16.75 39.0182 18.8568 41.125 21.4375 41.125H38.3125C38.8302 41.1249 39.2499 40.7052 39.25 40.1875V19.5625C39.2499 19.0448 38.8302 18.6251 38.3125 18.625H35.5V15.8125C35.4999 15.2948 35.0802 14.8751 34.5625 14.875H21.4375ZM35.5 20.5H37.375V39.25H21.4375C19.8632 39.25 18.625 38.0118 18.625 36.4375C18.625 34.8632 19.8632 33.625 21.4375 33.625H34.5625C35.0802 33.6249 35.4999 33.2052 35.5 32.6875V20.5Z\" fill=\"#9D2E98\"></path>\n<path d=\"M34.5359 35.5001H21.4372C20.1694 35.4822 20.1694 37.3931 21.4372 37.3751H34.5359C35.0645 37.3826 35.4945 36.9515 35.4863 36.4287C35.4779 35.9059 35.053 35.493 34.5359 35.5001Z\" fill=\"#9D2E98\"></path>\n</svg>",
+            "help_title": "Guides",
+            "help_desc": "Lorem Ipsum is simply dummy text of the printing  and typesetting industry. Lorem Ipsum has been  the industry's standard dummy text.",
+            "btn_text": "",
+            "btn_url": "#"
+          }
+        },
+        "help_box_DRcRnU": {
+          "type": "help_box",
+          "disabled": true,
+          "settings": {
+            "icon": "<svg width=\"56\" height=\"56\" viewbox=\"0 0 56 56\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect width=\"56\" height=\"56\" rx=\"8\" fill=\"#D7F3E9\"></rect>\n<path d=\"M30.5 31.75C30.8542 31.75 31.1615 31.6198 31.4219 31.3594C31.6823 31.099 31.8125 30.7917 31.8125 30.4375C31.8125 30.0833 31.6823 29.776 31.4219 29.5156C31.1615 29.2552 30.8542 29.125 30.5 29.125C30.1458 29.125 29.8385 29.2552 29.5781 29.5156C29.3177 29.776 29.1875 30.0833 29.1875 30.4375C29.1875 30.7917 29.3177 31.099 29.5781 31.3594C29.8385 31.6198 30.1458 31.75 30.5 31.75ZM30.5 27.75C30.7292 27.75 30.9427 27.6667 31.1406 27.5C31.3385 27.3333 31.4583 27.1146 31.5 26.8438C31.5417 26.5938 31.6302 26.3646 31.7656 26.1562C31.901 25.9479 32.1458 25.6667 32.5 25.3125C33.125 24.6875 33.5417 24.1823 33.75 23.7969C33.9583 23.4115 34.0625 22.9583 34.0625 22.4375C34.0625 21.5 33.7344 20.7344 33.0781 20.1406C32.4219 19.5469 31.5625 19.25 30.5 19.25C29.8125 19.25 29.1875 19.4062 28.625 19.7188C28.0625 20.0312 27.6146 20.4792 27.2812 21.0625C27.1562 21.2708 27.1458 21.4896 27.25 21.7188C27.3542 21.9479 27.5312 22.1146 27.7812 22.2188C28.0104 22.3229 28.2344 22.3333 28.4531 22.25C28.6719 22.1667 28.8542 22.0208 29 21.8125C29.1875 21.5417 29.4062 21.3385 29.6562 21.2031C29.9062 21.0677 30.1875 21 30.5 21C31 21 31.4062 21.1406 31.7188 21.4219C32.0312 21.7031 32.1875 22.0833 32.1875 22.5625C32.1875 22.8542 32.1042 23.1302 31.9375 23.3906C31.7708 23.651 31.4792 23.9792 31.0625 24.375C30.4583 24.8958 30.0729 25.2969 29.9062 25.5781C29.7396 25.8594 29.6354 26.2708 29.5938 26.8125C29.5729 27.0625 29.651 27.2812 29.8281 27.4688C30.0052 27.6562 30.2292 27.75 30.5 27.75ZM23 35.5C22.3125 35.5 21.724 35.2552 21.2344 34.7656C20.7448 34.276 20.5 33.6875 20.5 33V18C20.5 17.3125 20.7448 16.724 21.2344 16.2344C21.724 15.7448 22.3125 15.5 23 15.5H38C38.6875 15.5 39.276 15.7448 39.7656 16.2344C40.2552 16.724 40.5 17.3125 40.5 18V33C40.5 33.6875 40.2552 34.276 39.7656 34.7656C39.276 35.2552 38.6875 35.5 38 35.5H23ZM18 40.5C17.3125 40.5 16.724 40.2552 16.2344 39.7656C15.7448 39.276 15.5 38.6875 15.5 38V21.75C15.5 21.3958 15.6198 21.099 15.8594 20.8594C16.099 20.6198 16.3958 20.5 16.75 20.5C17.1042 20.5 17.401 20.6198 17.6406 20.8594C17.8802 21.099 18 21.3958 18 21.75V38H34.25C34.6042 38 34.901 38.1198 35.1406 38.3594C35.3802 38.599 35.5 38.8958 35.5 39.25C35.5 39.6042 35.3802 39.901 35.1406 40.1406C34.901 40.3802 34.6042 40.5 34.25 40.5H18Z\" fill=\"#439B7B\"></path>\n</svg>",
+            "help_title": "FAQs",
+            "help_desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been  the industry's standard dummy text.",
+            "btn_text": "",
+            "btn_url": "#"
+          }
+        },
+        "help_box_znb7Q8": {
+          "type": "help_box",
+          "disabled": true,
+          "settings": {
+            "icon": "<svg width=\"56\" height=\"56\" viewbox=\"0 0 56 56\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect width=\"56\" height=\"56\" rx=\"8\" fill=\"#EDDFFF\"></rect>\n<g clip-path=\"url(#clip0_118_1706)\">\n<path d=\"M18 24.25C20.0711 24.25 21.75 22.5711 21.75 20.5C21.75 18.4289 20.0711 16.75 18 16.75C15.9289 16.75 14.25 18.4289 14.25 20.5C14.25 22.5711 15.9289 24.25 18 24.25Z\" fill=\"#6123B0\"></path>\n<path d=\"M22.1125 26.8375C20.8544 27.6226 19.8167 28.7149 19.0973 30.0117C18.3778 31.3085 18.0002 32.767 18 34.25H15.5C14.8376 34.248 14.2028 33.984 13.7344 33.5156C13.266 33.0472 13.002 32.4124 13 31.75V29.25C13.003 28.2564 13.399 27.3042 14.1016 26.6016C14.8042 25.899 15.7564 25.503 16.75 25.5H19.25C19.7957 25.5012 20.3346 25.6216 20.829 25.8526C21.3234 26.0836 21.7614 26.4197 22.1125 26.8375Z\" fill=\"#6123B0\"></path>\n<path d=\"M38 24.25C40.0711 24.25 41.75 22.5711 41.75 20.5C41.75 18.4289 40.0711 16.75 38 16.75C35.9289 16.75 34.25 18.4289 34.25 20.5C34.25 22.5711 35.9289 24.25 38 24.25Z\" fill=\"#6123B0\"></path>\n<path d=\"M42.9992 29.25V31.75C42.9972 32.4124 42.7332 33.0472 42.2648 33.5156C41.7964 33.984 41.1617 34.248 40.4992 34.25H37.9992C37.999 32.767 37.6214 31.3085 36.9019 30.0117C36.1825 28.7149 35.1448 27.6226 33.8867 26.8375C34.2378 26.4197 34.6758 26.0836 35.1702 25.8526C35.6646 25.6216 36.2035 25.5012 36.7492 25.5H39.2492C40.2429 25.503 41.195 25.899 41.8976 26.6016C42.6002 27.3042 42.9963 28.2564 42.9992 29.25Z\" fill=\"#6123B0\"></path>\n<path d=\"M28 26.75C30.7614 26.75 33 24.5114 33 21.75C33 18.9886 30.7614 16.75 28 16.75C25.2386 16.75 23 18.9886 23 21.75C23 24.5114 25.2386 26.75 28 26.75Z\" fill=\"#6123B0\"></path>\n<path d=\"M35.5 34.25V35.5C35.497 36.4936 35.101 37.4458 34.3984 38.1484C33.6958 38.851 32.7436 39.247 31.75 39.25H24.25C23.2564 39.247 22.3042 38.851 21.6016 38.1484C20.899 37.4458 20.503 36.4936 20.5 35.5V34.25C20.5 32.5924 21.1585 31.0027 22.3306 29.8306C23.5027 28.6585 25.0924 28 26.75 28H29.25C30.9076 28 32.4973 28.6585 33.6694 29.8306C34.8415 31.0027 35.5 32.5924 35.5 34.25Z\" fill=\"#6123B0\"></path>\n</g>\n<defs>\n<clippath id=\"clip0_118_1706\">\n<rect width=\"30\" height=\"30\" fill=\"white\" transform=\"translate(13 13)\"></rect>\n</clippath>\n</defs>\n</svg>",
+            "help_title": "Community",
+            "help_desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.",
+            "btn_text": "",
+            "btn_url": "#"
+          }
+        }
+      },
+      "block_order": [
+        "help_box_pPTNAn",
+        "help_box_DRcRnU",
+        "help_box_znb7Q8"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "How We Can Help?",
+        "desc": "for"
+      }
+    },
+    "help_faq_JPyUYx": {
+      "type": "help-faq",
+      "blocks": {
+        "tab_1_block_MEdb4g": {
+          "type": "tab_1_block",
+          "settings": {
+            "que1": "1. How do I activate my card?",
+            "desc1": "Card is already activated. Just login with your credentials in web dashboard or Add card in your QLEM app."
+          }
+        },
+        "tab_1_block_CQLf9Q": {
+          "type": "tab_1_block",
+          "settings": {
+            "que1": "2. How do I reset my card’s settings?",
+            "desc1": "Log into your QLEM app or dashboard, and update the card profile. Changes will sync automatically."
+          }
+        },
+        "tab_1_block_XU6NK9": {
+          "type": "tab_1_block",
+          "settings": {
+            "que1": "3. What happens if I change my phone number or email?",
+            "desc1": "Simply log into your QLEM app or dashboard and update your details in the \"Edit Profile\" section. The changes will be reflected instantly on your card."
+          }
+        },
+        "tab_1_block_ktVLJC": {
+          "type": "tab_1_block",
+          "settings": {
+            "que1": "4. Can I share specific social media accounts only?",
+            "desc1": "Yes, in the \"Edit Profile\" section, you can choose which social media links to share and hide others based on your preferences."
+          }
+        },
+        "tab_1_block_ePf4GM": {
+          "type": "tab_1_block",
+          "settings": {
+            "que1": "5. Can I add additional links like my portfolio or website?",
+            "desc1": "Yes, QLEM allows you to add custom links such as personal websites, blogs, or portfolios to showcase your work."
+          }
+        },
+        "tab_1_block_8N8RYw": {
+          "type": "tab_1_block",
+          "disabled": true,
+          "settings": {
+            "que1": "6. How long does the card last?",
+            "desc1": "It’s durable and reusable for years with proper care."
+          }
+        },
+        "tab_2_block_kHN8dr": {
+          "type": "tab_2_block",
+          "settings": {
+            "que2": "1. What is a QLEM NFC card?",
+            "desc2": "It’s a reusable smart business card that shares your contact info with a tap or Scan QR."
+          }
+        },
+        "tab_2_block_bXtP3j": {
+          "type": "tab_2_block",
+          "settings": {
+            "que2": "2. How does it work?",
+            "desc2": "Tap the card on an NFC-enabled smartphone to share your details instantly. or Scan QR for Non-NFC devices"
+          }
+        },
+        "tab_2_block_a6ULwg": {
+          "type": "tab_2_block",
+          "settings": {
+            "que2": "3. Do I need an app?",
+            "desc2": "No app is needed to receive info, but you can customize your profile via the QLEM app and Web dashboard"
+          }
+        },
+        "tab_2_block_jg66Uh": {
+          "type": "tab_2_block",
+          "settings": {
+            "que2": "4. Can I update my card details?",
+            "desc2": "Yes, update anytime using the QLEM app or web dashboard."
+          }
+        },
+        "tab_2_block_cVctyF": {
+          "type": "tab_2_block",
+          "settings": {
+            "que2": "5. Is my data secure?",
+            "desc2": "Yes, only the information you set is shared securely."
+          }
+        },
+        "tab_2_block_Wp7b7P": {
+          "type": "tab_2_block",
+          "settings": {
+            "que2": "6. How long does the card last?",
+            "desc2": "It’s durable and reusable for years with proper care. If you want to buy again only card then you have to pay only physical card cost."
+          }
+        },
+        "tab_2_block_FiwGeH": {
+          "type": "tab_2_block",
+          "settings": {
+            "que2": "7. How do I order a card?",
+            "desc2": "Order through our website, customize, and checkout."
+          }
+        },
+        "tab_3_block_H3nTUQ": {
+          "type": "tab_3_block",
+          "settings": {
+            "que3": "1. Is it compatible with all devices?",
+            "desc3": "Yes, It works with most NFC-enabled smartphones (Android and iPhones 7+). and for Non-NFC phone users can scan QR to get same information."
+          }
+        },
+        "tab_3_block_GJeUhJ": {
+          "type": "tab_3_block",
+          "settings": {
+            "que3": "2. What if a phone doesn’t support NFC?",
+            "desc3": "A QR code on the card can be scanned instead."
+          }
+        },
+        "tab_3_block_RQ87w4": {
+          "type": "tab_3_block",
+          "disabled": true,
+          "settings": {
+            "que3": "Various versions have evolved over the years, sometimes by accident.",
+            "desc3": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum \nis that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here’"
+          }
+        },
+        "tab_4_block_4tCYMr": {
+          "type": "tab_4_block",
+          "settings": {
+            "que4": "1. Can I track my order?",
+            "desc4": "Yes, once your order is shipped, you will receive a tracking number via email and whatsapp to monitor its progress."
+          }
+        },
+        "tab_4_block_yn63Qb": {
+          "type": "tab_4_block",
+          "settings": {
+            "que4": "2. How much does shipping cost?",
+            "desc4": "Shipping costs depend on your location and the number of cards ordered. The final shipping cost will be calculated during checkout."
+          }
+        },
+        "tab_4_block_V9hkLz": {
+          "type": "tab_4_block",
+          "settings": {
+            "que4": "3. What’s your return policy?",
+            "desc4": "Returns are accepted for damaged products within 2 days."
+          }
+        },
+        "tab_4_block_aRDryT": {
+          "type": "tab_4_block",
+          "settings": {
+            "que4": "4. Do you ship internationally?",
+            "desc4": "Yes, shipping costs and times depend on your location."
+          }
+        }
+      },
+      "block_order": [
+        "tab_1_block_MEdb4g",
+        "tab_1_block_CQLf9Q",
+        "tab_1_block_XU6NK9",
+        "tab_1_block_ktVLJC",
+        "tab_1_block_ePf4GM",
+        "tab_1_block_8N8RYw",
+        "tab_2_block_kHN8dr",
+        "tab_2_block_bXtP3j",
+        "tab_2_block_a6ULwg",
+        "tab_2_block_jg66Uh",
+        "tab_2_block_cVctyF",
+        "tab_2_block_Wp7b7P",
+        "tab_2_block_FiwGeH",
+        "tab_3_block_H3nTUQ",
+        "tab_3_block_GJeUhJ",
+        "tab_3_block_RQ87w4",
+        "tab_4_block_4tCYMr",
+        "tab_4_block_yn63Qb",
+        "tab_4_block_V9hkLz",
+        "tab_4_block_aRDryT"
+      ],
+      "settings": {
+        "bg_color": "#f6f6f6"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "breadcrumb_AAHcRN",
+    "help_sec_Chiaey",
+    "help_faq_JPyUYx"
+  ]
+}

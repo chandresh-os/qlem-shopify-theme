@@ -1,0 +1,608 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero_banner_rdFkHW": {
+      "type": "Hero-banner",
+      "settings": {
+        "mainimg": "shopify://shop_images/Hero_Section.png",
+        "img": "shopify://shop_images/Group_2.png",
+        "title": "Share your Identity with One Card",
+        "desc": "Easily create DIGITAL BUSINESS CARDS for yourself or your team. <br>Use them to make connections that grow your business.",
+        "btntext": "GET YOUR NOW",
+        "btnurl": "https://qlem.co/collections/pvc"
+      }
+    },
+    "trusted_section_pip7eV": {
+      "type": "trusted-section",
+      "blocks": {
+        "image_XdV9bw": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Group_467.png"
+          }
+        },
+        "image_KyG99W": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/IBM_logo.png"
+          }
+        },
+        "image_MJa4dB": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Frame_466.png"
+          }
+        },
+        "image_Xy4XUG": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Group_601.png"
+          }
+        },
+        "image_MTwm4U": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Frame_467.png"
+          }
+        },
+        "image_Q7Gda6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/hyfun.png"
+          }
+        }
+      },
+      "block_order": [
+        "image_XdV9bw",
+        "image_KyG99W",
+        "image_MJa4dB",
+        "image_Xy4XUG",
+        "image_MTwm4U",
+        "image_Q7Gda6"
+      ],
+      "settings": {
+        "title": "Trusted by over 1500 companies across the world"
+      }
+    },
+    "pvc_section_6ViUgq": {
+      "type": "PVC-section",
+      "settings": {
+        "title": "Revolutionize Your Networking with <span>QLEM</span>",
+        "subtext": "Discover the future of business cards-effortlessly share your contact information, showcase your brand, <br> and connect with others in an eco-friendly, innovative way.",
+        "heading": "",
+        "desc": "<p>Welcome to QLEM, where we are redefining the way you connect and share your professional identity. Gone are the days of carrying stacks of paper business cards that quickly become outdated and lost. QLEM offers a smart, sustainable solution that empowers you to share your contact information effortlessly and instantly, using the latest in digital technology..</p>\n<ul>\n    <li>Instant Sharing</li>\n    <li>Customizable Profiles</li>\n    <li>Real-Time Updates</li>\n    <li>Eco-Friendly Solution</li>\n    <li>Secure Data Management</li>\n    <li>Versatile Functionality</li>\n    <li>Engagement Analytics</li>\n    <li>Global Accessibility</li>\n    <li>Supportive Community</li>\n</ul>",
+        "btn_url": "",
+        "btn_text": "",
+        "image": "shopify://shop_images/qlem-card.png"
+      }
+    },
+    "ql_card_sec_BExQtJ": {
+      "type": "QL-card-sec",
+      "blocks": {
+        "card_block_tMB7Xb": {
+          "type": "card_block",
+          "settings": {
+            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"28\" height=\"28\" viewbox=\"0 0 28 28\" fill=\"none\">\n  <g clip-path=\"url(#clip0_1_324)\">\n    <path d=\"M22.2031 18.1562C20.5821 18.1562 19.1537 18.9536 18.2565 20.1663L10.4995 16.1943C10.6282 15.7553 10.7188 15.3004 10.7188 14.8203C10.7188 14.1692 10.5853 13.5502 10.3546 12.9808L18.4727 8.09572C19.3762 9.156 20.7041 9.84375 22.2031 9.84375C24.9172 9.84375 27.125 7.63596 27.125 4.92188C27.125 2.20779 24.9172 0 22.2031 0C19.489 0 17.2812 2.20779 17.2812 4.92188C17.2812 5.54734 17.41 6.14064 17.6237 6.69145L9.48145 11.5909C8.57877 10.5621 7.26999 9.89844 5.79688 9.89844C3.08279 9.89844 0.875 12.1062 0.875 14.8203C0.875 17.5344 3.08279 19.7422 5.79688 19.7422C7.44461 19.7422 8.89716 18.9214 9.79098 17.6747L17.5225 21.6338C17.3801 22.0935 17.2812 22.5723 17.2812 23.0781C17.2812 25.7922 19.489 28 22.2031 28C24.9172 28 27.125 25.7922 27.125 23.0781C27.125 20.364 24.9172 18.1562 22.2031 18.1562Z\" fill=\"#3324A8\"></path>\n  </g>\n  <defs>\n    <clippath id=\"clip0_1_324\">\n      <rect width=\"28\" height=\"28\" fill=\"white\"></rect>\n    </clippath>\n  </defs>\n</svg>",
+            "title1": "Share Details Instantly",
+            "detail": "By using contactless tech, Qlem stores your \ncontact information into wallet-sized cards"
+          }
+        },
+        "card_block_Qqbe3z": {
+          "type": "card_block",
+          "settings": {
+            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"28\" height=\"28\" viewbox=\"0 0 28 28\" fill=\"none\">\n  <g clip-path=\"url(#clip0_1_339)\">\n    <path d=\"M13.8007 13.4877C15.6537 13.4877 17.2582 12.8231 18.5692 11.5119C19.8802 10.2009 20.5448 8.5968 20.5448 6.74363C20.5448 4.89109 19.8802 3.28679 18.569 1.97536C17.2578 0.664579 15.6535 0 13.8007 0C11.9475 0 10.3434 0.664579 9.03244 1.97558C7.72144 3.28658 7.05664 4.89088 7.05664 6.74363C7.05664 8.5968 7.72144 10.2011 9.03265 11.5121C10.3439 12.8229 11.9482 13.4877 13.8007 13.4877Z\" fill=\"#BE2E9C\"></path>\n    <path d=\"M25.6008 21.5309C25.563 20.9853 25.4865 20.3901 25.3739 19.7617C25.2603 19.1285 25.114 18.5299 24.9388 17.9828C24.7578 17.4174 24.5117 16.859 24.2076 16.3238C23.8918 15.7684 23.521 15.2848 23.1048 14.8868C22.6697 14.4705 22.1369 14.1357 21.5208 13.8915C20.9069 13.6487 20.2265 13.5256 19.4987 13.5256C19.2128 13.5256 18.9364 13.6429 18.4026 13.9904C18.074 14.2047 17.6897 14.4525 17.2607 14.7266C16.894 14.9603 16.3971 15.1793 15.7833 15.3775C15.1845 15.5713 14.5766 15.6695 13.9765 15.6695C13.3764 15.6695 12.7687 15.5713 12.1693 15.3775C11.5562 15.1795 11.0593 14.9605 10.6929 14.7268C10.268 14.4553 9.88348 14.2075 9.55002 13.9902C9.01682 13.6427 8.74017 13.5254 8.45435 13.5254C7.72632 13.5254 7.04614 13.6487 6.4324 13.8918C5.81674 14.1355 5.28375 14.4702 4.84818 14.887C4.43225 15.2852 4.06119 15.7686 3.74588 16.3238C3.44189 16.859 3.1958 17.4172 3.01465 17.983C2.83969 18.5301 2.69336 19.1285 2.57971 19.7617C2.46713 20.3893 2.39066 20.9847 2.35284 21.5315C2.31567 22.0673 2.29688 22.6233 2.29688 23.185C2.29688 24.6466 2.76151 25.8298 3.67773 26.7025C4.58264 27.5636 5.78 28.0004 7.23605 28.0004H20.7182C22.1743 28.0004 23.3712 27.5638 24.2763 26.7025C25.1928 25.8305 25.6574 24.647 25.6574 23.1847C25.6572 22.6206 25.6382 22.0641 25.6008 21.5309Z\" fill=\"#BE2E9C\"></path>\n  </g>\n  <defs>\n    <clippath id=\"clip0_1_339\">\n      <rect width=\"28\" height=\"28\" fill=\"white\"></rect>\n    </clippath>\n  </defs>\n</svg>",
+            "title1": "Update your information",
+            "detail": "Update your information anytime from your \nprofile "
+          }
+        },
+        "card_block_txCrPX": {
+          "type": "card_block",
+          "settings": {
+            "icon": "<svg width=\"28\" height=\"28\" viewbox=\"0 0 28 28\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M17.2777 22.1472H4.23116V3.43527H17.2741V4.83509H19.0272V3.05315C19.0284 1.37459 17.6502 0 15.9728 0H5.53484C3.85506 0 2.48047 1.37459 2.48047 3.05315V24.9456C2.48047 26.6266 3.85506 28 5.53484 28H15.9728C17.6502 28 19.0284 26.6266 19.0284 24.9456V22.1147H17.2777V22.1472ZM10.752 26.4716C9.97818 26.4716 9.35341 25.8456 9.35341 25.073C9.35341 24.298 9.97823 23.6732 10.752 23.6732C11.527 23.6732 12.1531 24.2992 12.1531 25.073C12.1531 25.8456 11.5271 26.4716 10.752 26.4716Z\" fill=\"#A04513\"></path>\n<path d=\"M9.63907 5.31348H5.72559V7.6998H9.63907V5.31348Z\" fill=\"#A04513\"></path>\n<path d=\"M9.63907 11.4229H5.72559V13.8092H9.63907V11.4229Z\" fill=\"#A04513\"></path>\n<path d=\"M9.63907 17.8184H5.72559V20.2035H9.63907V17.8184Z\" fill=\"#A04513\"></path>\n<circle cx=\"18.2708\" cy=\"13.4798\" r=\"7.40853\" fill=\"#A04513\"></circle>\n<g clip-path=\"url(#clip0_1_351)\">\n<path d=\"M19.0075 13.4592L22.0224 10.4443C22.2186 10.2482 22.2186 9.93108 22.0224 9.73497C21.8262 9.53886 21.5092 9.53886 21.3131 9.73497L18.2981 12.7499L15.2832 9.73497C15.087 9.53886 14.77 9.53886 14.5739 9.73497C14.3777 9.93108 14.3777 10.2482 14.5739 10.4443L17.5888 13.4592L14.5739 16.4742C14.3777 16.6703 14.3777 16.9874 14.5739 17.1835C14.6716 17.2813 14.8001 17.3305 14.9286 17.3305C15.057 17.3305 15.1854 17.2813 15.2832 17.1835L18.2981 14.1685L21.3131 17.1835C21.4109 17.2813 21.5393 17.3305 21.6677 17.3305C21.7961 17.3305 21.9245 17.2813 22.0224 17.1835C22.2186 16.9874 22.2186 16.6703 22.0224 16.4742L19.0075 13.4592Z\" fill=\"white\"></path>\n</g>\n<defs>\n<clippath id=\"clip0_1_351\">\n<rect width=\"7.74275\" height=\"7.74275\" fill=\"white\" transform=\"translate(14.4268 9.58105)\"></rect>\n</clippath>\n</defs>\n</svg>",
+            "title1": "No App Required for Recipient",
+            "detail": "Recipient Can Access QLEM User Details Without an App"
+          }
+        }
+      },
+      "block_order": [
+        "card_block_tMB7Xb",
+        "card_block_Qqbe3z",
+        "card_block_txCrPX"
+      ],
+      "settings": {
+        "bg_color": "#f6f6f6",
+        "title": "Your Personalised Website in a Card",
+        "desc": "QLEM is your smart digital business card that enables instant sharing and easy updates. Connect effortlessly and keep your information current for seamless networking in a sustainable way."
+      }
+    },
+    "custom_video_slider_UXeYaf": {
+      "type": "custom-video-slider",
+      "blocks": {
+        "video_block_EzYrx9": {
+          "type": "video_block",
+          "settings": {
+            "video_poster": "shopify://shop_images/Instagram.jpg",
+            "url_video": "https://cdn.shopify.com/videos/c/o/v/4204d8e95ff9439e97b6ee193df3942f.mp4"
+          }
+        },
+        "video_block_MfnJfP": {
+          "type": "video_block",
+          "settings": {
+            "video_poster": "shopify://shop_images/IMG_9445.heic",
+            "url_video": "https://cdn.shopify.com/videos/c/o/v/df9e39b4b0c84f989e106ede96d005ba.mp4"
+          }
+        },
+        "video_block_wUicy9": {
+          "type": "video_block",
+          "settings": {
+            "video_poster": "shopify://shop_images/IMG_6977.jpg",
+            "url_video": "https://cdn.shopify.com/videos/c/o/v/1196364a22f3422f9ee272cfa5910618.mp4"
+          }
+        },
+        "video_block_FcR6Qr": {
+          "type": "video_block",
+          "settings": {
+            "video_poster": "shopify://shop_images/IMG_6978.jpg",
+            "url_video": "https://cdn.shopify.com/videos/c/o/v/b5f1cc4be1e543669ba522369d3c3825.mp4"
+          }
+        },
+        "video_block_fYxrTP": {
+          "type": "video_block",
+          "disabled": true,
+          "settings": {
+            "video_poster": "shopify://shop_images/pos-1.png",
+            "url_video": "https://cdn.shopify.com/videos/c/o/v/aea5f4f9e7a9409d9dd435753aae52c5.mp4"
+          }
+        }
+      },
+      "block_order": [
+        "video_block_EzYrx9",
+        "video_block_MfnJfP",
+        "video_block_wUicy9",
+        "video_block_FcR6Qr",
+        "video_block_fYxrTP"
+      ],
+      "settings": {
+        "bg_color": "#081626"
+      }
+    },
+    "featured_collection_QbBiUp": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Featured collection",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "customize-card",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "standard",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "tab_product_dmAEwC": {
+      "type": "tab-product",
+      "blocks": {
+        "collection_i4Rh7d": {
+          "type": "Collection",
+          "settings": {
+            "collection": "pvc"
+          }
+        },
+        "collection_KBaBbT": {
+          "type": "Collection",
+          "settings": {
+            "collection": "wooden"
+          }
+        },
+        "collection_86knBC": {
+          "type": "Collection",
+          "settings": {
+            "collection": "customize-card"
+          }
+        },
+        "collection_fywe4q": {
+          "type": "Collection",
+          "settings": {
+            "collection": "metal-card"
+          }
+        }
+      },
+      "block_order": [
+        "collection_i4Rh7d",
+        "collection_KBaBbT",
+        "collection_86knBC",
+        "collection_fywe4q"
+      ],
+      "settings": {
+        "title": "All Products",
+        "desc": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form  by <br>injected humour, or randomised words which don't look even slightly believable."
+      }
+    },
+    "ql_how_work_YHyagN": {
+      "type": "QL-how-work",
+      "blocks": {
+        "work_block_rFDc3X": {
+          "type": "work_block",
+          "settings": {
+            "image": "shopify://shop_images/work_img1.png",
+            "title": "1.Get your Qlem Card"
+          }
+        },
+        "work_block_hhJ98U": {
+          "type": "work_block",
+          "settings": {
+            "image": "shopify://shop_images/work_img2.png",
+            "title": "2.Set Your Profile"
+          }
+        },
+        "work_block_dExUjX": {
+          "type": "work_block",
+          "settings": {
+            "image": "shopify://shop_images/work_img3.png",
+            "title": "3.Ready to tap & share"
+          }
+        }
+      },
+      "block_order": [
+        "work_block_rFDc3X",
+        "work_block_hhJ98U",
+        "work_block_dExUjX"
+      ],
+      "settings": {
+        "bg_color": "#081626",
+        "title": "How does <span>it work?</span>",
+        "desc": ""
+      }
+    },
+    "business_card_iCfydY": {
+      "type": "business-card",
+      "blocks": {
+        "info_zLGMW7": {
+          "type": "info",
+          "settings": {
+            "tabtitle": "PVC Card",
+            "img1": "shopify://shop_images/qlem_card_1.png",
+            "img2": "shopify://shop_images/qlem_card_1.png",
+            "img3": "shopify://shop_images/qlem_card_1.png",
+            "btntext": "Buy Now",
+            "btnurl": "https://qlem.co/collections/pvc",
+            "desc": "Our PVC NFC cards combine style, durability, and functionality, offering a modern solution for seamless contact sharing. Lightweight, waterproof, and customizable, these smart cards are perfect for professionals looking to elevate their networking game.",
+            "svgicon1": "<svg width=\"52\" height=\"52\" viewbox=\"0 0 52 52\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<circle cx=\"26\" cy=\"26\" r=\"26\" fill=\"#EEE3FF\"></circle>\n<path d=\"M16.3954 18.0954L15.3774 18.5092C14.7585 18.7654 14.3443 19.2088 14.1347 19.8395C13.9251 20.4701 13.9601 21.0909 14.2395 21.7018L16.3954 26.3134V18.0954ZM21.1862 15.494C20.5274 15.494 19.9635 15.7255 19.4944 16.1887C19.0253 16.6518 18.7908 17.2085 18.7908 17.8589V24.9536L21.9647 16.2626C22.0246 16.1246 22.0845 15.9916 22.1443 15.8635C22.2042 15.7354 22.2841 15.6122 22.3839 15.494H21.1862ZM27.3543 15.6122C26.7155 15.3757 26.0967 15.4053 25.4979 15.7009C24.899 15.9965 24.4798 16.4596 24.2403 17.0903L18.9106 31.5162C18.671 32.1469 18.691 32.7627 18.9704 33.3638C19.2499 33.9649 19.709 34.3738 20.3478 34.5906L29.3904 37.8423C30.0292 38.0788 30.648 38.0493 31.2468 37.7537C31.8457 37.458 32.2649 36.9949 32.5044 36.3643L37.8342 21.9383C38.0737 21.3077 38.0537 20.6918 37.7743 20.0908C37.4948 19.4897 37.0357 19.0807 36.3969 18.864L27.3543 15.6122ZM24.7793 29.6834C25.1186 29.6834 25.4031 29.7967 25.6326 30.0234C25.8622 30.25 25.977 30.5308 25.977 30.8659C25.977 31.2009 25.8622 31.4817 25.6326 31.7084C25.4031 31.935 25.1186 32.0483 24.7793 32.0483C24.4399 32.0483 24.1555 31.935 23.9259 31.7084C23.6964 31.4817 23.5816 31.2009 23.5816 30.8659C23.5816 30.5308 23.6964 30.25 23.9259 30.0234C24.1555 29.7967 24.4399 29.6834 24.7793 29.6834Z\" fill=\"#8B64C8\"></path>\n</svg>",
+            "title1": "1. Key Features",
+            "subtext1": "Our PVC NFC cards are durable, waterproof, and lightweight, designed for everyday use. They’re easy to carry and can be customized with your logo and brand style.",
+            "svgicon2": "<svg width=\"52\" height=\"52\" viewbox=\"0 0 52 52\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<circle cx=\"26\" cy=\"26\" r=\"26\" fill=\"#EEE3FF\"></circle>\n<path d=\"M16.3954 18.0954L15.3774 18.5092C14.7585 18.7654 14.3443 19.2088 14.1347 19.8395C13.9251 20.4701 13.9601 21.0909 14.2395 21.7018L16.3954 26.3134V18.0954ZM21.1862 15.494C20.5274 15.494 19.9635 15.7255 19.4944 16.1887C19.0253 16.6518 18.7908 17.2085 18.7908 17.8589V24.9536L21.9647 16.2626C22.0246 16.1246 22.0845 15.9916 22.1443 15.8635C22.2042 15.7354 22.2841 15.6122 22.3839 15.494H21.1862ZM27.3543 15.6122C26.7155 15.3757 26.0967 15.4053 25.4979 15.7009C24.899 15.9965 24.4798 16.4596 24.2403 17.0903L18.9106 31.5162C18.671 32.1469 18.691 32.7627 18.9704 33.3638C19.2499 33.9649 19.709 34.3738 20.3478 34.5906L29.3904 37.8423C30.0292 38.0788 30.648 38.0493 31.2468 37.7537C31.8457 37.458 32.2649 36.9949 32.5044 36.3643L37.8342 21.9383C38.0737 21.3077 38.0537 20.6918 37.7743 20.0908C37.4948 19.4897 37.0357 19.0807 36.3969 18.864L27.3543 15.6122ZM24.7793 29.6834C25.1186 29.6834 25.4031 29.7967 25.6326 30.0234C25.8622 30.25 25.977 30.5308 25.977 30.8659C25.977 31.2009 25.8622 31.4817 25.6326 31.7084C25.4031 31.935 25.1186 32.0483 24.7793 32.0483C24.4399 32.0483 24.1555 31.935 23.9259 31.7084C23.6964 31.4817 23.5816 31.2009 23.5816 30.8659C23.5816 30.5308 23.6964 30.25 23.9259 30.0234C24.1555 29.7967 24.4399 29.6834 24.7793 29.6834Z\" fill=\"#8B64C8\"></path>\n</svg>",
+            "title2": "2. Professional Benefits",
+            "subtext2": "Simplify networking with tap-to-share technology, reduce waste with an eco-friendly option, and impress clients with a sleek, modern card.",
+            "svgicon3": "<svg width=\"52\" height=\"52\" viewbox=\"0 0 52 52\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<circle cx=\"26\" cy=\"26\" r=\"26\" fill=\"#DDE0FF\"></circle>\n<path d=\"M28.4919 36.3667C28.0697 36.7889 27.5465 37 26.9224 37C26.2983 37 25.7751 36.7889 25.3529 36.3667L15.6608 26.6746C15.4589 26.4727 15.2983 26.234 15.179 25.9587C15.0597 25.6834 15 25.3897 15 25.0776V17.2028C15 16.597 15.2157 16.0784 15.6471 15.6471C16.0784 15.2157 16.597 15 17.2028 15H25.0776C25.3897 15 25.6834 15.0597 25.9587 15.179C26.234 15.2983 26.4727 15.4589 26.6746 15.6608L36.3667 25.3805C36.7889 25.8027 37 26.3212 37 26.9362C37 27.5511 36.7889 28.0697 36.3667 28.4919L28.4919 36.3667ZM19.9562 21.6083C20.4151 21.6083 20.8052 21.4476 21.1264 21.1264C21.4476 20.8052 21.6083 20.4151 21.6083 19.9562C21.6083 19.4973 21.4476 19.1072 21.1264 18.786C20.8052 18.4647 20.4151 18.3041 19.9562 18.3041C19.4973 18.3041 19.1072 18.4647 18.786 18.786C18.4647 19.1072 18.3041 19.4973 18.3041 19.9562C18.3041 20.4151 18.4647 20.8052 18.786 21.1264C19.1072 21.4476 19.4973 21.6083 19.9562 21.6083Z\" fill=\"#3B4181\"></path>\n</svg>",
+            "title3": "3. How It Works",
+            "subtext3": "Tap the card on an NFC-enabled smartphone or scan QR Code to instantly share your details, and update your profile anytime via the QLEM app.",
+            "svgicon4": "<svg width=\"52\" height=\"52\" viewbox=\"0 0 52 52\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<circle cx=\"26\" cy=\"26\" r=\"26\" fill=\"#FFECEC\"></circle>\n<path d=\"M16.3954 18.0954L15.3774 18.5092C14.7585 18.7654 14.3443 19.2088 14.1347 19.8395C13.9251 20.4701 13.9601 21.0909 14.2395 21.7018L16.3954 26.3134V18.0954ZM21.1862 15.494C20.5274 15.494 19.9635 15.7255 19.4944 16.1887C19.0253 16.6518 18.7908 17.2085 18.7908 17.8589V24.9536L21.9647 16.2626C22.0246 16.1246 22.0845 15.9916 22.1443 15.8635C22.2042 15.7354 22.2841 15.6122 22.3839 15.494H21.1862ZM27.3543 15.6122C26.7155 15.3757 26.0967 15.4053 25.4979 15.7009C24.899 15.9965 24.4798 16.4596 24.2403 17.0903L18.9106 31.5162C18.671 32.1469 18.691 32.7627 18.9704 33.3638C19.2499 33.9649 19.709 34.3738 20.3478 34.5906L29.3904 37.8423C30.0292 38.0788 30.648 38.0493 31.2468 37.7537C31.8457 37.458 32.2649 36.9949 32.5044 36.3643L37.8342 21.9383C38.0737 21.3077 38.0537 20.6918 37.7743 20.0908C37.4948 19.4897 37.0357 19.0807 36.3969 18.864L27.3543 15.6122ZM24.7793 29.6834C25.1186 29.6834 25.4031 29.7967 25.6326 30.0234C25.8622 30.25 25.977 30.5308 25.977 30.8659C25.977 31.2009 25.8622 31.4817 25.6326 31.7084C25.4031 31.935 25.1186 32.0483 24.7793 32.0483C24.4399 32.0483 24.1555 31.935 23.9259 31.7084C23.6964 31.4817 23.5816 31.2009 23.5816 30.8659C23.5816 30.5308 23.6964 30.25 23.9259 30.0234C24.1555 29.7967 24.4399 29.6834 24.7793 29.6834Z\" fill=\"#884141\"></path>\n</svg>",
+            "title4": "4. Why Choose Us?",
+            "subtext4": "Premium materials, quick setup, and a seamless connection to the QLEM app make our PVC NFC cards a trusted choice for professionals worldwide."
+          }
+        },
+        "info_XzCHNA": {
+          "type": "info",
+          "settings": {
+            "tabtitle": "Wooden Card",
+            "img1": "shopify://shop_images/qlem_card_1.png",
+            "img2": "shopify://shop_images/qlem_card_1.png",
+            "img3": "shopify://shop_images/qlem_card_1.png",
+            "btntext": "Buy Now",
+            "btnurl": "https://qlem.co/collections/wooden",
+            "desc": "Our Wooden NFC cards are a unique and sustainable choice, offering a perfect blend of eco-friendliness and style. Made from natural materials, these cards bring a touch of elegance to networking.",
+            "svgicon1": "<svg width=\"52\" height=\"52\" viewbox=\"0 0 52 52\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<circle cx=\"26\" cy=\"26\" r=\"26\" fill=\"#EEE3FF\"></circle>\n<path d=\"M16.3954 18.0954L15.3774 18.5092C14.7585 18.7654 14.3443 19.2088 14.1347 19.8395C13.9251 20.4701 13.9601 21.0909 14.2395 21.7018L16.3954 26.3134V18.0954ZM21.1862 15.494C20.5274 15.494 19.9635 15.7255 19.4944 16.1887C19.0253 16.6518 18.7908 17.2085 18.7908 17.8589V24.9536L21.9647 16.2626C22.0246 16.1246 22.0845 15.9916 22.1443 15.8635C22.2042 15.7354 22.2841 15.6122 22.3839 15.494H21.1862ZM27.3543 15.6122C26.7155 15.3757 26.0967 15.4053 25.4979 15.7009C24.899 15.9965 24.4798 16.4596 24.2403 17.0903L18.9106 31.5162C18.671 32.1469 18.691 32.7627 18.9704 33.3638C19.2499 33.9649 19.709 34.3738 20.3478 34.5906L29.3904 37.8423C30.0292 38.0788 30.648 38.0493 31.2468 37.7537C31.8457 37.458 32.2649 36.9949 32.5044 36.3643L37.8342 21.9383C38.0737 21.3077 38.0537 20.6918 37.7743 20.0908C37.4948 19.4897 37.0357 19.0807 36.3969 18.864L27.3543 15.6122ZM24.7793 29.6834C25.1186 29.6834 25.4031 29.7967 25.6326 30.0234C25.8622 30.25 25.977 30.5308 25.977 30.8659C25.977 31.2009 25.8622 31.4817 25.6326 31.7084C25.4031 31.935 25.1186 32.0483 24.7793 32.0483C24.4399 32.0483 24.1555 31.935 23.9259 31.7084C23.6964 31.4817 23.5816 31.2009 23.5816 30.8659C23.5816 30.5308 23.6964 30.25 23.9259 30.0234C24.1555 29.7967 24.4399 29.6834 24.7793 29.6834Z\" fill=\"#8B64C8\"></path>\n</svg>",
+            "title1": "1. Key Features",
+            "subtext1": "Each wooden card is crafted from premium, eco-friendly wood, making it both durable and biodegradable. The natural grain patterns ensure every card is unique, and they can be personalized to align with your brand.",
+            "svgicon2": "<svg width=\"52\" height=\"52\" viewbox=\"0 0 52 52\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<circle cx=\"26\" cy=\"26\" r=\"26\" fill=\"#EEE3FF\"></circle>\n<path d=\"M16.3954 18.0954L15.3774 18.5092C14.7585 18.7654 14.3443 19.2088 14.1347 19.8395C13.9251 20.4701 13.9601 21.0909 14.2395 21.7018L16.3954 26.3134V18.0954ZM21.1862 15.494C20.5274 15.494 19.9635 15.7255 19.4944 16.1887C19.0253 16.6518 18.7908 17.2085 18.7908 17.8589V24.9536L21.9647 16.2626C22.0246 16.1246 22.0845 15.9916 22.1443 15.8635C22.2042 15.7354 22.2841 15.6122 22.3839 15.494H21.1862ZM27.3543 15.6122C26.7155 15.3757 26.0967 15.4053 25.4979 15.7009C24.899 15.9965 24.4798 16.4596 24.2403 17.0903L18.9106 31.5162C18.671 32.1469 18.691 32.7627 18.9704 33.3638C19.2499 33.9649 19.709 34.3738 20.3478 34.5906L29.3904 37.8423C30.0292 38.0788 30.648 38.0493 31.2468 37.7537C31.8457 37.458 32.2649 36.9949 32.5044 36.3643L37.8342 21.9383C38.0737 21.3077 38.0537 20.6918 37.7743 20.0908C37.4948 19.4897 37.0357 19.0807 36.3969 18.864L27.3543 15.6122ZM24.7793 29.6834C25.1186 29.6834 25.4031 29.7967 25.6326 30.0234C25.8622 30.25 25.977 30.5308 25.977 30.8659C25.977 31.2009 25.8622 31.4817 25.6326 31.7084C25.4031 31.935 25.1186 32.0483 24.7793 32.0483C24.4399 32.0483 24.1555 31.935 23.9259 31.7084C23.6964 31.4817 23.5816 31.2009 23.5816 30.8659C23.5816 30.5308 23.6964 30.25 23.9259 30.0234C24.1555 29.7967 24.4399 29.6834 24.7793 29.6834Z\" fill=\"#8B64C8\"></path>\n</svg>",
+            "title2": "2. Professional Benefits",
+            "subtext2": "Stand out with an eco-conscious card that demonstrates your commitment to sustainability. These wooden cards combine natural aesthetics with modern technology, helping you leave a positive impression.",
+            "svgicon3": "<svg width=\"52\" height=\"52\" viewbox=\"0 0 52 52\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<circle cx=\"26\" cy=\"26\" r=\"26\" fill=\"#DDE0FF\"></circle>\n<path d=\"M28.4919 36.3667C28.0697 36.7889 27.5465 37 26.9224 37C26.2983 37 25.7751 36.7889 25.3529 36.3667L15.6608 26.6746C15.4589 26.4727 15.2983 26.234 15.179 25.9587C15.0597 25.6834 15 25.3897 15 25.0776V17.2028C15 16.597 15.2157 16.0784 15.6471 15.6471C16.0784 15.2157 16.597 15 17.2028 15H25.0776C25.3897 15 25.6834 15.0597 25.9587 15.179C26.234 15.2983 26.4727 15.4589 26.6746 15.6608L36.3667 25.3805C36.7889 25.8027 37 26.3212 37 26.9362C37 27.5511 36.7889 28.0697 36.3667 28.4919L28.4919 36.3667ZM19.9562 21.6083C20.4151 21.6083 20.8052 21.4476 21.1264 21.1264C21.4476 20.8052 21.6083 20.4151 21.6083 19.9562C21.6083 19.4973 21.4476 19.1072 21.1264 18.786C20.8052 18.4647 20.4151 18.3041 19.9562 18.3041C19.4973 18.3041 19.1072 18.4647 18.786 18.786C18.4647 19.1072 18.3041 19.4973 18.3041 19.9562C18.3041 20.4151 18.4647 20.8052 18.786 21.1264C19.1072 21.4476 19.4973 21.6083 19.9562 21.6083Z\" fill=\"#3B4181\"></path>\n</svg>",
+            "title3": "3. How It Works",
+            "subtext3": "Tap the card on an NFC-enabled smartphone or scan QR Code to instantly share your details, and update your profile anytime via the QLEM app.",
+            "svgicon4": "<svg width=\"52\" height=\"52\" viewbox=\"0 0 52 52\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<circle cx=\"26\" cy=\"26\" r=\"26\" fill=\"#FFECEC\"></circle>\n<path d=\"M16.3954 18.0954L15.3774 18.5092C14.7585 18.7654 14.3443 19.2088 14.1347 19.8395C13.9251 20.4701 13.9601 21.0909 14.2395 21.7018L16.3954 26.3134V18.0954ZM21.1862 15.494C20.5274 15.494 19.9635 15.7255 19.4944 16.1887C19.0253 16.6518 18.7908 17.2085 18.7908 17.8589V24.9536L21.9647 16.2626C22.0246 16.1246 22.0845 15.9916 22.1443 15.8635C22.2042 15.7354 22.2841 15.6122 22.3839 15.494H21.1862ZM27.3543 15.6122C26.7155 15.3757 26.0967 15.4053 25.4979 15.7009C24.899 15.9965 24.4798 16.4596 24.2403 17.0903L18.9106 31.5162C18.671 32.1469 18.691 32.7627 18.9704 33.3638C19.2499 33.9649 19.709 34.3738 20.3478 34.5906L29.3904 37.8423C30.0292 38.0788 30.648 38.0493 31.2468 37.7537C31.8457 37.458 32.2649 36.9949 32.5044 36.3643L37.8342 21.9383C38.0737 21.3077 38.0537 20.6918 37.7743 20.0908C37.4948 19.4897 37.0357 19.0807 36.3969 18.864L27.3543 15.6122ZM24.7793 29.6834C25.1186 29.6834 25.4031 29.7967 25.6326 30.0234C25.8622 30.25 25.977 30.5308 25.977 30.8659C25.977 31.2009 25.8622 31.4817 25.6326 31.7084C25.4031 31.935 25.1186 32.0483 24.7793 32.0483C24.4399 32.0483 24.1555 31.935 23.9259 31.7084C23.6964 31.4817 23.5816 31.2009 23.5816 30.8659C23.5816 30.5308 23.6964 30.25 23.9259 30.0234C24.1555 29.7967 24.4399 29.6834 24.7793 29.6834Z\" fill=\"#884141\"></path>\n</svg>",
+            "title4": "4. Why Choose Us?",
+            "subtext4": "Choose a sustainable, stylish, and innovative networking tool with our wooden NFC cards—perfect for environmentally-conscious professionals."
+          }
+        },
+        "info_TthwHT": {
+          "type": "info",
+          "settings": {
+            "tabtitle": "Metal Card",
+            "img1": "shopify://shop_images/Peach1-400x400.jpg",
+            "img2": "shopify://shop_images/Peach1-400x400.jpg",
+            "img3": "shopify://shop_images/qlem_card_1.png",
+            "btntext": "Buy Now",
+            "btnurl": "https://qlem.co/collections/metal-card",
+            "desc": "Our Metal NFC cards are a premium option for professionals who want to stand out. Combining elegance, durability, and cutting-edge technology, these cards are designed to leave a lasting impression.",
+            "svgicon1": "<svg width=\"52\" height=\"52\" viewbox=\"0 0 52 52\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<circle cx=\"26\" cy=\"26\" r=\"26\" fill=\"#EEE3FF\"></circle>\n<path d=\"M16.3954 18.0954L15.3774 18.5092C14.7585 18.7654 14.3443 19.2088 14.1347 19.8395C13.9251 20.4701 13.9601 21.0909 14.2395 21.7018L16.3954 26.3134V18.0954ZM21.1862 15.494C20.5274 15.494 19.9635 15.7255 19.4944 16.1887C19.0253 16.6518 18.7908 17.2085 18.7908 17.8589V24.9536L21.9647 16.2626C22.0246 16.1246 22.0845 15.9916 22.1443 15.8635C22.2042 15.7354 22.2841 15.6122 22.3839 15.494H21.1862ZM27.3543 15.6122C26.7155 15.3757 26.0967 15.4053 25.4979 15.7009C24.899 15.9965 24.4798 16.4596 24.2403 17.0903L18.9106 31.5162C18.671 32.1469 18.691 32.7627 18.9704 33.3638C19.2499 33.9649 19.709 34.3738 20.3478 34.5906L29.3904 37.8423C30.0292 38.0788 30.648 38.0493 31.2468 37.7537C31.8457 37.458 32.2649 36.9949 32.5044 36.3643L37.8342 21.9383C38.0737 21.3077 38.0537 20.6918 37.7743 20.0908C37.4948 19.4897 37.0357 19.0807 36.3969 18.864L27.3543 15.6122ZM24.7793 29.6834C25.1186 29.6834 25.4031 29.7967 25.6326 30.0234C25.8622 30.25 25.977 30.5308 25.977 30.8659C25.977 31.2009 25.8622 31.4817 25.6326 31.7084C25.4031 31.935 25.1186 32.0483 24.7793 32.0483C24.4399 32.0483 24.1555 31.935 23.9259 31.7084C23.6964 31.4817 23.5816 31.2009 23.5816 30.8659C23.5816 30.5308 23.6964 30.25 23.9259 30.0234C24.1555 29.7967 24.4399 29.6834 24.7793 29.6834Z\" fill=\"#8B64C8\"></path>\n</svg>",
+            "title1": "1. Key Features",
+            "subtext1": "Crafted from high-quality metal, these cards are sturdy, scratch-resistant, and built to last. Their sleek, polished finish gives them a luxurious look, and they’re available in customizable designs to reflect your brand's identity.",
+            "svgicon2": "<svg width=\"52\" height=\"52\" viewbox=\"0 0 52 52\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<circle cx=\"26\" cy=\"26\" r=\"26\" fill=\"#EEE3FF\"></circle>\n<path d=\"M16.3954 18.0954L15.3774 18.5092C14.7585 18.7654 14.3443 19.2088 14.1347 19.8395C13.9251 20.4701 13.9601 21.0909 14.2395 21.7018L16.3954 26.3134V18.0954ZM21.1862 15.494C20.5274 15.494 19.9635 15.7255 19.4944 16.1887C19.0253 16.6518 18.7908 17.2085 18.7908 17.8589V24.9536L21.9647 16.2626C22.0246 16.1246 22.0845 15.9916 22.1443 15.8635C22.2042 15.7354 22.2841 15.6122 22.3839 15.494H21.1862ZM27.3543 15.6122C26.7155 15.3757 26.0967 15.4053 25.4979 15.7009C24.899 15.9965 24.4798 16.4596 24.2403 17.0903L18.9106 31.5162C18.671 32.1469 18.691 32.7627 18.9704 33.3638C19.2499 33.9649 19.709 34.3738 20.3478 34.5906L29.3904 37.8423C30.0292 38.0788 30.648 38.0493 31.2468 37.7537C31.8457 37.458 32.2649 36.9949 32.5044 36.3643L37.8342 21.9383C38.0737 21.3077 38.0537 20.6918 37.7743 20.0908C37.4948 19.4897 37.0357 19.0807 36.3969 18.864L27.3543 15.6122ZM24.7793 29.6834C25.1186 29.6834 25.4031 29.7967 25.6326 30.0234C25.8622 30.25 25.977 30.5308 25.977 30.8659C25.977 31.2009 25.8622 31.4817 25.6326 31.7084C25.4031 31.935 25.1186 32.0483 24.7793 32.0483C24.4399 32.0483 24.1555 31.935 23.9259 31.7084C23.6964 31.4817 23.5816 31.2009 23.5816 30.8659C23.5816 30.5308 23.6964 30.25 23.9259 30.0234C24.1555 29.7967 24.4399 29.6834 24.7793 29.6834Z\" fill=\"#8B64C8\"></path>\n</svg>",
+            "title2": "2. Professional Benefits",
+            "subtext2": "Make a bold statement with an ultra-modern card that combines durability with sophistication. These eco-friendly cards elevate your networking game while providing a reliable, reusable solution for sharing contact details.",
+            "svgicon3": "<svg width=\"52\" height=\"52\" viewbox=\"0 0 52 52\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<circle cx=\"26\" cy=\"26\" r=\"26\" fill=\"#DDE0FF\"></circle>\n<path d=\"M28.4919 36.3667C28.0697 36.7889 27.5465 37 26.9224 37C26.2983 37 25.7751 36.7889 25.3529 36.3667L15.6608 26.6746C15.4589 26.4727 15.2983 26.234 15.179 25.9587C15.0597 25.6834 15 25.3897 15 25.0776V17.2028C15 16.597 15.2157 16.0784 15.6471 15.6471C16.0784 15.2157 16.597 15 17.2028 15H25.0776C25.3897 15 25.6834 15.0597 25.9587 15.179C26.234 15.2983 26.4727 15.4589 26.6746 15.6608L36.3667 25.3805C36.7889 25.8027 37 26.3212 37 26.9362C37 27.5511 36.7889 28.0697 36.3667 28.4919L28.4919 36.3667ZM19.9562 21.6083C20.4151 21.6083 20.8052 21.4476 21.1264 21.1264C21.4476 20.8052 21.6083 20.4151 21.6083 19.9562C21.6083 19.4973 21.4476 19.1072 21.1264 18.786C20.8052 18.4647 20.4151 18.3041 19.9562 18.3041C19.4973 18.3041 19.1072 18.4647 18.786 18.786C18.4647 19.1072 18.3041 19.4973 18.3041 19.9562C18.3041 20.4151 18.4647 20.8052 18.786 21.1264C19.1072 21.4476 19.4973 21.6083 19.9562 21.6083Z\" fill=\"#3B4181\"></path>\n</svg>",
+            "title3": "3. How It Works",
+            "subtext3": "Tap the card on an NFC-enabled smartphone or scan QR Code to instantly share your details, and update your profile anytime via the QLEM app.",
+            "svgicon4": "<svg width=\"52\" height=\"52\" viewbox=\"0 0 52 52\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<circle cx=\"26\" cy=\"26\" r=\"26\" fill=\"#FFECEC\"></circle>\n<path d=\"M16.3954 18.0954L15.3774 18.5092C14.7585 18.7654 14.3443 19.2088 14.1347 19.8395C13.9251 20.4701 13.9601 21.0909 14.2395 21.7018L16.3954 26.3134V18.0954ZM21.1862 15.494C20.5274 15.494 19.9635 15.7255 19.4944 16.1887C19.0253 16.6518 18.7908 17.2085 18.7908 17.8589V24.9536L21.9647 16.2626C22.0246 16.1246 22.0845 15.9916 22.1443 15.8635C22.2042 15.7354 22.2841 15.6122 22.3839 15.494H21.1862ZM27.3543 15.6122C26.7155 15.3757 26.0967 15.4053 25.4979 15.7009C24.899 15.9965 24.4798 16.4596 24.2403 17.0903L18.9106 31.5162C18.671 32.1469 18.691 32.7627 18.9704 33.3638C19.2499 33.9649 19.709 34.3738 20.3478 34.5906L29.3904 37.8423C30.0292 38.0788 30.648 38.0493 31.2468 37.7537C31.8457 37.458 32.2649 36.9949 32.5044 36.3643L37.8342 21.9383C38.0737 21.3077 38.0537 20.6918 37.7743 20.0908C37.4948 19.4897 37.0357 19.0807 36.3969 18.864L27.3543 15.6122ZM24.7793 29.6834C25.1186 29.6834 25.4031 29.7967 25.6326 30.0234C25.8622 30.25 25.977 30.5308 25.977 30.8659C25.977 31.2009 25.8622 31.4817 25.6326 31.7084C25.4031 31.935 25.1186 32.0483 24.7793 32.0483C24.4399 32.0483 24.1555 31.935 23.9259 31.7084C23.6964 31.4817 23.5816 31.2009 23.5816 30.8659C23.5816 30.5308 23.6964 30.25 23.9259 30.0234C24.1555 29.7967 24.4399 29.6834 24.7793 29.6834Z\" fill=\"#884141\"></path>\n</svg>",
+            "title4": "4. Why Choose Us?",
+            "subtext4": "Experience the perfect mix of durability and elegance with our metal NFC cards, trusted by professionals looking to make an impactful first impression."
+          }
+        },
+        "info_n6rRmz": {
+          "type": "info",
+          "settings": {
+            "tabtitle": "Art Card",
+            "img1": "shopify://shop_images/qlem_card_1.png",
+            "img2": "shopify://shop_images/qlem_card_1.png",
+            "img3": "shopify://shop_images/qlem_card_1.png",
+            "btntext": "Buy Now",
+            "btnurl": "#",
+            "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the \nindustry's standard dummy text ever since the 1500s, when an unknown printer.",
+            "svgicon1": "<svg width=\"52\" height=\"52\" viewbox=\"0 0 52 52\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<circle cx=\"26\" cy=\"26\" r=\"26\" fill=\"#EEE3FF\"></circle>\n<path d=\"M16.3954 18.0954L15.3774 18.5092C14.7585 18.7654 14.3443 19.2088 14.1347 19.8395C13.9251 20.4701 13.9601 21.0909 14.2395 21.7018L16.3954 26.3134V18.0954ZM21.1862 15.494C20.5274 15.494 19.9635 15.7255 19.4944 16.1887C19.0253 16.6518 18.7908 17.2085 18.7908 17.8589V24.9536L21.9647 16.2626C22.0246 16.1246 22.0845 15.9916 22.1443 15.8635C22.2042 15.7354 22.2841 15.6122 22.3839 15.494H21.1862ZM27.3543 15.6122C26.7155 15.3757 26.0967 15.4053 25.4979 15.7009C24.899 15.9965 24.4798 16.4596 24.2403 17.0903L18.9106 31.5162C18.671 32.1469 18.691 32.7627 18.9704 33.3638C19.2499 33.9649 19.709 34.3738 20.3478 34.5906L29.3904 37.8423C30.0292 38.0788 30.648 38.0493 31.2468 37.7537C31.8457 37.458 32.2649 36.9949 32.5044 36.3643L37.8342 21.9383C38.0737 21.3077 38.0537 20.6918 37.7743 20.0908C37.4948 19.4897 37.0357 19.0807 36.3969 18.864L27.3543 15.6122ZM24.7793 29.6834C25.1186 29.6834 25.4031 29.7967 25.6326 30.0234C25.8622 30.25 25.977 30.5308 25.977 30.8659C25.977 31.2009 25.8622 31.4817 25.6326 31.7084C25.4031 31.935 25.1186 32.0483 24.7793 32.0483C24.4399 32.0483 24.1555 31.935 23.9259 31.7084C23.6964 31.4817 23.5816 31.2009 23.5816 30.8659C23.5816 30.5308 23.6964 30.25 23.9259 30.0234C24.1555 29.7967 24.4399 29.6834 24.7793 29.6834Z\" fill=\"#8B64C8\"></path>\n</svg>",
+            "title1": "Loram Ipsum Is Simply Text.",
+            "subtext1": "It is a long established fact that a reader will be \ndistracted by the readable content of a page \nwhen looking at its layout. The point of using \nLorem Ipsum is dummy text.",
+            "svgicon2": "<svg width=\"52\" height=\"52\" viewbox=\"0 0 52 52\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<circle cx=\"26\" cy=\"26\" r=\"26\" fill=\"#EEE3FF\"></circle>\n<path d=\"M16.3954 18.0954L15.3774 18.5092C14.7585 18.7654 14.3443 19.2088 14.1347 19.8395C13.9251 20.4701 13.9601 21.0909 14.2395 21.7018L16.3954 26.3134V18.0954ZM21.1862 15.494C20.5274 15.494 19.9635 15.7255 19.4944 16.1887C19.0253 16.6518 18.7908 17.2085 18.7908 17.8589V24.9536L21.9647 16.2626C22.0246 16.1246 22.0845 15.9916 22.1443 15.8635C22.2042 15.7354 22.2841 15.6122 22.3839 15.494H21.1862ZM27.3543 15.6122C26.7155 15.3757 26.0967 15.4053 25.4979 15.7009C24.899 15.9965 24.4798 16.4596 24.2403 17.0903L18.9106 31.5162C18.671 32.1469 18.691 32.7627 18.9704 33.3638C19.2499 33.9649 19.709 34.3738 20.3478 34.5906L29.3904 37.8423C30.0292 38.0788 30.648 38.0493 31.2468 37.7537C31.8457 37.458 32.2649 36.9949 32.5044 36.3643L37.8342 21.9383C38.0737 21.3077 38.0537 20.6918 37.7743 20.0908C37.4948 19.4897 37.0357 19.0807 36.3969 18.864L27.3543 15.6122ZM24.7793 29.6834C25.1186 29.6834 25.4031 29.7967 25.6326 30.0234C25.8622 30.25 25.977 30.5308 25.977 30.8659C25.977 31.2009 25.8622 31.4817 25.6326 31.7084C25.4031 31.935 25.1186 32.0483 24.7793 32.0483C24.4399 32.0483 24.1555 31.935 23.9259 31.7084C23.6964 31.4817 23.5816 31.2009 23.5816 30.8659C23.5816 30.5308 23.6964 30.25 23.9259 30.0234C24.1555 29.7967 24.4399 29.6834 24.7793 29.6834Z\" fill=\"#8B64C8\"></path>\n</svg>",
+            "title2": "Loram Ipsum Is Simply Text.",
+            "subtext2": "It is a long established fact that a reader will be \ndistracted by the readable content of a page \nwhen looking at its layout. The point of using \nLorem Ipsum is dummy text.",
+            "svgicon3": "<svg width=\"52\" height=\"52\" viewbox=\"0 0 52 52\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<circle cx=\"26\" cy=\"26\" r=\"26\" fill=\"#DDE0FF\"></circle>\n<path d=\"M28.4919 36.3667C28.0697 36.7889 27.5465 37 26.9224 37C26.2983 37 25.7751 36.7889 25.3529 36.3667L15.6608 26.6746C15.4589 26.4727 15.2983 26.234 15.179 25.9587C15.0597 25.6834 15 25.3897 15 25.0776V17.2028C15 16.597 15.2157 16.0784 15.6471 15.6471C16.0784 15.2157 16.597 15 17.2028 15H25.0776C25.3897 15 25.6834 15.0597 25.9587 15.179C26.234 15.2983 26.4727 15.4589 26.6746 15.6608L36.3667 25.3805C36.7889 25.8027 37 26.3212 37 26.9362C37 27.5511 36.7889 28.0697 36.3667 28.4919L28.4919 36.3667ZM19.9562 21.6083C20.4151 21.6083 20.8052 21.4476 21.1264 21.1264C21.4476 20.8052 21.6083 20.4151 21.6083 19.9562C21.6083 19.4973 21.4476 19.1072 21.1264 18.786C20.8052 18.4647 20.4151 18.3041 19.9562 18.3041C19.4973 18.3041 19.1072 18.4647 18.786 18.786C18.4647 19.1072 18.3041 19.4973 18.3041 19.9562C18.3041 20.4151 18.4647 20.8052 18.786 21.1264C19.1072 21.4476 19.4973 21.6083 19.9562 21.6083Z\" fill=\"#3B4181\"></path>\n</svg>",
+            "title3": "Loram Ipsum Is Simply Text.",
+            "subtext3": "It is a long established fact that a reader will be \ndistracted by the readable content of a page \nwhen looking at its layout. The point of using \nLorem Ipsum is dummy text.",
+            "svgicon4": "<svg width=\"52\" height=\"52\" viewbox=\"0 0 52 52\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<circle cx=\"26\" cy=\"26\" r=\"26\" fill=\"#FFECEC\"></circle>\n<path d=\"M16.3954 18.0954L15.3774 18.5092C14.7585 18.7654 14.3443 19.2088 14.1347 19.8395C13.9251 20.4701 13.9601 21.0909 14.2395 21.7018L16.3954 26.3134V18.0954ZM21.1862 15.494C20.5274 15.494 19.9635 15.7255 19.4944 16.1887C19.0253 16.6518 18.7908 17.2085 18.7908 17.8589V24.9536L21.9647 16.2626C22.0246 16.1246 22.0845 15.9916 22.1443 15.8635C22.2042 15.7354 22.2841 15.6122 22.3839 15.494H21.1862ZM27.3543 15.6122C26.7155 15.3757 26.0967 15.4053 25.4979 15.7009C24.899 15.9965 24.4798 16.4596 24.2403 17.0903L18.9106 31.5162C18.671 32.1469 18.691 32.7627 18.9704 33.3638C19.2499 33.9649 19.709 34.3738 20.3478 34.5906L29.3904 37.8423C30.0292 38.0788 30.648 38.0493 31.2468 37.7537C31.8457 37.458 32.2649 36.9949 32.5044 36.3643L37.8342 21.9383C38.0737 21.3077 38.0537 20.6918 37.7743 20.0908C37.4948 19.4897 37.0357 19.0807 36.3969 18.864L27.3543 15.6122ZM24.7793 29.6834C25.1186 29.6834 25.4031 29.7967 25.6326 30.0234C25.8622 30.25 25.977 30.5308 25.977 30.8659C25.977 31.2009 25.8622 31.4817 25.6326 31.7084C25.4031 31.935 25.1186 32.0483 24.7793 32.0483C24.4399 32.0483 24.1555 31.935 23.9259 31.7084C23.6964 31.4817 23.5816 31.2009 23.5816 30.8659C23.5816 30.5308 23.6964 30.25 23.9259 30.0234C24.1555 29.7967 24.4399 29.6834 24.7793 29.6834Z\" fill=\"#884141\"></path>\n</svg>",
+            "title4": "Loram Ipsum Is Simply Text.",
+            "subtext4": "It is a long established fact that a reader will be \ndistracted by the readable content of a page \nwhen looking at its layout. The point of using \nLorem Ipsum is dummy text."
+          }
+        },
+        "info_dBBerq": {
+          "type": "info",
+          "disabled": true,
+          "settings": {
+            "tabtitle": "Standy Card",
+            "img1": "shopify://shop_images/qlem_card_1.png",
+            "img2": "shopify://shop_images/qlem_card_1.png",
+            "img3": "shopify://shop_images/qlem_card_1.png",
+            "btntext": "Buy Now",
+            "btnurl": "#",
+            "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the \nindustry's standard dummy text ever since the 1500s, when an unknown printer.",
+            "svgicon1": "<svg width=\"52\" height=\"52\" viewbox=\"0 0 52 52\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<circle cx=\"26\" cy=\"26\" r=\"26\" fill=\"#EEE3FF\"></circle>\n<path d=\"M16.3954 18.0954L15.3774 18.5092C14.7585 18.7654 14.3443 19.2088 14.1347 19.8395C13.9251 20.4701 13.9601 21.0909 14.2395 21.7018L16.3954 26.3134V18.0954ZM21.1862 15.494C20.5274 15.494 19.9635 15.7255 19.4944 16.1887C19.0253 16.6518 18.7908 17.2085 18.7908 17.8589V24.9536L21.9647 16.2626C22.0246 16.1246 22.0845 15.9916 22.1443 15.8635C22.2042 15.7354 22.2841 15.6122 22.3839 15.494H21.1862ZM27.3543 15.6122C26.7155 15.3757 26.0967 15.4053 25.4979 15.7009C24.899 15.9965 24.4798 16.4596 24.2403 17.0903L18.9106 31.5162C18.671 32.1469 18.691 32.7627 18.9704 33.3638C19.2499 33.9649 19.709 34.3738 20.3478 34.5906L29.3904 37.8423C30.0292 38.0788 30.648 38.0493 31.2468 37.7537C31.8457 37.458 32.2649 36.9949 32.5044 36.3643L37.8342 21.9383C38.0737 21.3077 38.0537 20.6918 37.7743 20.0908C37.4948 19.4897 37.0357 19.0807 36.3969 18.864L27.3543 15.6122ZM24.7793 29.6834C25.1186 29.6834 25.4031 29.7967 25.6326 30.0234C25.8622 30.25 25.977 30.5308 25.977 30.8659C25.977 31.2009 25.8622 31.4817 25.6326 31.7084C25.4031 31.935 25.1186 32.0483 24.7793 32.0483C24.4399 32.0483 24.1555 31.935 23.9259 31.7084C23.6964 31.4817 23.5816 31.2009 23.5816 30.8659C23.5816 30.5308 23.6964 30.25 23.9259 30.0234C24.1555 29.7967 24.4399 29.6834 24.7793 29.6834Z\" fill=\"#8B64C8\"></path>\n</svg>",
+            "title1": "Loram Ipsum Is Simply Text.",
+            "subtext1": "It is a long established fact that a reader will be \ndistracted by the readable content of a page \nwhen looking at its layout. The point of using \nLorem Ipsum is dummy text.",
+            "svgicon2": "<svg width=\"52\" height=\"52\" viewbox=\"0 0 52 52\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<circle cx=\"26\" cy=\"26\" r=\"26\" fill=\"#EEE3FF\"></circle>\n<path d=\"M16.3954 18.0954L15.3774 18.5092C14.7585 18.7654 14.3443 19.2088 14.1347 19.8395C13.9251 20.4701 13.9601 21.0909 14.2395 21.7018L16.3954 26.3134V18.0954ZM21.1862 15.494C20.5274 15.494 19.9635 15.7255 19.4944 16.1887C19.0253 16.6518 18.7908 17.2085 18.7908 17.8589V24.9536L21.9647 16.2626C22.0246 16.1246 22.0845 15.9916 22.1443 15.8635C22.2042 15.7354 22.2841 15.6122 22.3839 15.494H21.1862ZM27.3543 15.6122C26.7155 15.3757 26.0967 15.4053 25.4979 15.7009C24.899 15.9965 24.4798 16.4596 24.2403 17.0903L18.9106 31.5162C18.671 32.1469 18.691 32.7627 18.9704 33.3638C19.2499 33.9649 19.709 34.3738 20.3478 34.5906L29.3904 37.8423C30.0292 38.0788 30.648 38.0493 31.2468 37.7537C31.8457 37.458 32.2649 36.9949 32.5044 36.3643L37.8342 21.9383C38.0737 21.3077 38.0537 20.6918 37.7743 20.0908C37.4948 19.4897 37.0357 19.0807 36.3969 18.864L27.3543 15.6122ZM24.7793 29.6834C25.1186 29.6834 25.4031 29.7967 25.6326 30.0234C25.8622 30.25 25.977 30.5308 25.977 30.8659C25.977 31.2009 25.8622 31.4817 25.6326 31.7084C25.4031 31.935 25.1186 32.0483 24.7793 32.0483C24.4399 32.0483 24.1555 31.935 23.9259 31.7084C23.6964 31.4817 23.5816 31.2009 23.5816 30.8659C23.5816 30.5308 23.6964 30.25 23.9259 30.0234C24.1555 29.7967 24.4399 29.6834 24.7793 29.6834Z\" fill=\"#8B64C8\"></path>\n</svg>",
+            "title2": "Loram Ipsum Is Simply Text.",
+            "subtext2": "It is a long established fact that a reader will be \ndistracted by the readable content of a page \nwhen looking at its layout. The point of using \nLorem Ipsum is dummy text.",
+            "svgicon3": "<svg width=\"52\" height=\"52\" viewbox=\"0 0 52 52\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<circle cx=\"26\" cy=\"26\" r=\"26\" fill=\"#DDE0FF\"></circle>\n<path d=\"M28.4919 36.3667C28.0697 36.7889 27.5465 37 26.9224 37C26.2983 37 25.7751 36.7889 25.3529 36.3667L15.6608 26.6746C15.4589 26.4727 15.2983 26.234 15.179 25.9587C15.0597 25.6834 15 25.3897 15 25.0776V17.2028C15 16.597 15.2157 16.0784 15.6471 15.6471C16.0784 15.2157 16.597 15 17.2028 15H25.0776C25.3897 15 25.6834 15.0597 25.9587 15.179C26.234 15.2983 26.4727 15.4589 26.6746 15.6608L36.3667 25.3805C36.7889 25.8027 37 26.3212 37 26.9362C37 27.5511 36.7889 28.0697 36.3667 28.4919L28.4919 36.3667ZM19.9562 21.6083C20.4151 21.6083 20.8052 21.4476 21.1264 21.1264C21.4476 20.8052 21.6083 20.4151 21.6083 19.9562C21.6083 19.4973 21.4476 19.1072 21.1264 18.786C20.8052 18.4647 20.4151 18.3041 19.9562 18.3041C19.4973 18.3041 19.1072 18.4647 18.786 18.786C18.4647 19.1072 18.3041 19.4973 18.3041 19.9562C18.3041 20.4151 18.4647 20.8052 18.786 21.1264C19.1072 21.4476 19.4973 21.6083 19.9562 21.6083Z\" fill=\"#3B4181\"></path>\n</svg>",
+            "title3": "Loram Ipsum Is Simply Text.",
+            "subtext3": "It is a long established fact that a reader will be \ndistracted by the readable content of a page \nwhen looking at its layout. The point of using \nLorem Ipsum is dummy text.",
+            "svgicon4": "<svg width=\"52\" height=\"52\" viewbox=\"0 0 52 52\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<circle cx=\"26\" cy=\"26\" r=\"26\" fill=\"#FFECEC\"></circle>\n<path d=\"M16.3954 18.0954L15.3774 18.5092C14.7585 18.7654 14.3443 19.2088 14.1347 19.8395C13.9251 20.4701 13.9601 21.0909 14.2395 21.7018L16.3954 26.3134V18.0954ZM21.1862 15.494C20.5274 15.494 19.9635 15.7255 19.4944 16.1887C19.0253 16.6518 18.7908 17.2085 18.7908 17.8589V24.9536L21.9647 16.2626C22.0246 16.1246 22.0845 15.9916 22.1443 15.8635C22.2042 15.7354 22.2841 15.6122 22.3839 15.494H21.1862ZM27.3543 15.6122C26.7155 15.3757 26.0967 15.4053 25.4979 15.7009C24.899 15.9965 24.4798 16.4596 24.2403 17.0903L18.9106 31.5162C18.671 32.1469 18.691 32.7627 18.9704 33.3638C19.2499 33.9649 19.709 34.3738 20.3478 34.5906L29.3904 37.8423C30.0292 38.0788 30.648 38.0493 31.2468 37.7537C31.8457 37.458 32.2649 36.9949 32.5044 36.3643L37.8342 21.9383C38.0737 21.3077 38.0537 20.6918 37.7743 20.0908C37.4948 19.4897 37.0357 19.0807 36.3969 18.864L27.3543 15.6122ZM24.7793 29.6834C25.1186 29.6834 25.4031 29.7967 25.6326 30.0234C25.8622 30.25 25.977 30.5308 25.977 30.8659C25.977 31.2009 25.8622 31.4817 25.6326 31.7084C25.4031 31.935 25.1186 32.0483 24.7793 32.0483C24.4399 32.0483 24.1555 31.935 23.9259 31.7084C23.6964 31.4817 23.5816 31.2009 23.5816 30.8659C23.5816 30.5308 23.6964 30.25 23.9259 30.0234C24.1555 29.7967 24.4399 29.6834 24.7793 29.6834Z\" fill=\"#884141\"></path>\n</svg>",
+            "title4": "Loram Ipsum Is Simply Text.",
+            "subtext4": "It is a long established fact that a reader will be \ndistracted by the readable content of a page \nwhen looking at its layout. The point of using \nLorem Ipsum is dummy text."
+          }
+        },
+        "info_7XJNU9": {
+          "type": "info",
+          "disabled": true,
+          "settings": {
+            "tabtitle": "Networking Kit",
+            "img1": "shopify://shop_images/qlem_card_1.png",
+            "img2": "shopify://shop_images/qlem_card_1.png",
+            "img3": "shopify://shop_images/qlem_card_1.png",
+            "btntext": "Buy Now",
+            "btnurl": "#",
+            "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the \nindustry's standard dummy text ever since the 1500s, when an unknown printer.",
+            "svgicon1": "<svg width=\"52\" height=\"52\" viewbox=\"0 0 52 52\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<circle cx=\"26\" cy=\"26\" r=\"26\" fill=\"#EEE3FF\"></circle>\n<path d=\"M16.3954 18.0954L15.3774 18.5092C14.7585 18.7654 14.3443 19.2088 14.1347 19.8395C13.9251 20.4701 13.9601 21.0909 14.2395 21.7018L16.3954 26.3134V18.0954ZM21.1862 15.494C20.5274 15.494 19.9635 15.7255 19.4944 16.1887C19.0253 16.6518 18.7908 17.2085 18.7908 17.8589V24.9536L21.9647 16.2626C22.0246 16.1246 22.0845 15.9916 22.1443 15.8635C22.2042 15.7354 22.2841 15.6122 22.3839 15.494H21.1862ZM27.3543 15.6122C26.7155 15.3757 26.0967 15.4053 25.4979 15.7009C24.899 15.9965 24.4798 16.4596 24.2403 17.0903L18.9106 31.5162C18.671 32.1469 18.691 32.7627 18.9704 33.3638C19.2499 33.9649 19.709 34.3738 20.3478 34.5906L29.3904 37.8423C30.0292 38.0788 30.648 38.0493 31.2468 37.7537C31.8457 37.458 32.2649 36.9949 32.5044 36.3643L37.8342 21.9383C38.0737 21.3077 38.0537 20.6918 37.7743 20.0908C37.4948 19.4897 37.0357 19.0807 36.3969 18.864L27.3543 15.6122ZM24.7793 29.6834C25.1186 29.6834 25.4031 29.7967 25.6326 30.0234C25.8622 30.25 25.977 30.5308 25.977 30.8659C25.977 31.2009 25.8622 31.4817 25.6326 31.7084C25.4031 31.935 25.1186 32.0483 24.7793 32.0483C24.4399 32.0483 24.1555 31.935 23.9259 31.7084C23.6964 31.4817 23.5816 31.2009 23.5816 30.8659C23.5816 30.5308 23.6964 30.25 23.9259 30.0234C24.1555 29.7967 24.4399 29.6834 24.7793 29.6834Z\" fill=\"#8B64C8\"></path>\n</svg>",
+            "title1": "Loram Ipsum Is Simply Text.",
+            "subtext1": "It is a long established fact that a reader will be \ndistracted by the readable content of a page \nwhen looking at its layout. The point of using \nLorem Ipsum is dummy text.",
+            "svgicon2": "<svg width=\"52\" height=\"52\" viewbox=\"0 0 52 52\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<circle cx=\"26\" cy=\"26\" r=\"26\" fill=\"#EEE3FF\"></circle>\n<path d=\"M16.3954 18.0954L15.3774 18.5092C14.7585 18.7654 14.3443 19.2088 14.1347 19.8395C13.9251 20.4701 13.9601 21.0909 14.2395 21.7018L16.3954 26.3134V18.0954ZM21.1862 15.494C20.5274 15.494 19.9635 15.7255 19.4944 16.1887C19.0253 16.6518 18.7908 17.2085 18.7908 17.8589V24.9536L21.9647 16.2626C22.0246 16.1246 22.0845 15.9916 22.1443 15.8635C22.2042 15.7354 22.2841 15.6122 22.3839 15.494H21.1862ZM27.3543 15.6122C26.7155 15.3757 26.0967 15.4053 25.4979 15.7009C24.899 15.9965 24.4798 16.4596 24.2403 17.0903L18.9106 31.5162C18.671 32.1469 18.691 32.7627 18.9704 33.3638C19.2499 33.9649 19.709 34.3738 20.3478 34.5906L29.3904 37.8423C30.0292 38.0788 30.648 38.0493 31.2468 37.7537C31.8457 37.458 32.2649 36.9949 32.5044 36.3643L37.8342 21.9383C38.0737 21.3077 38.0537 20.6918 37.7743 20.0908C37.4948 19.4897 37.0357 19.0807 36.3969 18.864L27.3543 15.6122ZM24.7793 29.6834C25.1186 29.6834 25.4031 29.7967 25.6326 30.0234C25.8622 30.25 25.977 30.5308 25.977 30.8659C25.977 31.2009 25.8622 31.4817 25.6326 31.7084C25.4031 31.935 25.1186 32.0483 24.7793 32.0483C24.4399 32.0483 24.1555 31.935 23.9259 31.7084C23.6964 31.4817 23.5816 31.2009 23.5816 30.8659C23.5816 30.5308 23.6964 30.25 23.9259 30.0234C24.1555 29.7967 24.4399 29.6834 24.7793 29.6834Z\" fill=\"#8B64C8\"></path>\n</svg>",
+            "title2": "Loram Ipsum Is Simply Text.",
+            "subtext2": "It is a long established fact that a reader will be \ndistracted by the readable content of a page \nwhen looking at its layout. The point of using \nLorem Ipsum is dummy text.",
+            "svgicon3": "<svg width=\"52\" height=\"52\" viewbox=\"0 0 52 52\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<circle cx=\"26\" cy=\"26\" r=\"26\" fill=\"#DDE0FF\"></circle>\n<path d=\"M28.4919 36.3667C28.0697 36.7889 27.5465 37 26.9224 37C26.2983 37 25.7751 36.7889 25.3529 36.3667L15.6608 26.6746C15.4589 26.4727 15.2983 26.234 15.179 25.9587C15.0597 25.6834 15 25.3897 15 25.0776V17.2028C15 16.597 15.2157 16.0784 15.6471 15.6471C16.0784 15.2157 16.597 15 17.2028 15H25.0776C25.3897 15 25.6834 15.0597 25.9587 15.179C26.234 15.2983 26.4727 15.4589 26.6746 15.6608L36.3667 25.3805C36.7889 25.8027 37 26.3212 37 26.9362C37 27.5511 36.7889 28.0697 36.3667 28.4919L28.4919 36.3667ZM19.9562 21.6083C20.4151 21.6083 20.8052 21.4476 21.1264 21.1264C21.4476 20.8052 21.6083 20.4151 21.6083 19.9562C21.6083 19.4973 21.4476 19.1072 21.1264 18.786C20.8052 18.4647 20.4151 18.3041 19.9562 18.3041C19.4973 18.3041 19.1072 18.4647 18.786 18.786C18.4647 19.1072 18.3041 19.4973 18.3041 19.9562C18.3041 20.4151 18.4647 20.8052 18.786 21.1264C19.1072 21.4476 19.4973 21.6083 19.9562 21.6083Z\" fill=\"#3B4181\"></path>\n</svg>",
+            "title3": "Loram Ipsum Is Simply Text.",
+            "subtext3": "It is a long established fact that a reader will be \ndistracted by the readable content of a page \nwhen looking at its layout. The point of using \nLorem Ipsum is dummy text.",
+            "svgicon4": "<svg width=\"52\" height=\"52\" viewbox=\"0 0 52 52\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<circle cx=\"26\" cy=\"26\" r=\"26\" fill=\"#FFECEC\"></circle>\n<path d=\"M16.3954 18.0954L15.3774 18.5092C14.7585 18.7654 14.3443 19.2088 14.1347 19.8395C13.9251 20.4701 13.9601 21.0909 14.2395 21.7018L16.3954 26.3134V18.0954ZM21.1862 15.494C20.5274 15.494 19.9635 15.7255 19.4944 16.1887C19.0253 16.6518 18.7908 17.2085 18.7908 17.8589V24.9536L21.9647 16.2626C22.0246 16.1246 22.0845 15.9916 22.1443 15.8635C22.2042 15.7354 22.2841 15.6122 22.3839 15.494H21.1862ZM27.3543 15.6122C26.7155 15.3757 26.0967 15.4053 25.4979 15.7009C24.899 15.9965 24.4798 16.4596 24.2403 17.0903L18.9106 31.5162C18.671 32.1469 18.691 32.7627 18.9704 33.3638C19.2499 33.9649 19.709 34.3738 20.3478 34.5906L29.3904 37.8423C30.0292 38.0788 30.648 38.0493 31.2468 37.7537C31.8457 37.458 32.2649 36.9949 32.5044 36.3643L37.8342 21.9383C38.0737 21.3077 38.0537 20.6918 37.7743 20.0908C37.4948 19.4897 37.0357 19.0807 36.3969 18.864L27.3543 15.6122ZM24.7793 29.6834C25.1186 29.6834 25.4031 29.7967 25.6326 30.0234C25.8622 30.25 25.977 30.5308 25.977 30.8659C25.977 31.2009 25.8622 31.4817 25.6326 31.7084C25.4031 31.935 25.1186 32.0483 24.7793 32.0483C24.4399 32.0483 24.1555 31.935 23.9259 31.7084C23.6964 31.4817 23.5816 31.2009 23.5816 30.8659C23.5816 30.5308 23.6964 30.25 23.9259 30.0234C24.1555 29.7967 24.4399 29.6834 24.7793 29.6834Z\" fill=\"#884141\"></path>\n</svg>",
+            "title4": "Loram Ipsum Is Simply Text.",
+            "subtext4": "It is a long established fact that a reader will be \ndistracted by the readable content of a page \nwhen looking at its layout. The point of using \nLorem Ipsum is dummy text."
+          }
+        }
+      },
+      "block_order": [
+        "info_zLGMW7",
+        "info_XzCHNA",
+        "info_TthwHT",
+        "info_n6rRmz",
+        "info_dBBerq",
+        "info_7XJNU9"
+      ],
+      "settings": {
+        "title": "Qlem Digital Business Cards",
+        "subtext": ""
+      }
+    },
+    "respose_section_mixYJ6": {
+      "type": "respose-section",
+      "settings": {
+        "color": "#081626",
+        "img1": "shopify://shop_images/respose-1.png",
+        "img2": "shopify://shop_images/respose-2.png",
+        "img3": "shopify://shop_images/respose-3.png"
+      }
+    },
+    "typesetting_section_f93xHc": {
+      "type": "typesetting-section",
+      "settings": {
+        "bgimg": "shopify://shop_images/typesetting-bg.png",
+        "img": "shopify://shop_images/mobile-img.png",
+        "title": "Download the QLEM App",
+        "desc": "Take your networking to the next level with the QLEM app—completely free! Easily manage your digital business card, update your profile, and share your information with just a tap. Available on both iOS and Android.",
+        "gimg": "shopify://shop_images/googlestore.png",
+        "gurl": "https://play.google.com/store/apps/details?id=com.qlem.nfc.smartcard.qr&hl=en_IN",
+        "aimg": "shopify://shop_images/appstore.png",
+        "aurl": "https://apps.apple.com/in/app/qlem/id6502877166"
+      }
+    },
+    "ql_img_text_KMHxqD": {
+      "type": "QL-img-text",
+      "settings": {
+        "bg_img": "shopify://shop_images/community-bg.png",
+        "image": "shopify://shop_images/object_img.png",
+        "title": "Join the QLEM WhatsApp Community",
+        "desc": "Join the exclusive QLEM WhatsApp community to receive the latest updates, exclusive offers, and valuable business insights. Stay informed and enhance your networking journey with QLEM!",
+        "btn_url": "https://chat.whatsapp.com/IQeuwB2mRfrCHydcfNL5t5",
+        "btn_text": "Join Now"
+      }
+    },
+    "custom_review_Jcidpd": {
+      "type": "custom-review",
+      "blocks": {
+        "review_block_LfEzyR": {
+          "type": "review_block",
+          "settings": {
+            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"38\" height=\"38\" viewbox=\"0 0 38 38\" fill=\"none\">\n  <path d=\"M13.2017 19.001H7.40332V14.3623C7.40332 11.8038 9.48345 9.72363 12.042 9.72363H12.6218C13.5857 9.72363 14.3613 8.94812 14.3613 7.98409V4.50516C14.3613 3.54121 13.5858 2.76562 12.6218 2.76562H12.042C5.63484 2.76562 0.445312 7.95515 0.445312 14.3623V31.7573C0.445312 33.678 2.00361 35.2363 3.92432 35.2363H13.2017C15.1224 35.2363 16.6807 33.678 16.6807 31.7573V22.48C16.6807 20.5593 15.1224 19.001 13.2017 19.001Z\" fill=\"#FFC107\"></path>\n  <path d=\"M34.0757 19.001H28.2773V14.3623C28.2773 11.8038 30.3575 9.72363 32.916 9.72363H33.4958C34.4598 9.72363 35.2354 8.94812 35.2354 7.98409V4.50516C35.2354 3.54121 34.4598 2.76562 33.4958 2.76562H32.916C26.5089 2.76562 21.3193 7.95515 21.3193 14.3623V31.7573C21.3193 33.678 22.8776 35.2363 24.7983 35.2363H34.0757C35.9964 35.2363 37.5547 33.678 37.5547 31.7573V22.48C37.5547 20.5593 35.9964 19.001 34.0757 19.001Z\" fill=\"#FFC107\"></path>\n</svg>",
+            "review_text": "The digital visiting card is sleek, professional, and easy to share, reflecting our innovative, tech-driven brand. It’s a convenient, sustainable solution that enhances our professionalism. Thank you for this excellent tool!",
+            "image": "shopify://shop_images/default-avatar-profile-icon-social-media-user-image-gray-avatar-icon-blank-profile-silhouette-illustration-vector.jpg",
+            "name": "Harshal Patel",
+            "position": "CPA Texas, USA",
+            "star_icon": "<svg width=\"106\" height=\"18\" viewbox=\"0 0 106 18\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<g clip-path=\"url(#clip0_1_1248)\">\n<path d=\"M17.9531 6.90521C17.8352 6.54073 17.512 6.28186 17.1295 6.24739L11.9342 5.77565L9.87984 0.967224C9.72836 0.614828 9.38338 0.386719 9.00009 0.386719C8.61679 0.386719 8.27181 0.614828 8.12034 0.968048L6.06598 5.77565L0.869862 6.24739C0.488078 6.28268 0.165621 6.54073 0.0471028 6.90521C-0.0714152 7.26969 0.0380388 7.66947 0.326849 7.92147L4.25387 11.3655L3.09589 16.4664C3.01115 16.8415 3.15672 17.2292 3.46792 17.4541C3.63519 17.575 3.83089 17.6365 4.02824 17.6365C4.19839 17.6365 4.36717 17.5907 4.51865 17.5L9.00009 14.8216L13.4799 17.5C13.8077 17.6972 14.2209 17.6792 14.5314 17.4541C14.8428 17.2285 14.9882 16.8407 14.9035 16.4664L13.7455 11.3655L17.6725 7.92216C17.9613 7.66947 18.0716 7.27038 17.9531 6.90521Z\" fill=\"#FFC107\"></path>\n</g>\n<g clip-path=\"url(#clip1_1_1248)\">\n<path d=\"M39.9531 6.90521C39.8352 6.54073 39.512 6.28186 39.1295 6.24739L33.9342 5.77565L31.8798 0.967224C31.7284 0.614828 31.3834 0.386719 31.0001 0.386719C30.6168 0.386719 30.2718 0.614828 30.1203 0.968048L28.066 5.77565L22.8699 6.24739C22.4881 6.28268 22.1656 6.54073 22.0471 6.90521C21.9286 7.26969 22.038 7.66947 22.3268 7.92147L26.2539 11.3655L25.0959 16.4664C25.0112 16.8415 25.1567 17.2292 25.4679 17.4541C25.6352 17.575 25.8309 17.6365 26.0282 17.6365C26.1984 17.6365 26.3672 17.5907 26.5187 17.5L31.0001 14.8216L35.4799 17.5C35.8077 17.6972 36.2209 17.6792 36.5314 17.4541C36.8428 17.2285 36.9882 16.8407 36.9035 16.4664L35.7455 11.3655L39.6725 7.92216C39.9613 7.66947 40.0716 7.27038 39.9531 6.90521Z\" fill=\"#FFC107\"></path>\n</g>\n<g clip-path=\"url(#clip2_1_1248)\">\n<path d=\"M61.9531 6.90521C61.8352 6.54073 61.512 6.28186 61.1295 6.24739L55.9342 5.77565L53.8798 0.967224C53.7284 0.614828 53.3834 0.386719 53.0001 0.386719C52.6168 0.386719 52.2718 0.614828 52.1203 0.968048L50.066 5.77565L44.8699 6.24739C44.4881 6.28268 44.1656 6.54073 44.0471 6.90521C43.9286 7.26969 44.038 7.66947 44.3268 7.92147L48.2539 11.3655L47.0959 16.4664C47.0112 16.8415 47.1567 17.2292 47.4679 17.4541C47.6352 17.575 47.8309 17.6365 48.0282 17.6365C48.1984 17.6365 48.3672 17.5907 48.5187 17.5L53.0001 14.8216L57.4799 17.5C57.8077 17.6972 58.2209 17.6792 58.5314 17.4541C58.8428 17.2285 58.9882 16.8407 58.9035 16.4664L57.7455 11.3655L61.6725 7.92216C61.9613 7.66947 62.0716 7.27038 61.9531 6.90521Z\" fill=\"#FFC107\"></path>\n</g>\n<g clip-path=\"url(#clip3_1_1248)\">\n<path d=\"M83.9531 6.90521C83.8352 6.54073 83.512 6.28186 83.1295 6.24739L77.9342 5.77565L75.8798 0.967224C75.7284 0.614828 75.3834 0.386719 75.0001 0.386719C74.6168 0.386719 74.2718 0.614828 74.1203 0.968048L72.066 5.77565L66.8699 6.24739C66.4881 6.28268 66.1656 6.54073 66.0471 6.90521C65.9286 7.26969 66.038 7.66947 66.3268 7.92147L70.2539 11.3655L69.0959 16.4664C69.0112 16.8415 69.1567 17.2292 69.4679 17.4541C69.6352 17.575 69.8309 17.6365 70.0282 17.6365C70.1984 17.6365 70.3672 17.5907 70.5187 17.5L75.0001 14.8216L79.4799 17.5C79.8077 17.6972 80.2209 17.6792 80.5314 17.4541C80.8428 17.2285 80.9882 16.8407 80.9035 16.4664L79.7455 11.3655L83.6725 7.92216C83.9613 7.66947 84.0716 7.27038 83.9531 6.90521Z\" fill=\"#FFC107\"></path>\n</g>\n<g clip-path=\"url(#clip4_1_1248)\">\n<path d=\"M105.953 6.90521C105.835 6.54073 105.512 6.28186 105.129 6.24739L99.9342 5.77565L97.8798 0.967224C97.7284 0.614828 97.3834 0.386719 97.0001 0.386719C96.6168 0.386719 96.2718 0.614828 96.1203 0.968048L94.066 5.77565L88.8699 6.24739C88.4881 6.28268 88.1656 6.54073 88.0471 6.90521C87.9286 7.26969 88.038 7.66947 88.3268 7.92147L92.2539 11.3655L91.0959 16.4664C91.0112 16.8415 91.1567 17.2292 91.4679 17.4541C91.6352 17.575 91.8309 17.6365 92.0282 17.6365C92.1984 17.6365 92.3672 17.5907 92.5187 17.5L97.0001 14.8216L101.48 17.5C101.808 17.6972 102.221 17.6792 102.531 17.4541C102.843 17.2285 102.988 16.8407 102.903 16.4664L101.745 11.3655L105.673 7.92216C105.961 7.66947 106.072 7.27038 105.953 6.90521Z\" fill=\"#FFC107\"></path>\n</g>\n<defs>\n<clippath id=\"clip0_1_1248\">\n<rect width=\"18\" height=\"18\" fill=\"white\"></rect>\n</clippath>\n<clippath id=\"clip1_1_1248\">\n<rect width=\"18\" height=\"18\" fill=\"white\" transform=\"translate(22)\"></rect>\n</clippath>\n<clippath id=\"clip2_1_1248\">\n<rect width=\"18\" height=\"18\" fill=\"white\" transform=\"translate(44)\"></rect>\n</clippath>\n<clippath id=\"clip3_1_1248\">\n<rect width=\"18\" height=\"18\" fill=\"white\" transform=\"translate(66)\"></rect>\n</clippath>\n<clippath id=\"clip4_1_1248\">\n<rect width=\"18\" height=\"18\" fill=\"white\" transform=\"translate(88)\"></rect>\n</clippath>\n</defs>\n</svg>"
+          }
+        },
+        "review_block_rQ3RDt": {
+          "type": "review_block",
+          "settings": {
+            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"38\" height=\"38\" viewbox=\"0 0 38 38\" fill=\"none\">\n  <path d=\"M13.2017 19.001H7.40332V14.3623C7.40332 11.8038 9.48345 9.72363 12.042 9.72363H12.6218C13.5857 9.72363 14.3613 8.94812 14.3613 7.98409V4.50516C14.3613 3.54121 13.5858 2.76562 12.6218 2.76562H12.042C5.63484 2.76562 0.445312 7.95515 0.445312 14.3623V31.7573C0.445312 33.678 2.00361 35.2363 3.92432 35.2363H13.2017C15.1224 35.2363 16.6807 33.678 16.6807 31.7573V22.48C16.6807 20.5593 15.1224 19.001 13.2017 19.001Z\" fill=\"#FFC107\"></path>\n  <path d=\"M34.0757 19.001H28.2773V14.3623C28.2773 11.8038 30.3575 9.72363 32.916 9.72363H33.4958C34.4598 9.72363 35.2354 8.94812 35.2354 7.98409V4.50516C35.2354 3.54121 34.4598 2.76562 33.4958 2.76562H32.916C26.5089 2.76562 21.3193 7.95515 21.3193 14.3623V31.7573C21.3193 33.678 22.8776 35.2363 24.7983 35.2363H34.0757C35.9964 35.2363 37.5547 33.678 37.5547 31.7573V22.48C37.5547 20.5593 35.9964 19.001 34.0757 19.001Z\" fill=\"#FFC107\"></path>\n</svg>",
+            "review_text": "The ability to customize my QLEM card with my logo and personal details is amazing. The NFC feature works flawlessly, and I love how I can manage everything through the app.",
+            "image": "shopify://shop_images/default-avatar-profile-icon-social-media-user-image-gray-avatar-icon-blank-profile-silhouette-illustration-vector.jpg",
+            "name": "Ajay Gupta",
+            "position": "Chartered Accountant",
+            "star_icon": "<svg width=\"106\" height=\"18\" viewbox=\"0 0 106 18\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<g clip-path=\"url(#clip0_1_1248)\">\n<path d=\"M17.9531 6.90521C17.8352 6.54073 17.512 6.28186 17.1295 6.24739L11.9342 5.77565L9.87984 0.967224C9.72836 0.614828 9.38338 0.386719 9.00009 0.386719C8.61679 0.386719 8.27181 0.614828 8.12034 0.968048L6.06598 5.77565L0.869862 6.24739C0.488078 6.28268 0.165621 6.54073 0.0471028 6.90521C-0.0714152 7.26969 0.0380388 7.66947 0.326849 7.92147L4.25387 11.3655L3.09589 16.4664C3.01115 16.8415 3.15672 17.2292 3.46792 17.4541C3.63519 17.575 3.83089 17.6365 4.02824 17.6365C4.19839 17.6365 4.36717 17.5907 4.51865 17.5L9.00009 14.8216L13.4799 17.5C13.8077 17.6972 14.2209 17.6792 14.5314 17.4541C14.8428 17.2285 14.9882 16.8407 14.9035 16.4664L13.7455 11.3655L17.6725 7.92216C17.9613 7.66947 18.0716 7.27038 17.9531 6.90521Z\" fill=\"#FFC107\"></path>\n</g>\n<g clip-path=\"url(#clip1_1_1248)\">\n<path d=\"M39.9531 6.90521C39.8352 6.54073 39.512 6.28186 39.1295 6.24739L33.9342 5.77565L31.8798 0.967224C31.7284 0.614828 31.3834 0.386719 31.0001 0.386719C30.6168 0.386719 30.2718 0.614828 30.1203 0.968048L28.066 5.77565L22.8699 6.24739C22.4881 6.28268 22.1656 6.54073 22.0471 6.90521C21.9286 7.26969 22.038 7.66947 22.3268 7.92147L26.2539 11.3655L25.0959 16.4664C25.0112 16.8415 25.1567 17.2292 25.4679 17.4541C25.6352 17.575 25.8309 17.6365 26.0282 17.6365C26.1984 17.6365 26.3672 17.5907 26.5187 17.5L31.0001 14.8216L35.4799 17.5C35.8077 17.6972 36.2209 17.6792 36.5314 17.4541C36.8428 17.2285 36.9882 16.8407 36.9035 16.4664L35.7455 11.3655L39.6725 7.92216C39.9613 7.66947 40.0716 7.27038 39.9531 6.90521Z\" fill=\"#FFC107\"></path>\n</g>\n<g clip-path=\"url(#clip2_1_1248)\">\n<path d=\"M61.9531 6.90521C61.8352 6.54073 61.512 6.28186 61.1295 6.24739L55.9342 5.77565L53.8798 0.967224C53.7284 0.614828 53.3834 0.386719 53.0001 0.386719C52.6168 0.386719 52.2718 0.614828 52.1203 0.968048L50.066 5.77565L44.8699 6.24739C44.4881 6.28268 44.1656 6.54073 44.0471 6.90521C43.9286 7.26969 44.038 7.66947 44.3268 7.92147L48.2539 11.3655L47.0959 16.4664C47.0112 16.8415 47.1567 17.2292 47.4679 17.4541C47.6352 17.575 47.8309 17.6365 48.0282 17.6365C48.1984 17.6365 48.3672 17.5907 48.5187 17.5L53.0001 14.8216L57.4799 17.5C57.8077 17.6972 58.2209 17.6792 58.5314 17.4541C58.8428 17.2285 58.9882 16.8407 58.9035 16.4664L57.7455 11.3655L61.6725 7.92216C61.9613 7.66947 62.0716 7.27038 61.9531 6.90521Z\" fill=\"#FFC107\"></path>\n</g>\n<g clip-path=\"url(#clip3_1_1248)\">\n<path d=\"M83.9531 6.90521C83.8352 6.54073 83.512 6.28186 83.1295 6.24739L77.9342 5.77565L75.8798 0.967224C75.7284 0.614828 75.3834 0.386719 75.0001 0.386719C74.6168 0.386719 74.2718 0.614828 74.1203 0.968048L72.066 5.77565L66.8699 6.24739C66.4881 6.28268 66.1656 6.54073 66.0471 6.90521C65.9286 7.26969 66.038 7.66947 66.3268 7.92147L70.2539 11.3655L69.0959 16.4664C69.0112 16.8415 69.1567 17.2292 69.4679 17.4541C69.6352 17.575 69.8309 17.6365 70.0282 17.6365C70.1984 17.6365 70.3672 17.5907 70.5187 17.5L75.0001 14.8216L79.4799 17.5C79.8077 17.6972 80.2209 17.6792 80.5314 17.4541C80.8428 17.2285 80.9882 16.8407 80.9035 16.4664L79.7455 11.3655L83.6725 7.92216C83.9613 7.66947 84.0716 7.27038 83.9531 6.90521Z\" fill=\"#FFC107\"></path>\n</g>\n<g clip-path=\"url(#clip4_1_1248)\">\n<path d=\"M105.953 6.90521C105.835 6.54073 105.512 6.28186 105.129 6.24739L99.9342 5.77565L97.8798 0.967224C97.7284 0.614828 97.3834 0.386719 97.0001 0.386719C96.6168 0.386719 96.2718 0.614828 96.1203 0.968048L94.066 5.77565L88.8699 6.24739C88.4881 6.28268 88.1656 6.54073 88.0471 6.90521C87.9286 7.26969 88.038 7.66947 88.3268 7.92147L92.2539 11.3655L91.0959 16.4664C91.0112 16.8415 91.1567 17.2292 91.4679 17.4541C91.6352 17.575 91.8309 17.6365 92.0282 17.6365C92.1984 17.6365 92.3672 17.5907 92.5187 17.5L97.0001 14.8216L101.48 17.5C101.808 17.6972 102.221 17.6792 102.531 17.4541C102.843 17.2285 102.988 16.8407 102.903 16.4664L101.745 11.3655L105.673 7.92216C105.961 7.66947 106.072 7.27038 105.953 6.90521Z\" fill=\"#FFC107\"></path>\n</g>\n<defs>\n<clippath id=\"clip0_1_1248\">\n<rect width=\"18\" height=\"18\" fill=\"white\"></rect>\n</clippath>\n<clippath id=\"clip1_1_1248\">\n<rect width=\"18\" height=\"18\" fill=\"white\" transform=\"translate(22)\"></rect>\n</clippath>\n<clippath id=\"clip2_1_1248\">\n<rect width=\"18\" height=\"18\" fill=\"white\" transform=\"translate(44)\"></rect>\n</clippath>\n<clippath id=\"clip3_1_1248\">\n<rect width=\"18\" height=\"18\" fill=\"white\" transform=\"translate(66)\"></rect>\n</clippath>\n<clippath id=\"clip4_1_1248\">\n<rect width=\"18\" height=\"18\" fill=\"white\" transform=\"translate(88)\"></rect>\n</clippath>\n</defs>\n</svg>"
+          }
+        },
+        "review_block_8XBBRB": {
+          "type": "review_block",
+          "settings": {
+            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"38\" height=\"38\" viewbox=\"0 0 38 38\" fill=\"none\">\n  <path d=\"M13.2017 19.001H7.40332V14.3623C7.40332 11.8038 9.48345 9.72363 12.042 9.72363H12.6218C13.5857 9.72363 14.3613 8.94812 14.3613 7.98409V4.50516C14.3613 3.54121 13.5858 2.76562 12.6218 2.76562H12.042C5.63484 2.76562 0.445312 7.95515 0.445312 14.3623V31.7573C0.445312 33.678 2.00361 35.2363 3.92432 35.2363H13.2017C15.1224 35.2363 16.6807 33.678 16.6807 31.7573V22.48C16.6807 20.5593 15.1224 19.001 13.2017 19.001Z\" fill=\"#FFC107\"></path>\n  <path d=\"M34.0757 19.001H28.2773V14.3623C28.2773 11.8038 30.3575 9.72363 32.916 9.72363H33.4958C34.4598 9.72363 35.2354 8.94812 35.2354 7.98409V4.50516C35.2354 3.54121 34.4598 2.76562 33.4958 2.76562H32.916C26.5089 2.76562 21.3193 7.95515 21.3193 14.3623V31.7573C21.3193 33.678 22.8776 35.2363 24.7983 35.2363H34.0757C35.9964 35.2363 37.5547 33.678 37.5547 31.7573V22.48C37.5547 20.5593 35.9964 19.001 34.0757 19.001Z\" fill=\"#FFC107\"></path>\n</svg>",
+            "review_text": "No more carrying a stack of paper business cards! QLEM’s digital solution is not just eco-friendly but also incredibly convenient. My clients and colleagues are impressed every time I use it.",
+            "image": "shopify://shop_images/default-avatar-profile-icon-social-media-user-image-gray-avatar-icon-blank-profile-silhouette-illustration-vector.jpg",
+            "name": "Hemal Patel",
+            "position": "HyFun Food",
+            "star_icon": "<svg width=\"106\" height=\"18\" viewbox=\"0 0 106 18\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<g clip-path=\"url(#clip0_1_1248)\">\n<path d=\"M17.9531 6.90521C17.8352 6.54073 17.512 6.28186 17.1295 6.24739L11.9342 5.77565L9.87984 0.967224C9.72836 0.614828 9.38338 0.386719 9.00009 0.386719C8.61679 0.386719 8.27181 0.614828 8.12034 0.968048L6.06598 5.77565L0.869862 6.24739C0.488078 6.28268 0.165621 6.54073 0.0471028 6.90521C-0.0714152 7.26969 0.0380388 7.66947 0.326849 7.92147L4.25387 11.3655L3.09589 16.4664C3.01115 16.8415 3.15672 17.2292 3.46792 17.4541C3.63519 17.575 3.83089 17.6365 4.02824 17.6365C4.19839 17.6365 4.36717 17.5907 4.51865 17.5L9.00009 14.8216L13.4799 17.5C13.8077 17.6972 14.2209 17.6792 14.5314 17.4541C14.8428 17.2285 14.9882 16.8407 14.9035 16.4664L13.7455 11.3655L17.6725 7.92216C17.9613 7.66947 18.0716 7.27038 17.9531 6.90521Z\" fill=\"#FFC107\"></path>\n</g>\n<g clip-path=\"url(#clip1_1_1248)\">\n<path d=\"M39.9531 6.90521C39.8352 6.54073 39.512 6.28186 39.1295 6.24739L33.9342 5.77565L31.8798 0.967224C31.7284 0.614828 31.3834 0.386719 31.0001 0.386719C30.6168 0.386719 30.2718 0.614828 30.1203 0.968048L28.066 5.77565L22.8699 6.24739C22.4881 6.28268 22.1656 6.54073 22.0471 6.90521C21.9286 7.26969 22.038 7.66947 22.3268 7.92147L26.2539 11.3655L25.0959 16.4664C25.0112 16.8415 25.1567 17.2292 25.4679 17.4541C25.6352 17.575 25.8309 17.6365 26.0282 17.6365C26.1984 17.6365 26.3672 17.5907 26.5187 17.5L31.0001 14.8216L35.4799 17.5C35.8077 17.6972 36.2209 17.6792 36.5314 17.4541C36.8428 17.2285 36.9882 16.8407 36.9035 16.4664L35.7455 11.3655L39.6725 7.92216C39.9613 7.66947 40.0716 7.27038 39.9531 6.90521Z\" fill=\"#FFC107\"></path>\n</g>\n<g clip-path=\"url(#clip2_1_1248)\">\n<path d=\"M61.9531 6.90521C61.8352 6.54073 61.512 6.28186 61.1295 6.24739L55.9342 5.77565L53.8798 0.967224C53.7284 0.614828 53.3834 0.386719 53.0001 0.386719C52.6168 0.386719 52.2718 0.614828 52.1203 0.968048L50.066 5.77565L44.8699 6.24739C44.4881 6.28268 44.1656 6.54073 44.0471 6.90521C43.9286 7.26969 44.038 7.66947 44.3268 7.92147L48.2539 11.3655L47.0959 16.4664C47.0112 16.8415 47.1567 17.2292 47.4679 17.4541C47.6352 17.575 47.8309 17.6365 48.0282 17.6365C48.1984 17.6365 48.3672 17.5907 48.5187 17.5L53.0001 14.8216L57.4799 17.5C57.8077 17.6972 58.2209 17.6792 58.5314 17.4541C58.8428 17.2285 58.9882 16.8407 58.9035 16.4664L57.7455 11.3655L61.6725 7.92216C61.9613 7.66947 62.0716 7.27038 61.9531 6.90521Z\" fill=\"#FFC107\"></path>\n</g>\n<g clip-path=\"url(#clip3_1_1248)\">\n<path d=\"M83.9531 6.90521C83.8352 6.54073 83.512 6.28186 83.1295 6.24739L77.9342 5.77565L75.8798 0.967224C75.7284 0.614828 75.3834 0.386719 75.0001 0.386719C74.6168 0.386719 74.2718 0.614828 74.1203 0.968048L72.066 5.77565L66.8699 6.24739C66.4881 6.28268 66.1656 6.54073 66.0471 6.90521C65.9286 7.26969 66.038 7.66947 66.3268 7.92147L70.2539 11.3655L69.0959 16.4664C69.0112 16.8415 69.1567 17.2292 69.4679 17.4541C69.6352 17.575 69.8309 17.6365 70.0282 17.6365C70.1984 17.6365 70.3672 17.5907 70.5187 17.5L75.0001 14.8216L79.4799 17.5C79.8077 17.6972 80.2209 17.6792 80.5314 17.4541C80.8428 17.2285 80.9882 16.8407 80.9035 16.4664L79.7455 11.3655L83.6725 7.92216C83.9613 7.66947 84.0716 7.27038 83.9531 6.90521Z\" fill=\"#FFC107\"></path>\n</g>\n<g clip-path=\"url(#clip4_1_1248)\">\n<path d=\"M105.953 6.90521C105.835 6.54073 105.512 6.28186 105.129 6.24739L99.9342 5.77565L97.8798 0.967224C97.7284 0.614828 97.3834 0.386719 97.0001 0.386719C96.6168 0.386719 96.2718 0.614828 96.1203 0.968048L94.066 5.77565L88.8699 6.24739C88.4881 6.28268 88.1656 6.54073 88.0471 6.90521C87.9286 7.26969 88.038 7.66947 88.3268 7.92147L92.2539 11.3655L91.0959 16.4664C91.0112 16.8415 91.1567 17.2292 91.4679 17.4541C91.6352 17.575 91.8309 17.6365 92.0282 17.6365C92.1984 17.6365 92.3672 17.5907 92.5187 17.5L97.0001 14.8216L101.48 17.5C101.808 17.6972 102.221 17.6792 102.531 17.4541C102.843 17.2285 102.988 16.8407 102.903 16.4664L101.745 11.3655L105.673 7.92216C105.961 7.66947 106.072 7.27038 105.953 6.90521Z\" fill=\"#FFC107\"></path>\n</g>\n<defs>\n<clippath id=\"clip0_1_1248\">\n<rect width=\"18\" height=\"18\" fill=\"white\"></rect>\n</clippath>\n<clippath id=\"clip1_1_1248\">\n<rect width=\"18\" height=\"18\" fill=\"white\" transform=\"translate(22)\"></rect>\n</clippath>\n<clippath id=\"clip2_1_1248\">\n<rect width=\"18\" height=\"18\" fill=\"white\" transform=\"translate(44)\"></rect>\n</clippath>\n<clippath id=\"clip3_1_1248\">\n<rect width=\"18\" height=\"18\" fill=\"white\" transform=\"translate(66)\"></rect>\n</clippath>\n<clippath id=\"clip4_1_1248\">\n<rect width=\"18\" height=\"18\" fill=\"white\" transform=\"translate(88)\"></rect>\n</clippath>\n</defs>\n</svg>"
+          }
+        },
+        "review_block_A8D6hc": {
+          "type": "review_block",
+          "settings": {
+            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"38\" height=\"38\" viewbox=\"0 0 38 38\" fill=\"none\">\n  <path d=\"M13.2017 19.001H7.40332V14.3623C7.40332 11.8038 9.48345 9.72363 12.042 9.72363H12.6218C13.5857 9.72363 14.3613 8.94812 14.3613 7.98409V4.50516C14.3613 3.54121 13.5858 2.76562 12.6218 2.76562H12.042C5.63484 2.76562 0.445312 7.95515 0.445312 14.3623V31.7573C0.445312 33.678 2.00361 35.2363 3.92432 35.2363H13.2017C15.1224 35.2363 16.6807 33.678 16.6807 31.7573V22.48C16.6807 20.5593 15.1224 19.001 13.2017 19.001Z\" fill=\"#FFC107\"></path>\n  <path d=\"M34.0757 19.001H28.2773V14.3623C28.2773 11.8038 30.3575 9.72363 32.916 9.72363H33.4958C34.4598 9.72363 35.2354 8.94812 35.2354 7.98409V4.50516C35.2354 3.54121 34.4598 2.76562 33.4958 2.76562H32.916C26.5089 2.76562 21.3193 7.95515 21.3193 14.3623V31.7573C21.3193 33.678 22.8776 35.2363 24.7983 35.2363H34.0757C35.9964 35.2363 37.5547 33.678 37.5547 31.7573V22.48C37.5547 20.5593 35.9964 19.001 34.0757 19.001Z\" fill=\"#FFC107\"></path>\n</svg>",
+            "review_text": "QLEM has revolutionized the way I connect with people! Sharing my contact details is so seamless now. The app is user-friendly, and the digital business card concept is brilliant.",
+            "image": "shopify://shop_images/default-avatar-profile-icon-social-media-user-image-gray-avatar-icon-blank-profile-silhouette-illustration-vector.jpg",
+            "name": "Nidhi Varma",
+            "position": "Artist",
+            "star_icon": "<svg width=\"106\" height=\"18\" viewbox=\"0 0 106 18\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<g clip-path=\"url(#clip0_1_1248)\">\n<path d=\"M17.9531 6.90521C17.8352 6.54073 17.512 6.28186 17.1295 6.24739L11.9342 5.77565L9.87984 0.967224C9.72836 0.614828 9.38338 0.386719 9.00009 0.386719C8.61679 0.386719 8.27181 0.614828 8.12034 0.968048L6.06598 5.77565L0.869862 6.24739C0.488078 6.28268 0.165621 6.54073 0.0471028 6.90521C-0.0714152 7.26969 0.0380388 7.66947 0.326849 7.92147L4.25387 11.3655L3.09589 16.4664C3.01115 16.8415 3.15672 17.2292 3.46792 17.4541C3.63519 17.575 3.83089 17.6365 4.02824 17.6365C4.19839 17.6365 4.36717 17.5907 4.51865 17.5L9.00009 14.8216L13.4799 17.5C13.8077 17.6972 14.2209 17.6792 14.5314 17.4541C14.8428 17.2285 14.9882 16.8407 14.9035 16.4664L13.7455 11.3655L17.6725 7.92216C17.9613 7.66947 18.0716 7.27038 17.9531 6.90521Z\" fill=\"#FFC107\"></path>\n</g>\n<g clip-path=\"url(#clip1_1_1248)\">\n<path d=\"M39.9531 6.90521C39.8352 6.54073 39.512 6.28186 39.1295 6.24739L33.9342 5.77565L31.8798 0.967224C31.7284 0.614828 31.3834 0.386719 31.0001 0.386719C30.6168 0.386719 30.2718 0.614828 30.1203 0.968048L28.066 5.77565L22.8699 6.24739C22.4881 6.28268 22.1656 6.54073 22.0471 6.90521C21.9286 7.26969 22.038 7.66947 22.3268 7.92147L26.2539 11.3655L25.0959 16.4664C25.0112 16.8415 25.1567 17.2292 25.4679 17.4541C25.6352 17.575 25.8309 17.6365 26.0282 17.6365C26.1984 17.6365 26.3672 17.5907 26.5187 17.5L31.0001 14.8216L35.4799 17.5C35.8077 17.6972 36.2209 17.6792 36.5314 17.4541C36.8428 17.2285 36.9882 16.8407 36.9035 16.4664L35.7455 11.3655L39.6725 7.92216C39.9613 7.66947 40.0716 7.27038 39.9531 6.90521Z\" fill=\"#FFC107\"></path>\n</g>\n<g clip-path=\"url(#clip2_1_1248)\">\n<path d=\"M61.9531 6.90521C61.8352 6.54073 61.512 6.28186 61.1295 6.24739L55.9342 5.77565L53.8798 0.967224C53.7284 0.614828 53.3834 0.386719 53.0001 0.386719C52.6168 0.386719 52.2718 0.614828 52.1203 0.968048L50.066 5.77565L44.8699 6.24739C44.4881 6.28268 44.1656 6.54073 44.0471 6.90521C43.9286 7.26969 44.038 7.66947 44.3268 7.92147L48.2539 11.3655L47.0959 16.4664C47.0112 16.8415 47.1567 17.2292 47.4679 17.4541C47.6352 17.575 47.8309 17.6365 48.0282 17.6365C48.1984 17.6365 48.3672 17.5907 48.5187 17.5L53.0001 14.8216L57.4799 17.5C57.8077 17.6972 58.2209 17.6792 58.5314 17.4541C58.8428 17.2285 58.9882 16.8407 58.9035 16.4664L57.7455 11.3655L61.6725 7.92216C61.9613 7.66947 62.0716 7.27038 61.9531 6.90521Z\" fill=\"#FFC107\"></path>\n</g>\n<g clip-path=\"url(#clip3_1_1248)\">\n<path d=\"M83.9531 6.90521C83.8352 6.54073 83.512 6.28186 83.1295 6.24739L77.9342 5.77565L75.8798 0.967224C75.7284 0.614828 75.3834 0.386719 75.0001 0.386719C74.6168 0.386719 74.2718 0.614828 74.1203 0.968048L72.066 5.77565L66.8699 6.24739C66.4881 6.28268 66.1656 6.54073 66.0471 6.90521C65.9286 7.26969 66.038 7.66947 66.3268 7.92147L70.2539 11.3655L69.0959 16.4664C69.0112 16.8415 69.1567 17.2292 69.4679 17.4541C69.6352 17.575 69.8309 17.6365 70.0282 17.6365C70.1984 17.6365 70.3672 17.5907 70.5187 17.5L75.0001 14.8216L79.4799 17.5C79.8077 17.6972 80.2209 17.6792 80.5314 17.4541C80.8428 17.2285 80.9882 16.8407 80.9035 16.4664L79.7455 11.3655L83.6725 7.92216C83.9613 7.66947 84.0716 7.27038 83.9531 6.90521Z\" fill=\"#FFC107\"></path>\n</g>\n<g clip-path=\"url(#clip4_1_1248)\">\n<path d=\"M105.953 6.90521C105.835 6.54073 105.512 6.28186 105.129 6.24739L99.9342 5.77565L97.8798 0.967224C97.7284 0.614828 97.3834 0.386719 97.0001 0.386719C96.6168 0.386719 96.2718 0.614828 96.1203 0.968048L94.066 5.77565L88.8699 6.24739C88.4881 6.28268 88.1656 6.54073 88.0471 6.90521C87.9286 7.26969 88.038 7.66947 88.3268 7.92147L92.2539 11.3655L91.0959 16.4664C91.0112 16.8415 91.1567 17.2292 91.4679 17.4541C91.6352 17.575 91.8309 17.6365 92.0282 17.6365C92.1984 17.6365 92.3672 17.5907 92.5187 17.5L97.0001 14.8216L101.48 17.5C101.808 17.6972 102.221 17.6792 102.531 17.4541C102.843 17.2285 102.988 16.8407 102.903 16.4664L101.745 11.3655L105.673 7.92216C105.961 7.66947 106.072 7.27038 105.953 6.90521Z\" fill=\"#FFC107\"></path>\n</g>\n<defs>\n<clippath id=\"clip0_1_1248\">\n<rect width=\"18\" height=\"18\" fill=\"white\"></rect>\n</clippath>\n<clippath id=\"clip1_1_1248\">\n<rect width=\"18\" height=\"18\" fill=\"white\" transform=\"translate(22)\"></rect>\n</clippath>\n<clippath id=\"clip2_1_1248\">\n<rect width=\"18\" height=\"18\" fill=\"white\" transform=\"translate(44)\"></rect>\n</clippath>\n<clippath id=\"clip3_1_1248\">\n<rect width=\"18\" height=\"18\" fill=\"white\" transform=\"translate(66)\"></rect>\n</clippath>\n<clippath id=\"clip4_1_1248\">\n<rect width=\"18\" height=\"18\" fill=\"white\" transform=\"translate(88)\"></rect>\n</clippath>\n</defs>\n</svg>"
+          }
+        },
+        "review_block_MWkrYc": {
+          "type": "review_block",
+          "settings": {
+            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"38\" height=\"38\" viewbox=\"0 0 38 38\" fill=\"none\">\n  <path d=\"M13.2017 19.001H7.40332V14.3623C7.40332 11.8038 9.48345 9.72363 12.042 9.72363H12.6218C13.5857 9.72363 14.3613 8.94812 14.3613 7.98409V4.50516C14.3613 3.54121 13.5858 2.76562 12.6218 2.76562H12.042C5.63484 2.76562 0.445312 7.95515 0.445312 14.3623V31.7573C0.445312 33.678 2.00361 35.2363 3.92432 35.2363H13.2017C15.1224 35.2363 16.6807 33.678 16.6807 31.7573V22.48C16.6807 20.5593 15.1224 19.001 13.2017 19.001Z\" fill=\"#FFC107\"></path>\n  <path d=\"M34.0757 19.001H28.2773V14.3623C28.2773 11.8038 30.3575 9.72363 32.916 9.72363H33.4958C34.4598 9.72363 35.2354 8.94812 35.2354 7.98409V4.50516C35.2354 3.54121 34.4598 2.76562 33.4958 2.76562H32.916C26.5089 2.76562 21.3193 7.95515 21.3193 14.3623V31.7573C21.3193 33.678 22.8776 35.2363 24.7983 35.2363H34.0757C35.9964 35.2363 37.5547 33.678 37.5547 31.7573V22.48C37.5547 20.5593 35.9964 19.001 34.0757 19.001Z\" fill=\"#FFC107\"></path>\n</svg>",
+            "review_text": "Switching to QLEM has been a game-changer for my business. It’s eco-friendly, modern, and makes sharing my contact details a breeze. A must-have for professionals!",
+            "image": "shopify://shop_images/default-avatar-profile-icon-social-media-user-image-gray-avatar-icon-blank-profile-silhouette-illustration-vector.jpg",
+            "name": "Bhavesh Patel",
+            "position": "Customize theme, Surat",
+            "star_icon": "<svg width=\"106\" height=\"18\" viewbox=\"0 0 106 18\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<g clip-path=\"url(#clip0_1_1248)\">\n<path d=\"M17.9531 6.90521C17.8352 6.54073 17.512 6.28186 17.1295 6.24739L11.9342 5.77565L9.87984 0.967224C9.72836 0.614828 9.38338 0.386719 9.00009 0.386719C8.61679 0.386719 8.27181 0.614828 8.12034 0.968048L6.06598 5.77565L0.869862 6.24739C0.488078 6.28268 0.165621 6.54073 0.0471028 6.90521C-0.0714152 7.26969 0.0380388 7.66947 0.326849 7.92147L4.25387 11.3655L3.09589 16.4664C3.01115 16.8415 3.15672 17.2292 3.46792 17.4541C3.63519 17.575 3.83089 17.6365 4.02824 17.6365C4.19839 17.6365 4.36717 17.5907 4.51865 17.5L9.00009 14.8216L13.4799 17.5C13.8077 17.6972 14.2209 17.6792 14.5314 17.4541C14.8428 17.2285 14.9882 16.8407 14.9035 16.4664L13.7455 11.3655L17.6725 7.92216C17.9613 7.66947 18.0716 7.27038 17.9531 6.90521Z\" fill=\"#FFC107\"></path>\n</g>\n<g clip-path=\"url(#clip1_1_1248)\">\n<path d=\"M39.9531 6.90521C39.8352 6.54073 39.512 6.28186 39.1295 6.24739L33.9342 5.77565L31.8798 0.967224C31.7284 0.614828 31.3834 0.386719 31.0001 0.386719C30.6168 0.386719 30.2718 0.614828 30.1203 0.968048L28.066 5.77565L22.8699 6.24739C22.4881 6.28268 22.1656 6.54073 22.0471 6.90521C21.9286 7.26969 22.038 7.66947 22.3268 7.92147L26.2539 11.3655L25.0959 16.4664C25.0112 16.8415 25.1567 17.2292 25.4679 17.4541C25.6352 17.575 25.8309 17.6365 26.0282 17.6365C26.1984 17.6365 26.3672 17.5907 26.5187 17.5L31.0001 14.8216L35.4799 17.5C35.8077 17.6972 36.2209 17.6792 36.5314 17.4541C36.8428 17.2285 36.9882 16.8407 36.9035 16.4664L35.7455 11.3655L39.6725 7.92216C39.9613 7.66947 40.0716 7.27038 39.9531 6.90521Z\" fill=\"#FFC107\"></path>\n</g>\n<g clip-path=\"url(#clip2_1_1248)\">\n<path d=\"M61.9531 6.90521C61.8352 6.54073 61.512 6.28186 61.1295 6.24739L55.9342 5.77565L53.8798 0.967224C53.7284 0.614828 53.3834 0.386719 53.0001 0.386719C52.6168 0.386719 52.2718 0.614828 52.1203 0.968048L50.066 5.77565L44.8699 6.24739C44.4881 6.28268 44.1656 6.54073 44.0471 6.90521C43.9286 7.26969 44.038 7.66947 44.3268 7.92147L48.2539 11.3655L47.0959 16.4664C47.0112 16.8415 47.1567 17.2292 47.4679 17.4541C47.6352 17.575 47.8309 17.6365 48.0282 17.6365C48.1984 17.6365 48.3672 17.5907 48.5187 17.5L53.0001 14.8216L57.4799 17.5C57.8077 17.6972 58.2209 17.6792 58.5314 17.4541C58.8428 17.2285 58.9882 16.8407 58.9035 16.4664L57.7455 11.3655L61.6725 7.92216C61.9613 7.66947 62.0716 7.27038 61.9531 6.90521Z\" fill=\"#FFC107\"></path>\n</g>\n<g clip-path=\"url(#clip3_1_1248)\">\n<path d=\"M83.9531 6.90521C83.8352 6.54073 83.512 6.28186 83.1295 6.24739L77.9342 5.77565L75.8798 0.967224C75.7284 0.614828 75.3834 0.386719 75.0001 0.386719C74.6168 0.386719 74.2718 0.614828 74.1203 0.968048L72.066 5.77565L66.8699 6.24739C66.4881 6.28268 66.1656 6.54073 66.0471 6.90521C65.9286 7.26969 66.038 7.66947 66.3268 7.92147L70.2539 11.3655L69.0959 16.4664C69.0112 16.8415 69.1567 17.2292 69.4679 17.4541C69.6352 17.575 69.8309 17.6365 70.0282 17.6365C70.1984 17.6365 70.3672 17.5907 70.5187 17.5L75.0001 14.8216L79.4799 17.5C79.8077 17.6972 80.2209 17.6792 80.5314 17.4541C80.8428 17.2285 80.9882 16.8407 80.9035 16.4664L79.7455 11.3655L83.6725 7.92216C83.9613 7.66947 84.0716 7.27038 83.9531 6.90521Z\" fill=\"#FFC107\"></path>\n</g>\n<g clip-path=\"url(#clip4_1_1248)\">\n<path d=\"M105.953 6.90521C105.835 6.54073 105.512 6.28186 105.129 6.24739L99.9342 5.77565L97.8798 0.967224C97.7284 0.614828 97.3834 0.386719 97.0001 0.386719C96.6168 0.386719 96.2718 0.614828 96.1203 0.968048L94.066 5.77565L88.8699 6.24739C88.4881 6.28268 88.1656 6.54073 88.0471 6.90521C87.9286 7.26969 88.038 7.66947 88.3268 7.92147L92.2539 11.3655L91.0959 16.4664C91.0112 16.8415 91.1567 17.2292 91.4679 17.4541C91.6352 17.575 91.8309 17.6365 92.0282 17.6365C92.1984 17.6365 92.3672 17.5907 92.5187 17.5L97.0001 14.8216L101.48 17.5C101.808 17.6972 102.221 17.6792 102.531 17.4541C102.843 17.2285 102.988 16.8407 102.903 16.4664L101.745 11.3655L105.673 7.92216C105.961 7.66947 106.072 7.27038 105.953 6.90521Z\" fill=\"#E3E3E3\"></path>\n</g>\n<defs>\n<clippath id=\"clip0_1_1248\">\n<rect width=\"18\" height=\"18\" fill=\"white\"></rect>\n</clippath>\n<clippath id=\"clip1_1_1248\">\n<rect width=\"18\" height=\"18\" fill=\"white\" transform=\"translate(22)\"></rect>\n</clippath>\n<clippath id=\"clip2_1_1248\">\n<rect width=\"18\" height=\"18\" fill=\"white\" transform=\"translate(44)\"></rect>\n</clippath>\n<clippath id=\"clip3_1_1248\">\n<rect width=\"18\" height=\"18\" fill=\"white\" transform=\"translate(66)\"></rect>\n</clippath>\n<clippath id=\"clip4_1_1248\">\n<rect width=\"18\" height=\"18\" fill=\"white\" transform=\"translate(88)\"></rect>\n</clippath>\n</defs>\n</svg>"
+          }
+        },
+        "review_block_qwfAHg": {
+          "type": "review_block",
+          "settings": {
+            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"38\" height=\"38\" viewbox=\"0 0 38 38\" fill=\"none\">\n  <path d=\"M13.2017 19.001H7.40332V14.3623C7.40332 11.8038 9.48345 9.72363 12.042 9.72363H12.6218C13.5857 9.72363 14.3613 8.94812 14.3613 7.98409V4.50516C14.3613 3.54121 13.5858 2.76562 12.6218 2.76562H12.042C5.63484 2.76562 0.445312 7.95515 0.445312 14.3623V31.7573C0.445312 33.678 2.00361 35.2363 3.92432 35.2363H13.2017C15.1224 35.2363 16.6807 33.678 16.6807 31.7573V22.48C16.6807 20.5593 15.1224 19.001 13.2017 19.001Z\" fill=\"#FFC107\"></path>\n  <path d=\"M34.0757 19.001H28.2773V14.3623C28.2773 11.8038 30.3575 9.72363 32.916 9.72363H33.4958C34.4598 9.72363 35.2354 8.94812 35.2354 7.98409V4.50516C35.2354 3.54121 34.4598 2.76562 33.4958 2.76562H32.916C26.5089 2.76562 21.3193 7.95515 21.3193 14.3623V31.7573C21.3193 33.678 22.8776 35.2363 24.7983 35.2363H34.0757C35.9964 35.2363 37.5547 33.678 37.5547 31.7573V22.48C37.5547 20.5593 35.9964 19.001 34.0757 19.001Z\" fill=\"#FFC107\"></path>\n</svg>",
+            "review_text": "With QLEM, I always make a great first impression. The smart business card is not just functional but also leaves people intrigued about its technology. Highly recommend it!",
+            "image": "shopify://shop_images/default-avatar-profile-icon-social-media-user-image-gray-avatar-icon-blank-profile-silhouette-illustration-vector.jpg",
+            "name": "Umang Zala",
+            "position": "Entrepreneur",
+            "star_icon": "<svg width=\"106\" height=\"18\" viewbox=\"0 0 106 18\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<g clip-path=\"url(#clip0_1_1248)\">\n<path d=\"M17.9531 6.90521C17.8352 6.54073 17.512 6.28186 17.1295 6.24739L11.9342 5.77565L9.87984 0.967224C9.72836 0.614828 9.38338 0.386719 9.00009 0.386719C8.61679 0.386719 8.27181 0.614828 8.12034 0.968048L6.06598 5.77565L0.869862 6.24739C0.488078 6.28268 0.165621 6.54073 0.0471028 6.90521C-0.0714152 7.26969 0.0380388 7.66947 0.326849 7.92147L4.25387 11.3655L3.09589 16.4664C3.01115 16.8415 3.15672 17.2292 3.46792 17.4541C3.63519 17.575 3.83089 17.6365 4.02824 17.6365C4.19839 17.6365 4.36717 17.5907 4.51865 17.5L9.00009 14.8216L13.4799 17.5C13.8077 17.6972 14.2209 17.6792 14.5314 17.4541C14.8428 17.2285 14.9882 16.8407 14.9035 16.4664L13.7455 11.3655L17.6725 7.92216C17.9613 7.66947 18.0716 7.27038 17.9531 6.90521Z\" fill=\"#FFC107\"></path>\n</g>\n<g clip-path=\"url(#clip1_1_1248)\">\n<path d=\"M39.9531 6.90521C39.8352 6.54073 39.512 6.28186 39.1295 6.24739L33.9342 5.77565L31.8798 0.967224C31.7284 0.614828 31.3834 0.386719 31.0001 0.386719C30.6168 0.386719 30.2718 0.614828 30.1203 0.968048L28.066 5.77565L22.8699 6.24739C22.4881 6.28268 22.1656 6.54073 22.0471 6.90521C21.9286 7.26969 22.038 7.66947 22.3268 7.92147L26.2539 11.3655L25.0959 16.4664C25.0112 16.8415 25.1567 17.2292 25.4679 17.4541C25.6352 17.575 25.8309 17.6365 26.0282 17.6365C26.1984 17.6365 26.3672 17.5907 26.5187 17.5L31.0001 14.8216L35.4799 17.5C35.8077 17.6972 36.2209 17.6792 36.5314 17.4541C36.8428 17.2285 36.9882 16.8407 36.9035 16.4664L35.7455 11.3655L39.6725 7.92216C39.9613 7.66947 40.0716 7.27038 39.9531 6.90521Z\" fill=\"#FFC107\"></path>\n</g>\n<g clip-path=\"url(#clip2_1_1248)\">\n<path d=\"M61.9531 6.90521C61.8352 6.54073 61.512 6.28186 61.1295 6.24739L55.9342 5.77565L53.8798 0.967224C53.7284 0.614828 53.3834 0.386719 53.0001 0.386719C52.6168 0.386719 52.2718 0.614828 52.1203 0.968048L50.066 5.77565L44.8699 6.24739C44.4881 6.28268 44.1656 6.54073 44.0471 6.90521C43.9286 7.26969 44.038 7.66947 44.3268 7.92147L48.2539 11.3655L47.0959 16.4664C47.0112 16.8415 47.1567 17.2292 47.4679 17.4541C47.6352 17.575 47.8309 17.6365 48.0282 17.6365C48.1984 17.6365 48.3672 17.5907 48.5187 17.5L53.0001 14.8216L57.4799 17.5C57.8077 17.6972 58.2209 17.6792 58.5314 17.4541C58.8428 17.2285 58.9882 16.8407 58.9035 16.4664L57.7455 11.3655L61.6725 7.92216C61.9613 7.66947 62.0716 7.27038 61.9531 6.90521Z\" fill=\"#FFC107\"></path>\n</g>\n<g clip-path=\"url(#clip3_1_1248)\">\n<path d=\"M83.9531 6.90521C83.8352 6.54073 83.512 6.28186 83.1295 6.24739L77.9342 5.77565L75.8798 0.967224C75.7284 0.614828 75.3834 0.386719 75.0001 0.386719C74.6168 0.386719 74.2718 0.614828 74.1203 0.968048L72.066 5.77565L66.8699 6.24739C66.4881 6.28268 66.1656 6.54073 66.0471 6.90521C65.9286 7.26969 66.038 7.66947 66.3268 7.92147L70.2539 11.3655L69.0959 16.4664C69.0112 16.8415 69.1567 17.2292 69.4679 17.4541C69.6352 17.575 69.8309 17.6365 70.0282 17.6365C70.1984 17.6365 70.3672 17.5907 70.5187 17.5L75.0001 14.8216L79.4799 17.5C79.8077 17.6972 80.2209 17.6792 80.5314 17.4541C80.8428 17.2285 80.9882 16.8407 80.9035 16.4664L79.7455 11.3655L83.6725 7.92216C83.9613 7.66947 84.0716 7.27038 83.9531 6.90521Z\" fill=\"#FFC107\"></path>\n</g>\n<g clip-path=\"url(#clip4_1_1248)\">\n<path d=\"M105.953 6.90521C105.835 6.54073 105.512 6.28186 105.129 6.24739L99.9342 5.77565L97.8798 0.967224C97.7284 0.614828 97.3834 0.386719 97.0001 0.386719C96.6168 0.386719 96.2718 0.614828 96.1203 0.968048L94.066 5.77565L88.8699 6.24739C88.4881 6.28268 88.1656 6.54073 88.0471 6.90521C87.9286 7.26969 88.038 7.66947 88.3268 7.92147L92.2539 11.3655L91.0959 16.4664C91.0112 16.8415 91.1567 17.2292 91.4679 17.4541C91.6352 17.575 91.8309 17.6365 92.0282 17.6365C92.1984 17.6365 92.3672 17.5907 92.5187 17.5L97.0001 14.8216L101.48 17.5C101.808 17.6972 102.221 17.6792 102.531 17.4541C102.843 17.2285 102.988 16.8407 102.903 16.4664L101.745 11.3655L105.673 7.92216C105.961 7.66947 106.072 7.27038 105.953 6.90521Z\" fill=\"#E3E3E3\"></path>\n</g>\n<defs>\n<clippath id=\"clip0_1_1248\">\n<rect width=\"18\" height=\"18\" fill=\"white\"></rect>\n</clippath>\n<clippath id=\"clip1_1_1248\">\n<rect width=\"18\" height=\"18\" fill=\"white\" transform=\"translate(22)\"></rect>\n</clippath>\n<clippath id=\"clip2_1_1248\">\n<rect width=\"18\" height=\"18\" fill=\"white\" transform=\"translate(44)\"></rect>\n</clippath>\n<clippath id=\"clip3_1_1248\">\n<rect width=\"18\" height=\"18\" fill=\"white\" transform=\"translate(66)\"></rect>\n</clippath>\n<clippath id=\"clip4_1_1248\">\n<rect width=\"18\" height=\"18\" fill=\"white\" transform=\"translate(88)\"></rect>\n</clippath>\n</defs>\n</svg>"
+          }
+        }
+      },
+      "block_order": [
+        "review_block_LfEzyR",
+        "review_block_rQ3RDt",
+        "review_block_8XBBRB",
+        "review_block_A8D6hc",
+        "review_block_MWkrYc",
+        "review_block_qwfAHg"
+      ],
+      "settings": {
+        "bg_color": "",
+        "title": "Positive Experiences",
+        "desc": "Discover why users love QLEM! Here are some of the best reviews from our Users"
+      }
+    },
+    "ql_text_form_wpGgCj": {
+      "type": "QL-text-form",
+      "blocks": {
+        "forms_inline_jpMXfL": {
+          "type": "shopify://apps/forms/blocks/inline/8744a304-fcb1-4347-b211-bb6b4759a76a",
+          "settings": {
+            "form_id": "292530",
+            "text_color": "#202020",
+            "button_background_color": "#202020",
+            "button_label_color": "#ffffff",
+            "links_color": "#1878b9",
+            "errors_color": "#e02229",
+            "text_alignment": "center",
+            "form_alignment": "center",
+            "padding_top": 0,
+            "padding_bottom": 0,
+            "padding_right": 0,
+            "padding_left": 0
+          }
+        }
+      },
+      "block_order": [
+        "forms_inline_jpMXfL"
+      ],
+      "settings": {
+        "bg_color": "#f8f8f8",
+        "title": "Do you need any help?",
+        "content": "<p>Looking to collaborate with QLEM or interested in our services? We’d love to hear from you! Fill out the request proposal form, and our team will get back to you promptly with tailored solutions to meet your needs.</p>"
+      }
+    }
+  },
+  "order": [
+    "hero_banner_rdFkHW",
+    "trusted_section_pip7eV",
+    "pvc_section_6ViUgq",
+    "ql_card_sec_BExQtJ",
+    "custom_video_slider_UXeYaf",
+    "featured_collection_QbBiUp",
+    "tab_product_dmAEwC",
+    "ql_how_work_YHyagN",
+    "business_card_iCfydY",
+    "respose_section_mixYJ6",
+    "typesetting_section_f93xHc",
+    "ql_img_text_KMHxqD",
+    "custom_review_Jcidpd",
+    "ql_text_form_wpGgCj"
+  ]
+}

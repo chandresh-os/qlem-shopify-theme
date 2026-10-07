@@ -1,0 +1,140 @@
+{% comment %}
+  Renders social icons.
+  Accepts:
+  - class: {String} a class to be added to the <ul> element (optional).
+
+  Usage:
+  {% render 'social-icons',
+    class: 'my-class'
+  %}
+{% endcomment %}
+
+<ul class="d-flex list-unstyled list-social{% if class %} {{ class}}{% endif %}" role="list">
+  {%- if settings.social_facebook_link != blank -%}
+    <li class="list-social__item">
+      <a href="{{ settings.social_facebook_link }}" class="link list-social__link">
+        <span class="svg-wrapper">
+          {{- 'icon-facebook.svg' | inline_asset_content -}}
+        </span>
+        <span class="visually-hidden">{{ 'general.social.links.facebook' | t }}</span>
+      </a>
+    </li>
+  {%- endif -%}
+  {%- if settings.social_instagram_link != blank -%}
+    <li class="list-social__item">
+      <a href="{{ settings.social_instagram_link }}" class="link list-social__link">
+        <span class="svg-wrapper">
+          <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2.61671 2.78563C-0.526628 6.05063 0.116706 9.51896 0.116706 20.0556C0.116706 28.8056 -1.40996 37.5773 6.58004 39.6423C9.07504 40.284 31.1817 40.284 33.6734 39.639C37 38.7806 39.7067 36.0823 40.0767 31.3773C40.1284 30.7206 40.1284 9.40229 40.075 8.73229C39.6817 3.72063 36.5967 0.832294 32.5317 0.247294C31.6 0.112294 31.4134 0.0722941 26.6334 0.0639608C9.67837 0.0722941 5.96171 -0.682706 2.61671 2.78563Z" fill="url(#paint0_linear_0_1175)"/>
+<path d="M20.0002 10.0096C15.9043 10.0096 12.0147 9.64556 10.5291 13.4554C9.9154 15.0289 10.0045 17.0725 10.0045 19.9986C10.0045 22.5663 9.92217 24.9795 10.5291 26.5407C12.0113 30.3527 15.9325 29.9875 19.998 29.9875C23.9203 29.9875 27.9643 30.3956 29.4681 26.5407C30.0828 24.9514 29.9926 22.9382 29.9926 19.9986C29.9926 16.0963 30.2081 13.5771 28.314 11.6857C26.3963 9.76955 23.8029 10.0096 19.9957 10.0096H20.0002ZM19.1046 11.8097C27.6485 11.7962 28.7359 10.8471 28.1358 24.0316C27.9226 28.6947 24.3692 28.1829 20.0014 28.1829C12.0373 28.1829 11.8083 27.9553 11.8083 19.9941C11.8083 11.9405 12.44 11.8142 19.1046 11.8075V11.8097ZM25.336 13.4678C24.6738 13.4678 24.1368 14.0043 24.1368 14.666C24.1368 15.3276 24.6738 15.8641 25.336 15.8641C25.9981 15.8641 26.5351 15.3276 26.5351 14.666C26.5351 14.0043 25.9981 13.4678 25.336 13.4678ZM20.0002 14.8689C17.1654 14.8689 14.8676 17.166 14.8676 19.9986C14.8676 22.8312 17.1654 25.1272 20.0002 25.1272C22.8351 25.1272 25.1318 22.8312 25.1318 19.9986C25.1318 17.166 22.8351 14.8689 20.0002 14.8689ZM20.0002 16.6689C24.4053 16.6689 24.411 23.3282 20.0002 23.3282C15.5963 23.3282 15.5895 16.6689 20.0002 16.6689Z" fill="white"/>
+<defs>
+<linearGradient id="paint0_linear_0_1175" x1="2.69341" y1="37.5091" x2="39.8692" y2="5.33391" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FFDD55"/>
+<stop offset="0.5" stop-color="#FF543E"/>
+<stop offset="1" stop-color="#C837AB"/>
+</linearGradient>
+</defs>
+</svg>
+        </span>
+        <span class="visually-hidden">{{ 'general.social.links.instagram' | t }}</span>
+      </a>
+    </li>
+  {%- endif -%}
+  {%- if settings.social_youtube_link != blank -%}
+    <li class="list-social__item">
+      <a href="{{ settings.social_youtube_link }}" class="link list-social__link">
+        <span class="svg-wrapper">
+          {{- 'icon-youtube.svg' | inline_asset_content -}}
+        </span>
+        <span class="visually-hidden">{{ 'general.social.links.youtube' | t }}</span>
+      </a>
+    </li>
+  {%- endif -%}
+  {%- if settings.social_tiktok_link != blank -%}
+    <li class="list-social__item">
+      <a href="{{ settings.social_tiktok_link }}" class="link list-social__link">
+        <span class="svg-wrapper">
+          {{- 'icon-tiktok.svg' | inline_asset_content -}}
+        </span>
+        <span class="visually-hidden">{{ 'general.social.links.tiktok' | t }}</span>
+      </a>
+    </li>
+  {%- endif -%}
+  {%- if settings.social_twitter_link != blank -%}
+    <li class="list-social__item">
+      <a href="{{ settings.social_twitter_link }}" class="link list-social__link">
+        <span class="svg-wrapper">
+          {{- 'icon-twitter.svg' | inline_asset_content -}}
+        </span>
+        <span class="visually-hidden">{{ 'general.social.links.twitter' | t }}</span>
+      </a>
+    </li>
+  {%- endif -%}
+  {%- if settings.social_pinterest_link != blank -%}
+    <li class="list-social__item">
+      <a href="{{ settings.social_pinterest_link }}" class="link list-social__link">
+        <span class="svg-wrapper">
+          {{- 'icon-pinterest.svg' | inline_asset_content -}}
+        </span>
+        <span class="visually-hidden">{{ 'general.social.links.pinterest' | t }}</span>
+      </a>
+    </li>
+  {%- endif -%}
+  {%- if settings.social_snapchat_link != blank -%}
+    <li class="list-social__item">
+      <a href="{{ settings.social_snapchat_link }}" class="link list-social__link">
+        <span class="svg-wrapper">
+          {{- 'icon-snapchat.svg' | inline_asset_content -}}
+        </span>
+        <span class="visually-hidden">{{ 'general.social.links.snapchat' | t }}</span>
+      </a>
+    </li>
+  {%- endif -%}
+  {%- if settings.social_tumblr_link != blank -%}
+    <li class="list-social__item">
+      <a href="{{ settings.social_tumblr_link }}" class="link list-social__link">
+        <span class="svg-wrapper">
+          {{- 'icon-tumblr.svg' | inline_asset_content -}}
+        </span>
+        <span class="visually-hidden">{{ 'general.social.links.tumblr' | t }}</span>
+      </a>
+    </li>
+  {%- endif -%}
+  {%- if settings.social_vimeo_link != blank -%}
+    <li class="list-social__item">
+      <a href="{{ settings.social_vimeo_link }}" class="link list-social__link">
+        <span class="svg-wrapper">
+          {{- 'icon-vimeo.svg' | inline_asset_content -}}
+        </span>
+        <span class="visually-hidden">{{ 'general.social.links.vimeo' | t }}</span>
+      </a>
+    </li>
+  {%- endif -%}
+  {%- if settings.whatsapp_link != blank -%}
+    <li class="list-social__item">
+      <a href="{{ settings.whatsapp_link }}" class="link list-social__link">
+        <span class="svg-wrapper">
+          <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.73194 2.78563C-0.411393 6.05063 0.23194 9.51896 0.23194 20.0556C0.23194 28.8056 -1.29473 37.5773 6.69527 39.6423C9.19027 40.284 31.2969 40.284 33.7886 39.639C37.1153 38.7806 39.8219 36.0823 40.1919 31.3773C40.2436 30.7206 40.2436 9.40229 40.1903 8.73229C39.7969 3.72063 36.7119 0.832294 32.6469 0.247294C31.7153 0.112294 31.5286 0.0722941 26.7486 0.0639608C9.79361 0.0722941 6.07694 -0.682706 2.73194 2.78563Z" fill="#29A71A"/>
+            <path d="M27.2273 12.9652C25.5489 11.2701 23.32 10.2305 20.9427 10.034C18.5654 9.83752 16.1961 10.497 14.2622 11.8936C12.3283 13.2901 10.9571 15.3318 10.396 17.6503C9.83482 19.9688 10.1207 22.4115 11.2019 24.5378L10.1405 29.6908C10.1295 29.7421 10.1292 29.7951 10.1396 29.8465C10.15 29.8979 10.1709 29.9466 10.201 29.9896C10.2451 30.0548 10.308 30.105 10.3814 30.1335C10.4548 30.162 10.5351 30.1674 10.6116 30.1491L15.662 28.952C17.7823 30.0059 20.2077 30.2734 22.5068 29.7068C24.8058 29.1402 26.8292 27.7764 28.2171 25.858C29.6049 23.9395 30.2671 21.5909 30.0859 19.2301C29.9046 16.8692 28.8917 14.6493 27.2273 12.9652ZM25.6526 25.5332C24.4913 26.6912 22.996 27.4556 21.3773 27.7187C19.7585 27.9818 18.0981 27.7303 16.6299 26.9997L15.9259 26.6514L12.8297 27.3847L12.8389 27.3462L13.4805 24.2298L13.1359 23.5497C12.3857 22.0764 12.121 20.4034 12.3799 18.7704C12.6387 17.1375 13.4077 15.6283 14.5767 14.4592C16.0456 12.9907 18.0376 12.1658 20.1147 12.1658C22.1917 12.1658 24.1837 12.9907 25.6526 14.4592C25.6651 14.4735 25.6786 14.487 25.6929 14.4995C27.1436 15.9717 27.9535 17.9578 27.9459 20.0247C27.9384 22.0915 27.114 24.0716 25.6526 25.5332Z" fill="white"/>
+            <path d="M25.3779 23.2492C24.9984 23.8468 24.399 24.5782 23.6455 24.7597C22.3257 25.0787 20.3 24.7707 17.7795 22.4206L17.7483 22.3931C15.532 20.3382 14.9564 18.6278 15.0957 17.2713C15.1727 16.5014 15.8143 15.8048 16.3551 15.3502C16.4406 15.2772 16.542 15.2253 16.6512 15.1985C16.7603 15.1717 16.8742 15.1708 16.9838 15.196C17.0934 15.2211 17.1955 15.2715 17.2821 15.3431C17.3687 15.4148 17.4373 15.5057 17.4825 15.6087L18.2983 17.4418C18.3513 17.5607 18.3709 17.6917 18.3551 17.8209C18.3393 17.9501 18.2886 18.0725 18.2084 18.1751L17.796 18.7103C17.7075 18.8209 17.6541 18.9553 17.6426 19.0965C17.6312 19.2376 17.6623 19.3789 17.7318 19.5023C17.9628 19.9074 18.5164 20.5031 19.1305 21.0549C19.8198 21.6782 20.5842 22.2483 21.0681 22.4426C21.1976 22.4955 21.34 22.5084 21.4769 22.4797C21.6138 22.4509 21.7389 22.3818 21.8362 22.2813L22.3147 21.7992C22.407 21.7081 22.5218 21.6432 22.6474 21.611C22.773 21.5788 22.9049 21.5805 23.0296 21.6159L24.9672 22.1658C25.0741 22.1986 25.1721 22.2554 25.2537 22.3318C25.3352 22.4083 25.3982 22.5024 25.4378 22.6069C25.4775 22.7115 25.4927 22.8237 25.4823 22.935C25.4719 23.0463 25.4362 23.1538 25.3779 23.2492Z" fill="white"/>
+          </svg>
+        </span>
+      </a>
+    </li>
+  {%- endif -%}
+  {%- if settings.linkedin_link != blank -%}
+    <li class="list-social__item">
+      <a href="{{ settings.linkedin_link }}" class="link list-social__link">
+        <span class="svg-wrapper">
+          <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0.230469" width="40" height="40" rx="10" fill="#0077B5"/>
+            <path d="M15.8057 16.6016H12.1367V28.4452H15.8057V16.6016Z" fill="white"/>
+            <path d="M13.9532 15.0466C14.3871 15.0511 14.8126 14.9265 15.1756 14.6886C15.5385 14.4508 15.8227 14.1104 15.9918 13.7108C16.161 13.3111 16.2075 12.8702 16.1256 12.444C16.0437 12.0179 15.8369 11.6257 15.5317 11.3172C15.2264 11.0088 14.8363 10.798 14.411 10.7117C13.9857 10.6254 13.5443 10.6674 13.143 10.8325C12.7416 10.9975 12.3983 11.2781 12.1568 11.6386C11.9152 11.9991 11.7862 12.4233 11.7862 12.8573C11.7842 13.4346 12.0111 13.9893 12.4173 14.3997C12.8235 14.8101 13.3758 15.0427 13.9532 15.0466Z" fill="white"/>
+            <path d="M21.6705 22.229C21.6705 20.5627 22.4178 19.5689 23.9122 19.5689C25.2573 19.5689 25.9074 20.5179 25.9074 22.229V28.446H29.5389V20.9737C29.5389 17.7979 27.7456 16.2661 25.2349 16.2661C24.521 16.2554 23.8165 16.4302 23.1904 16.7733C22.5644 17.1165 22.0381 17.6163 21.6631 18.2238V16.5949H18.1436V28.446H21.6631L21.6705 22.229Z" fill="white"/>
+          </svg>
+        </span>
+      </a>
+    </li>
+  {%- endif -%}
+</ul>

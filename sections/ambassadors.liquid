@@ -1,0 +1,92 @@
+<div class="main-ambassadors mb-80">
+  <div class="container">
+    <div class="ambassadors-wrapper d-flex">
+      <div class="ambassadors-left w-50">
+        {% if section.settings.img != blank %}
+          <img src="{{ section.settings.img | img_url: "master" }}" class="w-100">
+        {% endif %}
+      </div>
+      <div class="ambassadors-right w-50">
+        {% if section.settings.title != blank %}
+          <h2 class="title-40 t-left">{{ section.settings.title }}</h2>
+        {% endif %}
+        {% if section.settings.desc != blank %}
+          <p class="f-20 t-left">{{ section.settings.desc }}</p>
+        {% endif %}
+        <div class="btn-wrap d-flex">
+          {% if section.settings.btntxt1 != blank %}
+            <a class="sec_btn get_btn" href="{{ section.settings.btnurl1 }}">{{ section.settings.btntxt1 }}</a>
+          {% endif %}
+          {% if section.settings.btntxt2 != blank %}
+            <a class="common_btn" href="{{ section.settings.btnurl2 }}">{{ section.settings.btntxt2 }}</a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% schema %}
+{
+  "name": "Ambassadors Section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "img",
+      "label": "Add Image"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Add Title"
+    },
+    {
+      "type": "textarea",
+      "id": "desc",
+      "label": "Add Description"
+    },
+    {
+      "type": "text",
+      "id": "btntxt1",
+      "label": "Add Button Title 1"
+    },
+    {
+      "type": "url",
+      "id": "btnurl1",
+      "label": "Add Button URL 1"
+    },
+    {
+      "type": "text",
+      "id": "btntxt2",
+      "label": "Add Button Title 2"
+    },
+    {
+      "type": "url",
+      "id": "btnurl2",
+      "label": "Add Button URL 2"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Ambassadors Section"
+    }
+  ]
+}
+{% endschema %}

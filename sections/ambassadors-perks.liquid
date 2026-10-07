@@ -1,0 +1,83 @@
+<div class="main-ambassadors-perks p-80" style="background-color:{{ section.settings.color }}">
+  <div class="container">
+    {% if section.settings.title != blank %}
+      <h2 class="title-40 t-center">{{ section.settings.title }}</h2>
+    {% endif %}
+    <div class="ambassadors-perks-inner d-flex">
+      {% for block in section.blocks %}
+        <div class="ambassadors-perks-col w-50">
+          <div class="ambassadors-perks-bg">
+            <div class="perks-top d-flex">
+              {{ block.settings.svgicon }}
+              <h4>{{ block.settings.title }}</h4>
+            </div>
+            {% if block.settings.desc != blank %}
+              <p>{{ block.settings.desc }}</p>
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+    {% if section.settings.btntxt != blank %}
+      <div class="button-wrapper t-center">
+        <a class="common_btn" href="{{ section.settings.btnurl }}">{{ section.settings.btntxt }}</a>
+      </div>
+    {% endif %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Ambassadors Perks Section",
+  "settings": [
+    {
+      "type": "color",
+      "id": "color",
+      "label": "Add Background Color"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Add Title"
+    },
+    {
+      "type": "text",
+      "id": "btntxt",
+      "label": "Add Button Title"
+    },
+    {
+      "type": "url",
+      "id": "btnurl",
+      "label": "Add Button URL"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "block",
+      "name": "name",
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "svgicon",
+          "label": "Add SVG Icon"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Add Title"
+        },
+        {
+          "type": "textarea",
+          "id": "desc",
+          "label": "Add Description"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "ambassadors-perks"
+    }
+  ]
+}
+{% endschema %}

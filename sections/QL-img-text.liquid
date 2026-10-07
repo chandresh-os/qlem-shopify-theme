@@ -1,0 +1,75 @@
+<section>
+ <div class="QL_img_text_sec mb-80"{% if section.settings.bg_img != blank %} style="background-image:url({{ section.settings.bg_img | img_url:'master' }})"{% endif %}>
+    <div class="container">
+      <div class="QL_img_text_flex">
+        <div class="QL_img_left_side">
+            {% if section.settings.image != blank %}
+            <img src="{{ section.settings.image | img_url:'master' }}">
+            {% endif %}
+        </div>
+        <div class="QL_text_right_side">
+          {% if section.settings.title != blank %}
+          <h2 class="title-40">{{ section.settings.title }}</h2>
+          {% endif %}
+          {% if section.settings.desc != blank %}
+          <p class="f-20">{{ section.settings.desc }}</p>
+          {% endif %}
+          {% if section.settings.btn_text != blank %}
+          <a href="{{ section.settings.btn_url }}" class="common_btn">
+            {{ section.settings.btn_text }}
+          </a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+{% schema %}
+  {
+    "name": "QL Img Text",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "bg_img",
+        "label": "Add Backgroud Img"
+      },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Add Image"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Add Title"
+      },
+      {
+        "type": "textarea",
+        "id": "desc",
+        "label": "Add Description"
+      },
+      {
+        "type": "url",
+        "id": "btn_url",
+        "label": "Add Button Url"
+      },
+      {
+        "type": "text",
+        "id": "btn_text",
+        "label": "Add Button Text"
+      }
+    ],
+    "presets": [
+      {
+        "name": "QL Img Text"
+      }
+    ]
+  }
+{% endschema %}

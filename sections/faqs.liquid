@@ -1,0 +1,91 @@
+<section class="faq">
+  <div class="faq_section mb-80"  style="background:{{ section.settings.bg_color }}">
+    <div class="container">
+      <div class="faq_title ">
+        {% if section.settings.title != blank %}
+          <h2 class="title-40 t-center">{{ section.settings.title }}</h2>
+          {% endif %}
+           {% if section.settings.desc != blank %}
+          <p class="f-20 t-center">{{ section.settings.desc }}</p>
+          {% endif %}
+    </div>
+      <div class="faq_question_flex">
+      <div class="faq_left_col">
+       {% for block in section.blocks %}
+        <div class="faq_side">
+          <div class="faq_side_inner">
+            <div class="faq_heading_col">
+          <div class="icon_flex">
+          {% if block.settings.text != blank %}
+          <h3 class="faq_heading">{{ block.settings.text }}</h3>
+          {% endif %}
+          <span class="plus_icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+  <path d="M9.16797 10.8346H5.0013C4.76519 10.8346 4.56727 10.7548 4.40755 10.5951C4.24783 10.4353 4.16797 10.2374 4.16797 10.0013C4.16797 9.76519 4.24783 9.56727 4.40755 9.40755C4.56727 9.24783 4.76519 9.16797 5.0013 9.16797H9.16797V5.0013C9.16797 4.76519 9.24783 4.56727 9.40755 4.40755C9.56727 4.24783 9.76519 4.16797 10.0013 4.16797C10.2374 4.16797 10.4353 4.24783 10.5951 4.40755C10.7548 4.56727 10.8346 4.76519 10.8346 5.0013V9.16797H15.0013C15.2374 9.16797 15.4353 9.24783 15.5951 9.40755C15.7548 9.56727 15.8346 9.76519 15.8346 10.0013C15.8346 10.2374 15.7548 10.4353 15.5951 10.5951C15.4353 10.7548 15.2374 10.8346 15.0013 10.8346H10.8346V15.0013C10.8346 15.2374 10.7548 15.4353 10.5951 15.5951C10.4353 15.7548 10.2374 15.8346 10.0013 15.8346C9.76519 15.8346 9.56727 15.7548 9.40755 15.5951C9.24783 15.4353 9.16797 15.2374 9.16797 15.0013V10.8346Z" fill="black"/>
+</svg></span>
+            <span class="minus_icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+  <path d="M5.0013 10.8346C4.76519 10.8346 4.56727 10.7548 4.40755 10.5951C4.24783 10.4353 4.16797 10.2374 4.16797 10.0013C4.16797 9.76519 4.24783 9.56727 4.40755 9.40755C4.56727 9.24783 4.76519 9.16797 5.0013 9.16797H15.0013C15.2374 9.16797 15.4353 9.24783 15.5951 9.40755C15.7548 9.56727 15.8346 9.76519 15.8346 10.0013C15.8346 10.2374 15.7548 10.4353 15.5951 10.5951C15.4353 10.7548 15.2374 10.8346 15.0013 10.8346H5.0013Z" fill="black"/>
+</svg>
+            </span>
+          </div>
+            </div>
+          {% if block.settings.text1 != blank %}
+          <div class="faq_desc">{{ block.settings.text1 }}</div>
+          {% endif %}
+          </div>
+        </div>
+        {% endfor %}
+         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Faq",
+    "settings": [
+       {
+        "type": "color",
+        "id": "bg_color",
+        "label": "Background Color"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Add Title"
+      },
+      {
+        "type": "textarea",
+        "id": "desc",
+        "label": "Add Description"
+      }
+    ],
+     "blocks":[
+      
+      {
+        "type":"faq_block",
+        "name":"Add FAQ Block",
+        "settings":[
+      
+          {
+            "type":"text",
+            "id":"text",
+            "label":"Add FAQ Question"
+          },
+          {
+            "type":"richtext",
+            "id":"text1",
+            "label":"Add FAQ Description"
+          }
+        ]
+      }
+     
+    ],
+    "presets" : [
+      {
+        "name" : "Faq"
+      }
+    ]
+  }
+{% endschema %}

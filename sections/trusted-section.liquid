@@ -1,0 +1,49 @@
+<div class="trusted-section mb-80">
+  <div class="container">
+    <div class="trusted-bg">
+      {% if section.settings.title != blank %}
+        <h6>{{ section.settings.title }}</h6>
+      {% endif %}
+      <div class="trusted-slider">
+        {% for block in section.blocks %}
+          {% if block.settings.image != blank %}
+            <div class="trusted-img">
+              <img src="{{ block.settings.image | img_url: "master"}}">
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Trusted Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Add Title"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Add Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Trusted Section"
+    }
+  ]
+}
+{% endschema %}

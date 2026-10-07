@@ -1,0 +1,74 @@
+<section>
+  <div class="about_img_text_sec mb-80"  style="background:{{ section.settings.bg_color }}">
+    <div class="container">
+      <div class="about_img_text_flex">
+        <div class="about_img_right">
+            {% if section.settings.image != blank %}
+            <img src="{{ section.settings.image | img_url:'master' }}">
+            {% endif %}
+        </div>
+        <div class="about_text_left">
+            {% if section.settings.title != blank %}
+          <h2 class="title-40">{{ section.settings.title }}</h2>
+          {% endif %}
+          {% if section.settings.desc != blank %}
+          <div class="desc">{{ section.settings.desc }}</div>
+          {% endif %}
+          {% if section.settings.btn_text != blank %}
+          <a href="{{ section.settings.btn_url }}" class="common_btn">
+            {{ section.settings.btn_text }}
+          </a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+{% schema %}
+  {
+    "name": "About Img Text",
+    "settings": [
+       {
+        "type": "color",
+        "id": "bg_color",
+        "label": "Background Color"
+      },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Add Image"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Add Title"
+      },
+      {
+        "type": "richtext",
+        "id": "desc",
+        "label": "Add Description"
+      },
+      {
+        "type": "url",
+        "id": "btn_url",
+        "label": "Add Button Url"
+      },
+      {
+        "type": "text",
+        "id": "btn_text",
+        "label": "Add Button Text"
+      }
+    ],
+    "presets": [
+      {
+        "name": "About Img Text"
+      }
+    ]
+  }
+{% endschema %}

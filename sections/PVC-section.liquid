@@ -1,0 +1,78 @@
+<div class="pvc-section mb-80">
+  <div class="container">
+    {% if section.settings.title != blank %}
+      <h2 class="title-40 t-center">{{ section.settings.title }}</h2>
+    {% endif %}
+    {% if section.settings.subtext != blank %}
+      <p class="f-20 t-center">{{ section.settings.subtext }}</p>
+    {% endif %}
+    <div class="d-flex pvc-inner">
+      <div class="pvc-left w-50">
+        {% if section.settings.heading != blank %}
+        <h3>{{ section.settings.heading }}</h3>
+        {% endif %}
+        {% if section.settings.desc != blank %}
+          {{ section.settings.desc }}
+        {% endif %}
+         {% if section.settings.btn_text != blank %}
+          <a href="{{ section.settings.btn_url }}" class="common_btn">
+            {{ section.settings.btn_text }}
+          </a>
+          {% endif %}
+      </div>
+      <div class="pvc-right w-50">
+        {% if section.settings.image != blank %}
+          <img src="{{ section.settings.image | img_url: "master" }}">
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "PVC Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Add Title"
+    },
+    {
+      "type": "textarea",
+      "id": "subtext",
+      "label": "Add Sub Text"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Add Heading"
+    },
+    {
+      "type": "textarea",
+      "id": "desc",
+      "label": "Add Description"
+    },
+       {
+        "type": "url",
+        "id": "btn_url",
+        "label": "Add Button Url"
+      },
+      {
+        "type": "text",
+        "id": "btn_text",
+        "label": "Add Button Text"
+      },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Add Image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "PVC Section"
+    }
+  ]
+}
+{% endschema %}
